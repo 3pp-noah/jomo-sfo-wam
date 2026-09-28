@@ -368,8 +368,10 @@ const AGENT_ALIAS = {
 
 
 // ── ALIAS DISPLAY FUNCTIONS ──
-function nsDisplay(ns) { return NS_ALIAS[ns] || ns; }
-function agentDisplay(name) { return AGENT_ALIAS[name] || name; }
+// The mineral codenames concealed SFO identifiers during the doctoral research. They are no longer
+// shown: surfaces display the actual names, and the Rosetta Stone keeps the codename mapping.
+function nsDisplay(ns) { return ns; }
+function agentDisplay(name) { return name; }
 
 // ═══════════════════════════════════════════════════════════════
 // COGNOSCENTI TARGETING LAYER
@@ -2076,7 +2078,7 @@ export default function JOMODashboard() {
             J-Overall Multiple Objective Engine
           </span>
           <span style={{ color: t.text.onDarkMuted, fontSize: 10, marginLeft: 12 }}>
-            ZIRCON-009 × 32 Cities of the Future
+            EXE_TPDP.100D × 32 Cities of the Future
           </span>
         </div>
         <div style={{ display: "flex", gap: 4 }}>
@@ -2210,7 +2212,7 @@ export default function JOMODashboard() {
           )}
           {!selectedAgent && !activeAgent && (
             <div style={{ gridColumn: "1 / -1", padding: "4px 8px", background: "rgba(224,96,64,0.06)", border: "1px dashed rgba(224,96,64,0.15)", marginBottom: 4, color: "#e06040" }}>
-              No agents found in {nsDisplay(travelSfo)} — using ZIRCON-009 fallback (A=100, C=17651.8).
+              No agents found in {nsDisplay(travelSfo)} — using EXE_TPDP.100D fallback (A=100, C=17651.8).
             </div>
           )}
           <div><span style={{ color: t.text.muted }}>View Y: </span><span style={{ color: isTraveling ? "#c080ff" : "#FFD740", fontWeight: 700 }}>{viewY.toFixed(6)}</span></div>
@@ -2357,7 +2359,7 @@ export default function JOMODashboard() {
             {typeof SFOWAMEngine !== "undefined" ? (
               <SFOWAMEngine
                 agentA={travelCoeff} agentC={travelZtp}
-                sfoLabel={selectedAgent ? agentDisplay(selectedAgent.name) : "ZIRCON-009"}
+                sfoLabel={selectedAgent ? agentDisplay(selectedAgent.name) : "EXE_TPDP.100D"}
                 viewY={viewY} viewZ={viewZ} isTraveling={isTraveling}
                 onForge={onForge}
               />
@@ -2441,7 +2443,7 @@ export default function JOMODashboard() {
                     color: t.accent.gold, fontSize: 8, marginTop: 4,
                     fontFamily: "'JetBrains Mono', monospace" 
                   }}>
-                    GPBS-ATDF Allocation: Active | ZIRCON Phase
+                    GPBS-ATDF Allocation: Active | EXE_TPDP Phase
                   </div>
                 </div>
               ))}
@@ -2486,10 +2488,10 @@ export default function JOMODashboard() {
               padding: 12,
             }}>
               <div style={{ color: t.accent.brand, fontSize: 11, fontWeight: 700, marginBottom: 8 }}>
-                ZIRCON-009 — PRIMARY EXECUTION AGENT
+                EXE_TPDP.100D — PRIMARY EXECUTION AGENT
               </div>
               <div style={{ color: t.text.secondary, fontSize: 10, lineHeight: 1.6 }}>
-                ZIRCON-009 is the primary execution agent (ZTP = 17651.8 TNLDY, 
+                EXE_TPDP.100D is the primary execution agent (ZTP = 17651.8 TNLDY, 
                 coefficient = 100) that orchestrates the Total Project Development Process for 
                 the fictitious large-scale engineering project: constructing 32 Cities of the 
                 Future as international refuge and desert cities within the Alternative Havens 
