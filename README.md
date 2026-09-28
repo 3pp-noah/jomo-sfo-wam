@@ -28,14 +28,34 @@ GitHub Pages serves files and runs no programs. The FastAPI backend (`backend/ma
 | `public/pyodide/` | Pyodide 0.28.3 with pydantic and sqlite3, vendored; nothing is loaded from elsewhere |
 
 The dashboard source (`src/`) is unchanged apart from one line in `src/main.jsx` that loads the
-shim. The runtime database lives in the visitor's browser (IndexedDB): each visitor starts from
-the seeded goals and policy rules, and what they do persists for them alone.
+shim, and the FEEDS tab in `src/sfo_wam_engine.jsx` (below). The runtime database lives in the
+visitor's browser (IndexedDB): each visitor starts from the seeded goals and policy rules, and
+what they do persists for them alone.
 
 **Not available in the published page.** The Claude digest (`/api/digest`) needs an API key,
 which a public page cannot hold; it answers 503 exactly as the backend does without
-`ANTHROPIC_API_KEY`, and the research layer writes its deterministic local digests instead. The
-FEEDS panel reads RSS through `/rss/*` proxies that this version never configured; each source
-reports its HTTP error, as it does locally.
+`ANTHROPIC_API_KEY`, and the research layer writes its deterministic local digests instead.
+
+## Knowledge-server feeds
+
+A page cannot read other sites' feeds (they send no CORS headers) and GitHub Pages runs no proxy,
+so the feeds are read on the author's computer and published beside the page as a snapshot.
+
+| Part | Role |
+|---|---|
+| `feeds/catalogue.json` | the sources: 75, in ten domains — world, Middle East, Russia & Eurasia, Asia, Africa & Nigeria, geopolitical analysis, defence & nuclear, economic, religious, science & technology — each with its perspective |
+| `feeds/build.py` | reads each publisher's RSS 2.0, RSS 1.0/RDF or Atom feed (standard library only), repairs the common faults, and writes `feeds/all.json` in both `public/` and `docs/` |
+| `feeds/refresh.sh [--push]` | rebuilds, commits only the snapshot, and with `--push` publishes it |
+| FEEDS tab | reads `feeds/all.json`: the latest headlines across the selected domains, or source by source, with the snapshot's age |
+
+The snapshot is a **JSON Feed 1.1** document (https://www.jsonfeed.org/version/1.1/), so any JSON
+Feed reader can also subscribe to https://3pp-noah.github.io/jomo-sfo-wam/feeds/all.json. Each
+item names its source in `authors` and carries `_jomo` = {source, domain, perspective, fetched}.
+
+Sources without a feed of their own (Reuters, AP), or whose feed refuses scripts, are read through
+a Google News search restricted to the publisher's site (`"google"` in the catalogue; `{year}`
+there is the current year). A source that fails keeps its previous items, marked with when they
+were fetched. Publisher dates later than the moment of reading are capped at that moment.
 
 ## Fidelity
 
@@ -58,6 +78,7 @@ node tests/fidelity.mjs http://127.0.0.1:8043
 npm ci
 npm run dev       # the full application, backend included, at http://localhost:5173
 npm run build     # into docs/, which GitHub Pages serves
+feeds/refresh.sh --push   # new feed snapshot, committed and published; no rebuild needed
 ```
 
 ## Other 3PP-NOAH sites

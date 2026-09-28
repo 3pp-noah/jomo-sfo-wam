@@ -131,39 +131,36 @@ function neighborLockins(store,nodeIdx){
 }
 function pendingProjections(store,y){ return store.projections.filter(p=>!p.resolution_state&&Math.abs(p.targetY-y)<0.5); }
 
-// ── RSS Feed System (matching vite.config.js) ──
-const NEWS_FEEDS=[
-  {id:"cnn",label:"CNN",proxy:"/rss/cnn",perspective:"Western"},
-  {id:"jpost",label:"Jerusalem Post",proxy:"/rss/jpost",perspective:"Middle East (Israeli)"},
-  {id:"aljazeera",label:"Al Jazeera",proxy:"/rss/aljazeera",perspective:"Middle East (Arab)"},
-  {id:"reuters",label:"Reuters",proxy:"/rss/reuters",perspective:"Wire service"},
-  {id:"tass",label:"TASS",proxy:"/rss/tass",perspective:"Russian"},
-  {id:"arise",label:"AriseNews",proxy:"/rss/arise",perspective:"African"},
-  {id:"symfoni",label:"Symfoni",proxy:"/rss/symfoni",perspective:"Nigerian"},
-  {id:"bbc",label:"BBC",proxy:"/rss/bbc",perspective:"British"},
-  {id:"foxnews",label:"Fox News",proxy:"/rss/foxnews",perspective:"American conservative"},
-  {id:"newsmax",label:"Newsmax",proxy:"/rss/newsmax",perspective:"American conservative"},
-  {id:"firstpost",label:"Vantage/FirstPost",proxy:"/rss/firstpost",perspective:"Indian"},
+// ── Knowledge-server feeds ──
+// feeds/build.py reads each publisher's RSS/RDF/Atom feed on the author's computer and publishes
+// one JSON Feed 1.1 snapshot beside the page (a static page cannot read other sites' feeds).
+const FEED_SNAPSHOT="feeds/all.json";
+const FEED_DOMAINS=[
+  ["world","World"],["middle-east","Middle East"],["russia-eurasia","Russia & Eurasia"],["asia","Asia"],
+  ["africa","Africa & Nigeria"],["geopolitical-analysis","Geopolitical analysis"],["defense-nuclear","Defence & nuclear"],
+  ["economic","Economic"],["religious","Religious"],["science-technology","Science & technology"],
 ];
+const feedDomainLabel=d=>(FEED_DOMAINS.find(([k])=>k===d)||[d,d])[1];
 
-function parseRSSXml(xml,src){
-  try{const doc=new DOMParser().parseFromString(xml,"text/xml");
-    const items=[],nodes=doc.querySelectorAll("item").length?doc.querySelectorAll("item"):doc.querySelectorAll("entry");
-    for(let i=0;i<Math.min(nodes.length,10);i++){const el=nodes[i];
-      const title=el.querySelector("title")?.textContent?.trim()||"";
-      const link=el.querySelector("link")?.textContent?.trim()||el.querySelector("link")?.getAttribute("href")||"";
-      const desc=(el.querySelector("description")?.textContent||el.querySelector("summary")?.textContent||"").trim().replace(/<[^>]*>/g,"").slice(0,200);
-      const pubDate=el.querySelector("pubDate")?.textContent?.trim()||el.querySelector("published")?.textContent?.trim()||"";
-      if(title) items.push({title,link,description:desc,pubDate,source:src});
-    }return items;
-  }catch{return [];}
+// One entry per source, in the shape the digest context has always used:
+// {source, items:[{title,link,description,pubDate,source}], error} — plus domain, perspective, fetched.
+async function loadFeedSnapshot(){
+  const r=await fetch(FEED_SNAPSHOT,{cache:"no-cache"});
+  if(!r.ok)throw new Error(`HTTP ${r.status}`);
+  const feed=await r.json();
+  const bySource=new Map(feed._jomo.sources.map(s=>[s.id,{source:s.label,id:s.id,domain:s.domain,perspective:s.perspective,
+    via:s.via,fetched:s.fetched,error:s.error,items:[]}]));
+  for(const it of feed.items){
+    const entry=bySource.get(it._jomo.source);
+    if(entry) entry.items.push({title:it.title,link:it.url,description:it.summary||"",pubDate:it.date_published||"",source:entry.source});
+  }
+  return {generated:feed._jomo.generated,sources:[...bySource.values()]};
 }
 
-async function fetchFeed(feed){
-  try{const r=await fetch(feed.proxy,{signal:AbortSignal.timeout(8000)});
-    if(!r.ok)throw new Error(`HTTP ${r.status}`);
-    return {source:feed.label,items:parseRSSXml(await r.text(),feed.label),error:null};
-  }catch(e){return {source:feed.label,items:[],error:e.message};}
+function feedAge(iso){
+  if(!iso)return "";
+  const m=Math.round((Date.now()-Date.parse(iso))/60000);
+  return m<60?`${Math.max(m,0)}m`:m<2880?`${Math.round(m/60)}h`:`${Math.round(m/1440)}d`;
 }
 
 // ── Digest Engine ──
@@ -297,7 +294,10 @@ export default function SFOWAMEngine({
   // ── Feed state ──
   const [feedResults,setFeedResults]=useState({});
   const [feedLoading,setFeedLoading]=useState(false);
-  const [feedLastFetch,setFeedLastFetch]=useState(0);
+  const [feedGenerated,setFeedGenerated]=useState(null);
+  const [feedError,setFeedError]=useState(null);
+  const [feedDomain,setFeedDomain]=useState("all");
+  const [feedView,setFeedView]=useState("latest");
 
   // ── SFO FORGE state ──
   const [forgeAnchors,setForgeAnchors]=useState([{y:"0",date:""},{y:"-18",date:""}]);
@@ -520,14 +520,14 @@ export default function SFOWAMEngine({
     setDigestLoading(false);
   },[digestPrompt,mockDigest,curLabel,curA,curC,viewY,viewZ,viewDate,currentIdx,curObs,curLockins,curNeighborLk,curPending,feedResults]);
 
-  // ── Feed fetch ──
+  // ── Feed snapshot ──
   const fetchFeeds=useCallback(async()=>{
-    if(Date.now()-feedLastFetch<60000)return;
-    setFeedLoading(true);
-    const results=await Promise.allSettled(NEWS_FEEDS.map(f=>fetchFeed(f)));
-    const items=results.map(r=>r.status==="fulfilled"?r.value:{source:"?",items:[],error:"rejected"});
-    setFeedResults({news:items});setFeedLastFetch(Date.now());setFeedLoading(false);
-  },[feedLastFetch]);
+    setFeedLoading(true);setFeedError(null);
+    try{const snap=await loadFeedSnapshot();setFeedResults({news:snap.sources});setFeedGenerated(snap.generated);}
+    catch(e){setFeedError(e.message);}
+    setFeedLoading(false);
+  },[]);
+  useEffect(()=>{if(tab==="feeds"&&!feedResults.news&&!feedLoading&&!feedError)fetchFeeds();},[tab,feedResults.news,feedLoading,feedError,fetchFeeds]);
 
   // ── Canvas layout & rendering ──
   const CW=1200,CH=500,PAD=35;
@@ -882,33 +882,55 @@ export default function SFOWAMEngine({
     </div>
     )}
 
-    {/* ══════════════ TAB: FEEDS — RSS Knowledge Servers ══════════════ */}
-    {tab==="feeds"&&(
+    {/* ══════════════ TAB: FEEDS — Knowledge Servers ══════════════ */}
+    {tab==="feeds"&&(()=>{
+      const sources=(feedResults.news||[]).filter(f=>feedDomain==="all"||f.domain===feedDomain);
+      const latest=sources.flatMap(f=>f.items.map(it=>({...it,perspective:f.perspective})))
+        .filter(it=>it.pubDate).sort((x,y)=>y.pubDate.localeCompare(x.pubDate)).slice(0,80);
+      const chip=(key,label,on,set)=>(
+        <button key={key} onClick={set} style={{fontSize:9,padding:"2px 8px",cursor:"pointer",textTransform:"uppercase",
+          background:on?"rgba(255,20,147,0.1)":"transparent",border:`1px solid ${on?"rgba(255,20,147,0.25)":S.border}`,color:on?S.pink:S.fgMuted}}>{label}</button>);
+      const row=(it,j,showSource)=>(
+        <div key={j} style={{padding:"3px 8px",marginBottom:2,background:S.panelBg,borderLeft:`2px solid ${S.border}`,fontSize:10}}>
+          <a href={it.link} target="_blank" rel="noopener noreferrer" style={{color:S.acc,textDecoration:"none"}}>{it.title}</a>
+          <span style={{color:S.fgMuted,fontSize:8,marginLeft:8}}>{showSource?`${it.source} · `:""}{feedAge(it.pubDate)}</span>
+          {it.description&&<div style={{color:S.dim,fontSize:9,marginTop:1}}>{it.description}</div>}
+        </div>);
+      return (
     <div style={{border:`1px solid ${S.border}`,marginBottom:10,padding:10}}>
-      <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:8}}>
-        <div style={{fontSize:9,textTransform:"uppercase",color:"#555"}}>Knowledge-Server Feeds · {NEWS_FEEDS.length} sources</div>
-        <button onClick={fetchFeeds} disabled={feedLoading||Date.now()-feedLastFetch<60000}
-          style={{fontSize:9,padding:"3px 10px",cursor:feedLoading?"not-allowed":"pointer",background:"rgba(80,180,120,0.15)",border:"1px solid rgba(80,180,120,0.3)",color:S.green,textTransform:"uppercase"}}>
-          {feedLoading?"FETCHING...":Date.now()-feedLastFetch<60000?`WAIT ${Math.ceil(60-(Date.now()-feedLastFetch)/1000)}s`:"FETCH ALL FEEDS"}
-        </button>
+      <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",flexWrap:"wrap",gap:6,marginBottom:8}}>
+        <div style={{fontSize:9,textTransform:"uppercase",color:S.fgMuted}}>
+          Knowledge-Server Feeds · {(feedResults.news||[]).length} sources{feedGenerated&&` · snapshot ${feedAge(feedGenerated)} ago (${feedGenerated.replace("T"," ").slice(0,16)} UTC)`}
+        </div>
+        <div style={{display:"flex",gap:4}}>
+          {chip("latest","Latest",feedView==="latest",()=>setFeedView("latest"))}
+          {chip("sources","By source",feedView==="sources",()=>setFeedView("sources"))}
+          <button onClick={fetchFeeds} disabled={feedLoading}
+            style={{fontSize:9,padding:"3px 10px",cursor:feedLoading?"not-allowed":"pointer",background:"rgba(80,180,120,0.15)",border:"1px solid rgba(80,180,120,0.3)",color:S.green,textTransform:"uppercase"}}>
+            {feedLoading?"LOADING...":"RELOAD"}
+          </button>
+        </div>
       </div>
-      {feedResults.news&&feedResults.news.map((fr,i)=>(
+      <div style={{display:"flex",flexWrap:"wrap",gap:4,marginBottom:10}}>
+        {chip("all","All",feedDomain==="all",()=>setFeedDomain("all"))}
+        {FEED_DOMAINS.map(([k,label])=>chip(k,label,feedDomain===k,()=>setFeedDomain(k)))}
+      </div>
+      {feedError&&<div style={{fontSize:10,color:S.blockR}}>Feed snapshot unavailable: {feedError}</div>}
+      {feedView==="latest"&&latest.map((it,j)=>row(it,j,true))}
+      {feedView==="sources"&&sources.map((fr,i)=>(
         <div key={i} style={{marginBottom:8}}>
-          <div style={{display:"flex",justifyContent:"space-between",marginBottom:3}}>
-            <span style={{fontSize:10,fontWeight:700,color:S.acc}}>{fr.source}</span>
-            <span style={{fontSize:9,color:fr.error?"#e06040":S.green}}>{fr.error?`ERROR: ${fr.error}`:`${fr.items.length} items`}</span>
+          <div style={{display:"flex",justifyContent:"space-between",gap:8,marginBottom:3}}>
+            <span style={{fontSize:10,fontWeight:700,color:S.acc}}>{fr.source}
+              <span style={{fontWeight:400,color:S.fgMuted,marginLeft:6}}>{fr.perspective} · {feedDomainLabel(fr.domain)}{fr.via==="Google News"?" · via Google News":""}</span></span>
+            <span style={{fontSize:9,color:fr.error?S.blockR:S.green,whiteSpace:"nowrap"}}>
+              {fr.error?`kept from ${feedAge(fr.fetched)||"—"} ago`:`${fr.items.length} items`}</span>
           </div>
-          {fr.items.slice(0,5).map((item,j)=>(
-            <div key={j} style={{padding:"3px 8px",marginBottom:2,background:"rgba(200,180,140,0.02)",borderLeft:"2px solid rgba(200,180,140,0.1)",fontSize:10}}>
-              <a href={item.link} target="_blank" rel="noopener noreferrer" style={{color:"#b8a878",textDecoration:"none"}}>{item.title}</a>
-              {item.pubDate&&<span style={{color:"#555",fontSize:8,marginLeft:8}}>{item.pubDate.slice(0,16)}</span>}
-            </div>
-          ))}
+          {fr.items.slice(0,5).map((it,j)=>row(it,j,false))}
         </div>
       ))}
-      {!feedResults.news&&<div style={{fontSize:10,color:"#555"}}>Press FETCH ALL FEEDS to query knowledge servers via Vite proxy.</div>}
-    </div>
-    )}
+      {!feedResults.news&&!feedError&&<div style={{fontSize:10,color:S.fgMuted}}>Loading the feed snapshot…</div>}
+    </div>);
+    })()}
 
     {/* ══════════════ TAB: CALIBRATION — Projection Resolution Register ══════════════ */}
     {tab==="calibration"&&(
