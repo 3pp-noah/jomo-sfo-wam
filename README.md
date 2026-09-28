@@ -81,6 +81,15 @@ npm run build     # into docs/, which GitHub Pages serves
 feeds/refresh.sh --push   # new feed snapshot, committed and published; no rebuild needed
 ```
 
+On the author's computer the feeds are refreshed every 15 minutes by cron:
+
+```
+*/15 * * * * $HOME/jomo-sfo-wam/feeds/cron.sh
+```
+
+`feeds/refresh.sh` keeps a single rolling "Feeds: snapshot" commit, replaced on each run, so the
+repository does not grow by one ~700 KB snapshot per run.
+
 ## Other 3PP-NOAH sites
 
 | Site | Address |
