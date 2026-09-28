@@ -1,0 +1,464 @@
+{
+ "reference": "backend/main.py under uvicorn",
+ "steps": 76,
+ "identical": 76,
+ "differ": 0,
+ "results": [
+  {
+   "method": "GET",
+   "url": "/api/health",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/kernel/status",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/graph/summary",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/graph/node/0",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/graph/node/200",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/graph/node/398",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/graph/node/399",
+   "same": true,
+   "status": 404
+  },
+  {
+   "method": "GET",
+   "url": "/api/graph/node/abc",
+   "same": true,
+   "status": 422
+  },
+  {
+   "method": "POST",
+   "url": "/api/graph/dsep",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/graph/dsep",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/graph/dsep",
+   "same": true,
+   "status": 422
+  },
+  {
+   "method": "POST",
+   "url": "/api/graph/dsep",
+   "same": true,
+   "status": 422
+  },
+  {
+   "method": "GET",
+   "url": "/api/runtime/status",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/runtime/agents?limit=20",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/runtime/tick",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/runtime/tick",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/runtime/tick",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/runtime/events?limit=5",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/runtime/events?limit=zero",
+   "same": true,
+   "status": 422
+  },
+  {
+   "method": "POST",
+   "url": "/api/observations",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/observations",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/observations?limit=3",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/judgments",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/judgments",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/judgments",
+   "same": true,
+   "status": 422
+  },
+  {
+   "method": "GET",
+   "url": "/api/judgments?limit=5",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/lockins",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/projections",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/projections?limit=5",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "(s) => `/api/projections/${s.projection.id}/resolve`",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/digest/tasks",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/digest/tasks",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "(s) => `/api/digest/tasks/${s.task.id}/run`",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/coordination/summary",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/research/status",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/research/cycle/run",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/research/cycle/run",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/research/goals",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/research/goals",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "(s) => `/api/research/goals/${s.goal.id}`",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "PATCH",
+   "url": "(s) => `/api/research/goals/${s.goal.id}`",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/research/hypotheses?limit=8",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/research/hypotheses/1",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "PATCH",
+   "url": "/api/research/hypotheses/1",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/research/tests/run",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/research/tests/run",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/research/tests?limit=5",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/research/tests/1",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/research/evidence-scores?limit=5",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/research/evidence-scores/1",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/research/episodes?limit=8",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/research/episodes/1",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/research/episodes",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/research/hypotheses",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/research/policy-rules",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "PATCH",
+   "url": "/api/research/policy-rules/1",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/research/review-queue",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/research/policy-rules",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/research/review-queue?limit=12&status=open",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/research/review-queue/1/resolve",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/research/review-queue/1/resolve",
+   "same": true,
+   "status": 400
+  },
+  {
+   "method": "POST",
+   "url": "/api/research/digests/generate",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/research/digests?limit=8",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/research/digests/1",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/research/digests/999",
+   "same": true,
+   "status": 404
+  },
+  {
+   "method": "GET",
+   "url": "/api/research/status",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/forge",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/forge",
+   "same": true,
+   "status": 409
+  },
+  {
+   "method": "POST",
+   "url": "/api/forge",
+   "same": true,
+   "status": 400
+  },
+  {
+   "method": "POST",
+   "url": "/api/digest",
+   "same": true,
+   "status": 503
+  },
+  {
+   "method": "POST",
+   "url": "/api/runtime/start",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "POST",
+   "url": "/api/runtime/stop",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/runtime/status",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/kernel/status",
+   "same": true,
+   "status": 200
+  },
+  {
+   "method": "GET",
+   "url": "/api/nowhere",
+   "same": true,
+   "status": 404
+  },
+  {
+   "method": "DELETE",
+   "url": "/api/health",
+   "same": true,
+   "status": 405
+  }
+ ]
+}

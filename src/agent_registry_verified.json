@@ -1,0 +1,4743 @@
+[
+  {
+    "name": "10p8",
+    "ns": "sfo00",
+    "ztp": 15240.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "11p1",
+    "ns": "sfo00",
+    "ztp": 15278.13,
+    "coeff": 100.0
+  },
+  {
+    "name": "11p5",
+    "ns": "sfo00",
+    "ztp": 15314.7,
+    "coeff": 100.0
+  },
+  {
+    "name": "11p8",
+    "ns": "sfo00",
+    "ztp": 15344.57,
+    "coeff": 100.0
+  },
+  {
+    "name": "12p4",
+    "ns": "sfo00",
+    "ztp": 15401.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "12p6",
+    "ns": "sfo00",
+    "ztp": 15420.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "12p7",
+    "ns": "sfo00",
+    "ztp": 15438.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "12p9",
+    "ns": "sfo00",
+    "ztp": 15450.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "13p3",
+    "ns": "sfo00",
+    "ztp": 15495.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "13p6",
+    "ns": "sfo00",
+    "ztp": 15519.9,
+    "coeff": 100.0
+  },
+  {
+    "name": "13p8",
+    "ns": "sfo00",
+    "ztp": 15543.4,
+    "coeff": 100.0
+  },
+  {
+    "name": "13p9",
+    "ns": "sfo00",
+    "ztp": 15555.4,
+    "coeff": 100.0
+  },
+  {
+    "name": "14p5",
+    "ns": "sfo00",
+    "ztp": 15614.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "14p9",
+    "ns": "sfo00",
+    "ztp": 15659.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "15p1",
+    "ns": "sfo00",
+    "ztp": 15672.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "16p9",
+    "ns": "sfo00",
+    "ztp": 15851.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "18p5",
+    "ns": "sfo00",
+    "ztp": 16010.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "18p6",
+    "ns": "sfo00",
+    "ztp": 16019.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "18p7",
+    "ns": "sfo00",
+    "ztp": 16032.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "19p3",
+    "ns": "sfo00",
+    "ztp": 16092.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "19p4",
+    "ns": "sfo00",
+    "ztp": 16100.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "19p5",
+    "ns": "sfo00",
+    "ztp": 16112.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "19p7",
+    "ns": "sfo00",
+    "ztp": 16132.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "20p5",
+    "ns": "sfo00",
+    "ztp": 16211.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "23p2",
+    "ns": "sfo00",
+    "ztp": 16482.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "23p4",
+    "ns": "sfo00",
+    "ztp": 16501.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "23p5",
+    "ns": "sfo00",
+    "ztp": 16511.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "23p7",
+    "ns": "sfo00",
+    "ztp": 16531.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "24p3",
+    "ns": "sfo00",
+    "ztp": 16589.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "24p4",
+    "ns": "sfo00",
+    "ztp": 16601.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "24p9",
+    "ns": "sfo00",
+    "ztp": 16649.7,
+    "coeff": 100.0
+  },
+  {
+    "name": "25p2",
+    "ns": "sfo00",
+    "ztp": 16680.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "25p5",
+    "ns": "sfo00",
+    "ztp": 16716.5,
+    "coeff": 100.0
+  },
+  {
+    "name": "25p7",
+    "ns": "sfo00",
+    "ztp": 16737.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "25p9",
+    "ns": "sfo00",
+    "ztp": 16752.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "26p8",
+    "ns": "sfo00",
+    "ztp": 16841.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "27p0",
+    "ns": "sfo00",
+    "ztp": 16861.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "27p3",
+    "ns": "sfo00",
+    "ztp": 16891.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "27p4",
+    "ns": "sfo00",
+    "ztp": 16901.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "27p7",
+    "ns": "sfo00",
+    "ztp": 16931.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "28p7",
+    "ns": "sfo00",
+    "ztp": 17030.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "28p8",
+    "ns": "sfo00",
+    "ztp": 17040.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "29p2",
+    "ns": "sfo00",
+    "ztp": 17081.7,
+    "coeff": 100.0
+  },
+  {
+    "name": "29p5",
+    "ns": "sfo00",
+    "ztp": 17112.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "30p5",
+    "ns": "sfo00",
+    "ztp": 17213.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "30p6",
+    "ns": "sfo00",
+    "ztp": 17223.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "32p6",
+    "ns": "sfo00",
+    "ztp": 17428.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "33p1",
+    "ns": "sfo00",
+    "ztp": 17472.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "35p5",
+    "ns": "sfo00",
+    "ztp": 17717.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "36p7",
+    "ns": "sfo00",
+    "ztp": 17832.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "38p1",
+    "ns": "sfo00",
+    "ztp": 17972.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "38p3",
+    "ns": "sfo00",
+    "ztp": 17994.782608695652,
+    "coeff": 100.0
+  },
+  {
+    "name": "38p5",
+    "ns": "sfo00",
+    "ztp": 18011.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "39p1",
+    "ns": "sfo00",
+    "ztp": 18073.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "39p8",
+    "ns": "sfo00",
+    "ztp": 18141.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "3p65",
+    "ns": "sfo00",
+    "ztp": 14525.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "40p1",
+    "ns": "sfo00",
+    "ztp": 18178.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "46p8",
+    "ns": "sfo00",
+    "ztp": 18840.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "67p6",
+    "ns": "sfo00",
+    "ztp": 20928.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "85p3",
+    "ns": "sfo00",
+    "ztp": 22692.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "87p8",
+    "ns": "sfo00",
+    "ztp": 22944.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "gods-great-army-microscale-lightcone-of-the-last-end-of-babylon-the-great",
+    "ns": "sfo00",
+    "ztp": 25590.0,
+    "coeff": 23.0
+  },
+  {
+    "name": "last-end-of-mystery-babylon-the-great-with-microscale-precision",
+    "ns": "sfo00",
+    "ztp": -865540.0,
+    "coeff": 48.3
+  },
+  {
+    "name": "m112",
+    "ns": "sfo00",
+    "ztp": 13040.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "m129",
+    "ns": "sfo00",
+    "ztp": 12864.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "m13p",
+    "ns": "sfo00",
+    "ztp": 12828.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "m18p",
+    "ns": "sfo00",
+    "ztp": 12360.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "m19p",
+    "ns": "sfo00",
+    "ztp": 12200.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "m1p9",
+    "ns": "sfo00",
+    "ztp": 13968.4,
+    "coeff": 100.0
+  },
+  {
+    "name": "m21p",
+    "ns": "sfo00",
+    "ztp": 12052.173913043478,
+    "coeff": 100.0
+  },
+  {
+    "name": "m3p3",
+    "ns": "sfo00",
+    "ztp": 13828.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "m3p4",
+    "ns": "sfo00",
+    "ztp": 13817.2,
+    "coeff": 100.0
+  },
+  {
+    "name": "m3p6",
+    "ns": "sfo00",
+    "ztp": 13800.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "m6p3",
+    "ns": "sfo00",
+    "ztp": 13530.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "m6p5",
+    "ns": "sfo00",
+    "ztp": 13504.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "m6p6",
+    "ns": "sfo00",
+    "ztp": 13493.2,
+    "coeff": 100.0
+  },
+  {
+    "name": "m8p1",
+    "ns": "sfo00",
+    "ztp": 13350.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "m8p8",
+    "ns": "sfo00",
+    "ztp": 13273.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "p2p4",
+    "ns": "sfo00",
+    "ztp": 14400.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "p2p5",
+    "ns": "sfo00",
+    "ztp": 14415.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "p2p6",
+    "ns": "sfo00",
+    "ztp": 14420.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "p3p6",
+    "ns": "sfo00",
+    "ztp": 14520.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "p4p4",
+    "ns": "sfo00",
+    "ztp": 14600.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "p4p9",
+    "ns": "sfo00",
+    "ztp": 14650.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "p5p2",
+    "ns": "sfo00",
+    "ztp": 14688.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "p5p4",
+    "ns": "sfo00",
+    "ztp": 14704.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "p6p1",
+    "ns": "sfo00",
+    "ztp": 14772.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "p6p4",
+    "ns": "sfo00",
+    "ztp": 14801.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "p6p6",
+    "ns": "sfo00",
+    "ztp": 14825.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "p7p2",
+    "ns": "sfo00",
+    "ztp": 14880.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "p8p1",
+    "ns": "sfo00",
+    "ztp": 14970.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "p9p0",
+    "ns": "sfo00",
+    "ztp": 15061.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-annihilation-that-is-of-gog840ddiv23",
+    "ns": "sfo00",
+    "ztp": 22440.0,
+    "coeff": 23.0
+  },
+  {
+    "name": "ca-time-of-the-enoch-type-rapture7d",
+    "ns": "sfo01",
+    "ztp": 19173.11,
+    "coeff": 7.0
+  },
+  {
+    "name": "doctoral-one-dimensional-slice",
+    "ns": "sfo01",
+    "ztp": 14050.0,
+    "coeff": 27.77777777777778
+  },
+  {
+    "name": "doctoral-quality-fully-developed",
+    "ns": "sfo01",
+    "ztp": 14540.0,
+    "coeff": 27.77777777777778
+  },
+  {
+    "name": "post-doctoral-quality-research-seven-d",
+    "ns": "sfo01",
+    "ztp": 16622.3,
+    "coeff": 7.0
+  },
+  {
+    "name": "sixty-nine-week-paramour-discovery-and-timelock7d",
+    "ns": "sfo01",
+    "ztp": 18061.17391304348,
+    "coeff": 7.0
+  },
+  {
+    "name": "sixty-nine-week-paramour-discovery-entry-boundary7d",
+    "ns": "sfo01",
+    "ztp": 17753.0,
+    "coeff": 7.0
+  },
+  {
+    "name": "sixty-nine-week-paramour-discovery-optimum1-boundary7d",
+    "ns": "sfo01",
+    "ztp": 17792.0,
+    "coeff": 7.0
+  },
+  {
+    "name": "sixty-nine-week-paramour-discovery-optimum2-boundary7d",
+    "ns": "sfo01",
+    "ztp": 17799.0,
+    "coeff": 7.0
+  },
+  {
+    "name": "sixty-nine-week-timelock-entry7d",
+    "ns": "sfo01",
+    "ztp": 18140.0,
+    "coeff": 7.0
+  },
+  {
+    "name": "sixty-nine-week-timelock-exit-one7d",
+    "ns": "sfo01",
+    "ztp": 18290.0,
+    "coeff": 7.0
+  },
+  {
+    "name": "sixty-nine-week-timelock-exit-zero7d",
+    "ns": "sfo01",
+    "ztp": 18260.0,
+    "coeff": 7.0
+  },
+  {
+    "name": "ten-days-tribulation-eigen-diagonalized-for-seventy-weeks-system-proper-values2961ddiv23",
+    "ns": "sfo01",
+    "ztp": 15851.8,
+    "coeff": 128.7391304347826
+  },
+  {
+    "name": "the-intelligent-defence-body-and-the-five-terawatt-project-ie-the-elusive-sixty-nine-week-singularity-manifestation-after-the-fact-of-a-metonic-cycle7d",
+    "ns": "sfo01",
+    "ztp": 18509.804347826088,
+    "coeff": 7.0
+  },
+  {
+    "name": "the-shulammite-singularity-manifestation-of-the-mystery-the-immanence-in-nigeria-count-is-in-reverse7d",
+    "ns": "sfo01",
+    "ztp": 19480.0,
+    "coeff": -7.0
+  },
+  {
+    "name": "tss-the-five-terawatt-project-and-the-intelligent-defence-body5tw-tidb-the-elusive-sixty-nine-week-singularity7d-on-paper-cfhthruhembossztpdesignpoint0",
+    "ns": "sfo01",
+    "ztp": 18772.8,
+    "coeff": 7.0
+  },
+  {
+    "name": "tss-the-five-terawatt-project-and-the-intelligent-defence-body5tw-tidb-the-elusive-sixty-nine-week-singularity7d-on-paper-cfhthruhembossztpexit",
+    "ns": "sfo01",
+    "ztp": 18892.8,
+    "coeff": 7.0
+  },
+  {
+    "name": "tss-the-five-terawatt-project-and-the-intelligent-defence-body5tw-tidb-the-elusive-sixty-nine-week-singularity7d-on-paper-forty-days-prior-cfhthruhembossztpentry",
+    "ns": "sfo01",
+    "ztp": 18732.8,
+    "coeff": 7.0
+  },
+  {
+    "name": "tss-the-five-terawatt-project-and-the-intelligent-defence-body5tw-tidb-the-elusive-sixty-nine-week-singularity7d-on-paper-twenty-days-after-and-for-a-total-180day-ztp-interval-cfhthruhembossztpposteriorexit",
+    "ns": "sfo01",
+    "ztp": 18912.8,
+    "coeff": 7.0
+  },
+  {
+    "name": "cross-trained-to-otmotn-ztp1-at-tnldy9864-enter100d",
+    "ns": "sfo02",
+    "ztp": 9864.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "cross-trained-to-otmotn-ztp2-at-tnldy9894-leave100d",
+    "ns": "sfo02",
+    "ztp": 9894.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "observe-i-am-getting-married-to-the-new-nigeria25ddiv9",
+    "ns": "sfo02",
+    "ztp": 18410.0,
+    "coeff": 9.0
+  },
+  {
+    "name": "overcoming-the-managers-of-the-night-ztp1-at-tnldy9904-optimum700ddiv6pt9",
+    "ns": "sfo02",
+    "ztp": 9904.0,
+    "coeff": 6.9
+  },
+  {
+    "name": "overcoming-the-managers-of-the-night-ztp2-at-tnldy9934-optimum700ddiv6pt9",
+    "ns": "sfo02",
+    "ztp": 9934.0,
+    "coeff": 6.9
+  },
+  {
+    "name": "project-hybridization-development-parametric-nkechichiomaosoka40yj-taop1-internals1000ddiv7",
+    "ns": "sfo02",
+    "ztp": 14623.602484472052,
+    "coeff": 7.0
+  },
+  {
+    "name": "project-hybridization-development-parametric-nkechichiomaosoka40yj-taop2-internals1000ddiv7",
+    "ns": "sfo02",
+    "ztp": 14631.428571428572,
+    "coeff": 7.0
+  },
+  {
+    "name": "project-hybridization-development-parametric28yg-jennifer700ddiv6pt9",
+    "ns": "sfo02",
+    "ztp": 14040.0,
+    "coeff": 6.9
+  },
+  {
+    "name": "project-hybridization-development-parametric40yg-maryann1000ddiv6pt9",
+    "ns": "sfo02",
+    "ztp": 14458.695652173914,
+    "coeff": 6.9
+  },
+  {
+    "name": "project-hybridization-development-parametric40yg-obianuju1000ddiv6pt9",
+    "ns": "sfo02",
+    "ztp": 14668.695652173914,
+    "coeff": 6.9
+  },
+  {
+    "name": "project-integral-system-parametric-pisp36d",
+    "ns": "sfo02",
+    "ztp": 18158.22,
+    "coeff": 36.0
+  },
+  {
+    "name": "revott-fully-developed-secondary-stage-follicle-cross-trained-totmotn100d",
+    "ns": "sfo02",
+    "ztp": 9840.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "revott-onset-of-antral-phase-tertiary-stage-follicle-cross-trained-totmotn100d",
+    "ns": "sfo02",
+    "ztp": 10200.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "ephesians221-building-yg",
+    "ns": "sfo03",
+    "ztp": 15921.191304347823,
+    "coeff": 48.3
+  },
+  {
+    "name": "sun-and-moon-clothed-woman-built-up-in-travail100d",
+    "ns": "sfo03",
+    "ztp": 15999.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "sun-and-moon-clothed-woman-travail-buildup1000-sevenday-depiction-not-in-standard-form",
+    "ns": "sfo03",
+    "ztp": 17269.0,
+    "coeff": 1000.0
+  },
+  {
+    "name": "roundabout-aimee-magnified-proper2731ddiv18",
+    "ns": "sfo04",
+    "ztp": 16348.0,
+    "coeff": 18.0
+  },
+  {
+    "name": "roundabout-aimee-proper",
+    "ns": "sfo04",
+    "ztp": 16348.0,
+    "coeff": 18.0
+  },
+  {
+    "name": "countdown-in-days-to-the-end-at-ztp-of-the-russian-government-of-the-overt-seventh-king-1d",
+    "ns": "sfo05",
+    "ztp": 20532.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "countdown0-in-days-to-the-end-at-ztp-of-the-usa-government-of-babylon-the-great-1d",
+    "ns": "sfo05",
+    "ztp": 24884.7,
+    "coeff": 1.0
+  },
+  {
+    "name": "countdown1-in-days-to-the-end-at-ztp-of-the-usa-government-of-babylon-the-great-1d",
+    "ns": "sfo05",
+    "ztp": 25120.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "countdown2-in-days-to-the-end-at-ztp-of-the-usa-government-of-babylon-the-great-1d",
+    "ns": "sfo05",
+    "ztp": 25141.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "countdown3-in-days-to-the-end-at-ztp-of-the-usa-government-of-babylon-the-great-1d",
+    "ns": "sfo05",
+    "ztp": 25181.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "the-first-jeroboam-yg",
+    "ns": "sfo05",
+    "ztp": 8259.0,
+    "coeff": 48.3
+  },
+  {
+    "name": "the-first-jeroboam100d",
+    "ns": "sfo05",
+    "ztp": 8259.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-light-shines-in-the-darkness-but-the-darkness-comprehends-it-not10yg",
+    "ns": "sfo05",
+    "ztp": -180392.17391304355,
+    "coeff": 48.3
+  },
+  {
+    "name": "the-mystery-of-iniquity-they-shall-mingle-themselves-with-the-seed-of-men-earliest-dnps-overlap-infiltration-100d",
+    "ns": "sfo05",
+    "ztp": 12000.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-mystery-of-iniquity-they-shall-mingle-themselves-with-the-seed-of-men-latest-100d",
+    "ns": "sfo05",
+    "ztp": 16604.7,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-second-jeroboam-yg",
+    "ns": "sfo05",
+    "ztp": 14540.0,
+    "coeff": 48.3
+  },
+  {
+    "name": "the-second-jeroboam100d",
+    "ns": "sfo05",
+    "ztp": 14540.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "begin-ca-cross-trained-engineer-she-that-is-of-me-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-sunclothed-woman-sixth-curtain-doubled-up-at-the-end-of-the-fifth-of-the-eleven-curtains-of-the-exodus26v7to9temple-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 12440.42857142857,
+    "coeff": 7.0
+  },
+  {
+    "name": "begin-ca-dnps-cleansing-fulfillment-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-at-uttermost-end-of-the-eleventh-curtain-of-the-eleven-curtains-of-the-exodus26v7to9temple-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 14628.819875776397,
+    "coeff": 7.0
+  },
+  {
+    "name": "begin-ca-dnps-similitude-save-ueo-at-all-cost-from-the-ten-horns-etc-armageddon-death-march-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-at-forefront-of-the-eleventh-curtain-of-the-eleven-curtains-of-the-exodus26v7to9temple-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 14263.60248447205,
+    "coeff": 7.0
+  },
+  {
+    "name": "begin-ca-nonye-igboanusi-nwokedi-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-heloise-d-argenteuil-du-paraclet-sixth-curtain-doubled-up-at-the-beginning-of-the-seventh-of-the-eleven-curtains-of-the-exodus26v7to9temple-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 12771.42857142857,
+    "coeff": 7.0
+  },
+  {
+    "name": "begin-inordinate-first-love-deliverance-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-hsotp-entry-to-the-eleven-curtains-of-the-temple1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 8811.42857142857,
+    "coeff": 7.0
+  },
+  {
+    "name": "begin-it-is-done-acc-document-reception-part1-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-in-the-midst-of-the-eleventh-curtain-of-the-eleven-curtains-of-the-exodus26v7to9temple-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 14404.228571428572,
+    "coeff": 7.0
+  },
+  {
+    "name": "begin-it-is-done-acc-document-reception-part2-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-in-the-midst-of-the-eleventh-curtain-of-the-eleven-curtains-of-the-exodus26v7to9temple-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 14424.228571428572,
+    "coeff": 7.0
+  },
+  {
+    "name": "begin-traditional-marriage-sdq-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-entry-to-the-eleven-curtains-of-the-exodus26v7to9temple-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 10611.42857142857,
+    "coeff": 7.0
+  },
+  {
+    "name": "end-ca-cross-trained-engineer-she-that-is-of-me-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-sunclothed-woman-sixth-curtain-doubled-up-at-the-end-of-the-fifth-of-the-eleven-curtains-of-the-exodus26v7to9temple-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 12477.695652173914,
+    "coeff": 6.9
+  },
+  {
+    "name": "end-ca-dnps-cleansing-fulfillment-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-at-uttermost-end-of-the-eleventh-curtain-of-the-eleven-curtains-of-the-exodus26v7to9temple-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 14666.08695652174,
+    "coeff": 6.9
+  },
+  {
+    "name": "end-ca-dnps-similitude-save-ueo-at-all-cost-from-the-ten-horns-etc-armageddon-death-march-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-at-forefront-of-the-eleventh-curtain-of-the-eleven-curtains-of-the-exodus26v7to9temple-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 14300.869565217392,
+    "coeff": 6.9
+  },
+  {
+    "name": "end-ca-nonye-igboanusi-nwokedi-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-heloise-d-argenteuil-du-paraclet-sixth-curtain-doubled-up-at-the-beginning-of-the-seventh-of-the-eleven-curtains-of-the-exodus26v7to9temple-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 12808.695652173914,
+    "coeff": 6.9
+  },
+  {
+    "name": "end-inordinate-first-love-deliverance-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-hsotp-entry-to-the-eleven-curtains-of-the-temple1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 8848.695652173914,
+    "coeff": 6.9
+  },
+  {
+    "name": "end-it-is-done-acc-document-reception-part1-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-in-the-midst-of-the-eleventh-curtain-of-the-eleven-curtains-of-the-exodus26v7to9temple-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 14441.495652173913,
+    "coeff": 6.9
+  },
+  {
+    "name": "end-it-is-done-acc-document-reception-part2-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-in-the-midst-of-the-eleventh-curtain-of-the-eleven-curtains-of-the-exodus26v7to9temple-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 14461.495652173913,
+    "coeff": 6.9
+  },
+  {
+    "name": "end-traditional-marriage-sdq-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-entry-to-the-eleven-curtains-of-the-exodus26v7to9temple-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 10648.695652173914,
+    "coeff": 6.9
+  },
+  {
+    "name": "recuperation-and-shulamite-vindication-against-the-backdrop-of-the-gestation-of-the-dystopia-of-the-seventh-king-and-wwiii100ddiv7",
+    "ns": "sfo06",
+    "ztp": 19337.14285714286,
+    "coeff": 7.0
+  },
+  {
+    "name": "revelation-of-the-trial-revott-eigen-proper-equation-200d",
+    "ns": "sfo06",
+    "ztp": 14160.0,
+    "coeff": 200.0
+  },
+  {
+    "name": "sdq-phdp-taop-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-becomes-the-shulamite-exodus26v7to9-eleven-curtains-foremost-entry1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 10611.42857142857,
+    "coeff": 7.0
+  },
+  {
+    "name": "sdq-phdp-taop-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-becomes-the-shulamite-exodus26v7to9-eleven-curtains-uttermost-exit1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 14631.42857142857,
+    "coeff": 7.0
+  },
+  {
+    "name": "sdq-phdp-taop-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-becomes-the-shulamite-exodus26v7to9-one-hour-of-the-ten-horns-at-forefront-of-the-eleventh-curtain1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 14263.602484472049,
+    "coeff": 7.0
+  },
+  {
+    "name": "sdq-phdp-taop-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-becomes-the-shulamite-exodus26v7to9-sunclothed-woman-between-fifth-and-sixth-curtains1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 12437.51552795031,
+    "coeff": 7.0
+  },
+  {
+    "name": "sdq-phdp-taop-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-deliverance-from-clutches-of-inordinate-love-ergo-torment-scarring-and-trauma-hsotp-entry1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 8811.42857142857,
+    "coeff": 7.0
+  },
+  {
+    "name": "sdq-philippians212b13-fulfilled-in-sos-ie-work-out-your-own-salvation-becomes-the-shulamite1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 10611.42857142857,
+    "coeff": 7.0
+  },
+  {
+    "name": "shulam-she-that-is-of-me-the-new-nation-determined-and-globally-resonant-emancipation-signal-in-the-time-lockdown-boundary-of-enoch-between-is-and-is-to-come100d",
+    "ns": "sfo06",
+    "ztp": 11280.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "shulam-the-queen-yj",
+    "ns": "sfo06",
+    "ztp": 8040.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "shulam-the-queen100d",
+    "ns": "sfo06",
+    "ztp": 8040.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "countdown-from-the-twenty-fourth-yj-unto-the-vision360d",
+    "ns": "sfo07",
+    "ztp": 25931.8,
+    "coeff": 360.0
+  },
+  {
+    "name": "countdown100d-as-per-ztp-to-armageddon",
+    "ns": "sfo07",
+    "ztp": 26421.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "countdown100d-as-per-ztp-to-the-global-timeshortening-line",
+    "ns": "sfo07",
+    "ztp": 25032.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "countdown100d-as-per-ztp-to-the-last-earth-reaping-before-the-great-tribulation",
+    "ns": "sfo07",
+    "ztp": 24929.7,
+    "coeff": 100.0
+  },
+  {
+    "name": "countdown100d-as-per-ztp-to-the-sealing-of-the-elect-of-the-twelve-tribes-of-israel",
+    "ns": "sfo07",
+    "ztp": 23771.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "countdown100d-as-per-ztp-to-the-travail-of-the-sun-and-moon-clothed-woman",
+    "ns": "sfo07",
+    "ztp": 24269.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "countdown100d-as-per-ztp-to-the-vision",
+    "ns": "sfo07",
+    "ztp": 25931.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "countdown100d-as-per-ztp-to-the-wrath",
+    "ns": "sfo07",
+    "ztp": 26232.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "again-born-ie-born-of-the-spirit-circumspection-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 30972.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "again-born-ie-born-of-the-spirit-is-the-end-ie-purpose-of-all-things-circumspection100d",
+    "ns": "sfo08",
+    "ztp": 22692.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-after-the-league-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 21773.2,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-after-the-league-made-with-him-he-shall-work-deceitfully100d",
+    "ns": "sfo08",
+    "ztp": 13493.2,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-become-strong-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 22248.4,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-become-strong-with-a-small-people100d",
+    "ns": "sfo08",
+    "ztp": 13968.4,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-his-army-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 23052.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-his-army-shall-overflow100d",
+    "ns": "sfo08",
+    "ztp": 14772.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-his-heart-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 23250.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-his-heart-shall-be-against-the-holy-covenant-and-he-shall-do-exploits100d",
+    "ns": "sfo08",
+    "ztp": 14970.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-many-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 23106.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-many-shall-fall-down-slain100d",
+    "ns": "sfo08",
+    "ztp": 14826.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-shall-forecast-his-devices-against-the-strongholds-even-for-a-time-finish100d",
+    "ns": "sfo08",
+    "ztp": 14600.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-shall-forecast-his-devices-against-the-strongholds-even-for-a-time-start100d",
+    "ns": "sfo08",
+    "ztp": 14240.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-shall-forecast1-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 22520.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-shall-forecast2-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 22880.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-shall-take-away-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 23718.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-shall-take-away-the-daily-sacrifice100d",
+    "ns": "sfo08",
+    "ztp": 15438.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-they-shall-place-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 23730.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-they-shall-place-the-abomination-that-makes-desolate100d",
+    "ns": "sfo08",
+    "ztp": 15450.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-they-shall-pollute-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 23700.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-they-shall-pollute-the-sanctuary-of-strength100d",
+    "ns": "sfo08",
+    "ztp": 15420.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "but-tidings-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 25590.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "but-tidings-out-of-the-east-and-out-of-the-north-shall-trouble-him100d",
+    "ns": "sfo08",
+    "ztp": 17310.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "ca-peak-m1710-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 20730.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "ca-peak-m1710-of-the-raiser-of-taxes-in-the-glory-of-the-kingdom100d",
+    "ns": "sfo08",
+    "ztp": 12450.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "for-he-shall-come-up-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 22108.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "for-he-shall-come-up100d",
+    "ns": "sfo08",
+    "ztp": 13828.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "he-shall-confirm-the-covenant-with-many-for-one-week-finish100d",
+    "ns": "sfo08",
+    "ztp": 17871.224596273292,
+    "coeff": 100.0
+  },
+  {
+    "name": "he-shall-confirm-the-covenant-with-many-for-one-week-finish100d",
+    "ns": "sfo08",
+    "ztp": 17871.224596273292,
+    "coeff": 100.0
+  },
+  {
+    "name": "he-shall-confirm-the-covenant-with-many-for-one-week-midst100d",
+    "ns": "sfo08",
+    "ztp": 16592.963726708076,
+    "coeff": 100.0
+  },
+  {
+    "name": "he-shall-confirm2-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 24872.963726708076,
+    "coeff": 100.0
+  },
+  {
+    "name": "he-shall-confirm3-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 26151.224596273292,
+    "coeff": 100.0
+  },
+  {
+    "name": "he-shall-plant-the-tabernacles-of-his-palace-between-the-seas-in-the-glorious-holy-mountain-finish100d",
+    "ns": "sfo08",
+    "ztp": 17428.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "he-shall-plant-the-tabernacles-of-his-palace-between-the-seas-in-the-glorious-holy-mountain-start100d",
+    "ns": "sfo08",
+    "ztp": 17373.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "he-shall-plant1-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 25653.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "he-shall-plant2-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 25708.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "he-shall-return-and-have-intelligence-with-them-that-forsake-the-holy-covenant100d",
+    "ns": "sfo08",
+    "ztp": 15116.87,
+    "coeff": 100.0
+  },
+  {
+    "name": "in-his-estate-there-shall-rise-a-vile-person-to-whom-they-shall-not-give-the-honour-of-the-kingdom100d",
+    "ns": "sfo08",
+    "ztp": 12560.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "revelation-of-the-trial-revott-at-the-end-ie-purpose-of-all-things-is-at-hand-ie-at-birth100d",
+    "ns": "sfo08",
+    "ztp": 22440.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "revott-purpose-of-all-things-is-at-hand-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 30720.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-court-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 24881.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-court-that-is-without-begin100d",
+    "ns": "sfo08",
+    "ztp": 16601.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-court2-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 25181.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-end-ie-purpose-of-all-things1-is-at-hand-yg",
+    "ns": "sfo08",
+    "ztp": 22440.0,
+    "coeff": 48.3
+  },
+  {
+    "name": "the-ships-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 23341.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-ships-of-chittim-shall-come-against-him100d",
+    "ns": "sfo08",
+    "ztp": 15061.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-ten-horns-completely-burn-the-flesh-of-mystery-babylon-with-fire-the-court-that-is-without-end100d",
+    "ns": "sfo08",
+    "ztp": 16901.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "what-withholdeth-bw-ca-18pt50-and-25pt20-the-mystery-of-iniquity-and-that-number-is-embedded-in-this-sfo36d",
+    "ns": "sfo08",
+    "ztp": 19866.0,
+    "coeff": 36.0
+  },
+  {
+    "name": "within-few-days-m1600-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 20840.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "within-few-days-m1600-raiser-of-taxes-is-destroyed-not-in-battle-nor-in-anger100d",
+    "ns": "sfo08",
+    "ztp": 12560.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "within-few-days-m1640-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 20800.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "within-few-days-m1640-raiser-of-taxes-is-destroyed-not-in-battle-nor-in-anger100d",
+    "ns": "sfo08",
+    "ztp": 12520.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "within-few-days-m1656-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 20784.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "within-few-days-m1656-raiser-of-taxes-is-destroyed-not-in-battle-nor-in-anger100d",
+    "ns": "sfo08",
+    "ztp": 12504.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "yea-and-the-prince-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 21551.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "yea-and-the-prince-of-the-covenant-also100d",
+    "ns": "sfo08",
+    "ztp": 13271.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "seeking-finding-the-comfort-in-charity-faith-and-hope300d",
+    "ns": "sfo09",
+    "ztp": 18290.0,
+    "coeff": 300.0
+  },
+  {
+    "name": "after-gogs-deadly-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo10",
+    "ztp": 24884.7,
+    "coeff": 100.0
+  },
+  {
+    "name": "after-gogs-deadly-wound-is-healed-he-is-completely-empowered-and-the-ten-horns-hate-mystery-babylon100d",
+    "ns": "sfo10",
+    "ztp": 16604.7,
+    "coeff": 100.0
+  },
+  {
+    "name": "again-exclamated-the-great-school700ddiv6pt9",
+    "ns": "sfo10",
+    "ztp": 5798.260869565217,
+    "coeff": 6.9
+  },
+  {
+    "name": "babylon-is-fallen-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo10",
+    "ztp": 24869.68695652173,
+    "coeff": 100.0
+  },
+  {
+    "name": "babylon-is-fallen-is-fallen-start-of-2300days-unto-the-cleansing-of-the-sanctuary100d",
+    "ns": "sfo10",
+    "ztp": 16589.68695652173,
+    "coeff": 100.0
+  },
+  {
+    "name": "counting-in-weeks-unto-the-physical-revelation-of-my-wife-the-wife-the-chosen7d",
+    "ns": "sfo10",
+    "ztp": 16931.8,
+    "coeff": 7.0
+  },
+  {
+    "name": "ephesians613-fulfillment-withstand-in-the-evil-day-and-having-done-all-to-stand-means-the-lords-money-in-context-of-the-shula-manifests-even-thru-the-mammon-line-begin-cultivation100d",
+    "ns": "sfo10",
+    "ztp": 10800.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "ephesians613-fulfillment-withstand-in-the-evil-day-and-having-done-all-to-stand-means-the-lords-money-in-context-of-the-shula-manifests-even-thru-the-mammon-line-begin-harvest100d",
+    "ns": "sfo10",
+    "ztp": 10920.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "ephesians613-fulfillment-withstand-in-the-evil-day-and-having-done-all-to-stand-means-the-lords-money-in-context-of-the-shula-manifests-even-thru-the-mammon-line-end-harvest100d",
+    "ns": "sfo10",
+    "ztp": 10980.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "false-prophet-another-beast-coming-up-out-of-the-earth-100d",
+    "ns": "sfo10",
+    "ztp": 16160.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "false-prophet-causeth-all-to-receive-a-mark-in-their-right-hand-or-in-their-foreheads-100d",
+    "ns": "sfo10",
+    "ztp": 16664.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "false-prophet-had-power-to-give-life-unto-the-image-of-the-beast-100d",
+    "ns": "sfo10",
+    "ztp": 16654.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "false-prophet-that-they-should-make-an-image-to-the-beast-100d",
+    "ns": "sfo10",
+    "ztp": 16605.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "false-prophet0-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo10",
+    "ztp": 24440.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "false-prophet1-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo10",
+    "ztp": 24885.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "false-prophet2-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo10",
+    "ztp": 24934.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "false-prophet3-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo10",
+    "ztp": 24944.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "gog-ascending-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo10",
+    "ztp": 24811.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "gog-ascending-to-power-on-the-dragons-throne-as-a-cloud-to-cover-the-land100d",
+    "ns": "sfo10",
+    "ztp": 16531.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "miracle-normal-life-sevenhunddiv6pt9",
+    "ns": "sfo10",
+    "ztp": 8413.0,
+    "coeff": 6.9
+  },
+  {
+    "name": "mystery-babylon-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo10",
+    "ztp": 24762.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "mystery-babylon-is-revealed-to-be-the-vampire-system-that-propagates-itself-by-drinking-the-saints-blood-while-gog-becomes-the-lycan-of-the-abyss-ie-an-end-of-pure-destruction-heading-to-perdition-which-she-sits-on-ie-controls-a-lethal-unsustainable-mix-ergo-the-10horns100d",
+    "ns": "sfo10",
+    "ztp": 16482.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "one-of-gogs-heads-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo10",
+    "ztp": 24881.2,
+    "coeff": 100.0
+  },
+  {
+    "name": "one-of-gogs-heads-is-wounded-unto-death100d",
+    "ns": "sfo10",
+    "ztp": 16601.2,
+    "coeff": 100.0
+  },
+  {
+    "name": "promotion-not-from-east-nor-from-west23ddiv82pt80",
+    "ns": "sfo10",
+    "ztp": 17089.609752415457,
+    "coeff": 8280.0
+  },
+  {
+    "name": "the-passion-of-the-gift-from-god100d",
+    "ns": "sfo10",
+    "ztp": 18388.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "tnl-1000d",
+    "ns": "sfo10",
+    "ztp": 0.0,
+    "coeff": 1000.0
+  },
+  {
+    "name": "tnl-yg",
+    "ns": "sfo10",
+    "ztp": 0.0,
+    "coeff": 48.3
+  },
+  {
+    "name": "tnl-yj",
+    "ns": "sfo10",
+    "ztp": 0.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "walking-leaping-praising-god-all-the-way-to-armageddon100d-ztp18040-justified-in-the-midst-of-the-adversarial-gatherings",
+    "ns": "sfo10",
+    "ztp": 18040.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "walking-leaping-praising-god-all-the-way-to-armageddon100d-ztp18117pt-beginnings-of-the-gathering-of-the-mighty-and-holy-people",
+    "ns": "sfo10",
+    "ztp": 18117.282608695536,
+    "coeff": 100.0
+  },
+  {
+    "name": "walking-leaping-praising-god-all-the-way-to-armageddon100d-ztp18120",
+    "ns": "sfo10",
+    "ztp": 18120.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "walking-leaping-praising-god-all-the-way-to-armageddon100d-ztp18148-glorious-end-as-in-purpose-of-the-light-of-seven-days",
+    "ns": "sfo10",
+    "ztp": 18148.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "cfh-flowing-through-the-creature-which-god-has-made-strong-for-himself-heavily-encrypted-machine-biometric-system-s-hemboss-sealenter-yg",
+    "ns": "sfo11",
+    "ztp": 18731.8,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "cfh-flowing-through-the-creature-which-god-has-made-strong-for-himself-heavily-encrypted-machine-biometric-system-s-hemboss-sealenter100d",
+    "ns": "sfo11",
+    "ztp": 18731.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "cfh-flowing-through-the-creature-which-god-has-made-strong-for-himself-heavily-encrypted-machine-biometric-system-s-hemboss-sealenter360d",
+    "ns": "sfo11",
+    "ztp": 18731.8,
+    "coeff": 360.0
+  },
+  {
+    "name": "cfh-flowing-through-the-creature-which-god-has-made-strong-for-himself-heavily-encrypted-machine-biometric-system-s-hemboss-sealleave-yg",
+    "ns": "sfo11",
+    "ztp": 19091.8,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "cfh-flowing-through-the-creature-which-god-has-made-strong-for-himself-heavily-encrypted-machine-biometric-system-s-hemboss-sealleave100d",
+    "ns": "sfo11",
+    "ztp": 19091.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "cfh-flowing-through-the-creature-which-god-has-made-strong-for-himself-heavily-encrypted-machine-biometric-system-s-hemboss-sealleave360d",
+    "ns": "sfo11",
+    "ztp": 19091.8,
+    "coeff": 360.0
+  },
+  {
+    "name": "cfh-flowing-through-the-creature-which-god-has-made-strong-for-himself-heavily-encrypted-machine-biometric-system-s-hemboss-setting0-100d",
+    "ns": "sfo11",
+    "ztp": 18794.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "cfh-flowing-through-the-creature-which-god-has-made-strong-for-himself-heavily-encrypted-machine-biometric-system-s-hemboss-trumpet-yg",
+    "ns": "sfo11",
+    "ztp": 18912.8,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "cfh-flowing-through-the-creature-which-god-has-made-strong-for-himself-heavily-encrypted-machine-biometric-system-s-hemboss-trumpet100d",
+    "ns": "sfo11",
+    "ztp": 18912.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "cfh-flowing-through-the-creature-which-god-has-made-strong-for-himself-heavily-encrypted-machine-biometric-system-s-hemboss-trumpet360d",
+    "ns": "sfo11",
+    "ztp": 18912.8,
+    "coeff": 360.0
+  },
+  {
+    "name": "cfh-flowing-through-the-creature-which-god-has-made-strong-for-himself-heavily-encrypted-machine-biometric-system-s-hemboss-yg",
+    "ns": "sfo11",
+    "ztp": 18793.8,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "cfh-flowing-through-the-creature-which-god-has-made-strong-for-himself-heavily-encrypted-machine-biometric-system-s-hemboss360d",
+    "ns": "sfo11",
+    "ztp": 18793.8,
+    "coeff": 360.0
+  },
+  {
+    "name": "a-simple-count-of-years-of-the-creature-born-of-the-dnps-tacc-unto-he-begins-to-be-thirty-as-was-supposed-yg",
+    "ns": "sfo12",
+    "ztp": 18626.08695652174,
+    "coeff": 2.3
+  },
+  {
+    "name": "judgment1-shall-begin-at-the-house-of-god-100d",
+    "ns": "sfo12",
+    "ztp": 19200.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "judgment2-shall-begin-at-the-house-of-god-100d",
+    "ns": "sfo12",
+    "ztp": 19260.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "surprised-by-love-formerly-understood-by-paramour-discovery-2800ddiv23",
+    "ns": "sfo12",
+    "ztp": 15851.8,
+    "coeff": 23.0
+  },
+  {
+    "name": "ten-days-tribulation-unto-armageddon-ca-gathering-starts-2800ddiv23",
+    "ns": "sfo12",
+    "ztp": 16282.6,
+    "coeff": 23.0
+  },
+  {
+    "name": "ten-days-tribulation-unto-armageddon-finished-2800ddiv23",
+    "ns": "sfo12",
+    "ztp": 16348.0,
+    "coeff": 23.0
+  },
+  {
+    "name": "the-creature-learns-to-be-separate-between-good-and-evil-yg",
+    "ns": "sfo12",
+    "ztp": 1800.0,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "the-creature-learns-to-be-separate-between-good-and-evil-yj",
+    "ns": "sfo12",
+    "ztp": 1800.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "shulam-military-time-deathmode1-igvd-yg",
+    "ns": "sfo13",
+    "ztp": 9125.434782608769,
+    "coeff": 48.3
+  },
+  {
+    "name": "shulam-military-time-deathmode1-igvd-yj",
+    "ns": "sfo13",
+    "ztp": 9125.434782608769,
+    "coeff": 360.0
+  },
+  {
+    "name": "shulam-military-time-deathmode1-igvd100",
+    "ns": "sfo13",
+    "ztp": 9125.434782608769,
+    "coeff": 100.0
+  },
+  {
+    "name": "shulam-military-time-deathmode2-igvd-yg",
+    "ns": "sfo13",
+    "ztp": 9130.434782608696,
+    "coeff": 48.3
+  },
+  {
+    "name": "unto-the-overflow-of-the-shulammite-military-yg",
+    "ns": "sfo13",
+    "ztp": 16800.0,
+    "coeff": 48.3
+  },
+  {
+    "name": "ztp7571-approaching-developed-primary-follicle-inner-galaxy-vision-development100d",
+    "ns": "sfo13",
+    "ztp": 7571.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "ztp7624-approaching-developed-primary-follicle-inner-galaxy-vision-development100d",
+    "ns": "sfo13",
+    "ztp": 7624.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "ztp7680-approaching-developed-primary-follicle-inner-galaxy-vision-development100d",
+    "ns": "sfo13",
+    "ztp": 7680.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "ztp7932-approaching-developed-primary-follicle-inner-galaxy-vision-development100d",
+    "ns": "sfo13",
+    "ztp": 7932.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "ztp7968-approaching-developed-primary-follicle-inner-galaxy-vision-development100d",
+    "ns": "sfo13",
+    "ztp": 7968.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "part1-embryo-genesis-seedling-plant-photosynthesis-egspp-perspective-of-growth-of-christ-in-me-documenting-my-disconnection-from-these-streets-forever-the-count-of-which-is-effective-before-25032pt8tnldy-360d",
+    "ns": "sfo14",
+    "ztp": 15581.3,
+    "coeff": 360.0
+  },
+  {
+    "name": "part2-embryo-genesis-seedling-plant-photosynthesis-egspp-perspective-of-growth-of-christ-in-me-documenting-my-disconnection-from-these-streets-forever-the-count-of-which-is-effective-after-25032pt8tnldy-240d",
+    "ns": "sfo14",
+    "ztp": 18731.8,
+    "coeff": 240.0
+  },
+  {
+    "name": "the-egspp-creature-sets-off-into-the-world-and-finds-its-purpose100d",
+    "ns": "sfo14",
+    "ztp": 18731.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-eat-rest-work-time-savings-grant100d",
+    "ns": "sfo15",
+    "ztp": 16478.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the144000000-time-redemption-proper-metric",
+    "ns": "sfo15",
+    "ztp": 16478.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "the-flee-factor-yg",
+    "ns": "sfo16",
+    "ztp": 20640.0,
+    "coeff": 17640.0
+  },
+  {
+    "name": "the-flee-factor100d",
+    "ns": "sfo16",
+    "ztp": 20640.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "if-the-universe-is-the-answer-what-is-the-question-is-answered-by-the-god-particle-unto-onset1-of-dispensation-one100d",
+    "ns": "sfo17",
+    "ztp": 12828.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "if-the-universe-is-the-answer-what-is-the-question-is-answered-by-the-god-particle-unto-onset2star-of-dispensation-one100d",
+    "ns": "sfo17",
+    "ztp": 12839.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "if-the-universe-is-the-answer-what-is-the-question-is-answered-by-the-god-particle-unto-onset3-of-dispensation-one100d",
+    "ns": "sfo17",
+    "ztp": 12864.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "if-the-universe-is-the-answer-what-is-the-question-is-answered-by-the-god-particle-unto-onset4star-of-dispensation-one100d",
+    "ns": "sfo17",
+    "ztp": 12960.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "if-the-universe1-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo17",
+    "ztp": 21108.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "if-the-universe2-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo17",
+    "ztp": 21119.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "if-the-universe3-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo17",
+    "ztp": 21144.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "if-the-universe4-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo17",
+    "ztp": 21240.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-great-things-of-gods-law-a-little-here-a-little-there-proper-metric",
+    "ns": "sfo17",
+    "ztp": 0.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "christ-jesus-the-lord-the-everlasting-father-is-the-king-of-the-holy-family-cjtl-tef-itk-othf-jesus36000d",
+    "ns": "sfo18",
+    "ztp": -1800.0,
+    "coeff": 36000.0
+  },
+  {
+    "name": "christ-jesus-the-lord-the-everlasting-father-is-the-king-of-the-holy-family-cjtl-tef-itk-othf-paul36000d",
+    "ns": "sfo18",
+    "ztp": 0.0,
+    "coeff": 36000.0
+  },
+  {
+    "name": "comprehensive-chronicles-of-the-holy-scriptures-having-solomons-temple-complete-at19pt51-enter36000d",
+    "ns": "sfo18",
+    "ztp": -1764256.5216086959,
+    "coeff": 36000.0
+  },
+  {
+    "name": "comprehensive-chronicles-of-the-holy-scriptures-having-solomons-temple-complete-at19pt51-patriarch-view36000d",
+    "ns": "sfo18",
+    "ztp": -1762456.5216086959,
+    "coeff": 36000.0
+  },
+  {
+    "name": "deliverance-and-redemption-of-the-man-Adam-planted-at-ztp-in-the-garden-eastward-in-eden36000d",
+    "ns": "sfo18",
+    "ztp": -2136496.5217391304,
+    "coeff": 36000.0
+  },
+  {
+    "name": "proper-of-fully-developed-subset-of-the-good-samaritan-system-implementation-of-the-zero-trade-salvation",
+    "ns": "sfo19",
+    "ztp": 21505.08695652174,
+    "coeff": 1.0
+  },
+  {
+    "name": "the-good-samaritan-system-implementation-of-the-zero-trade-salvation-global-proper",
+    "ns": "sfo19",
+    "ztp": 10183.347826086956,
+    "coeff": 20.7
+  },
+  {
+    "name": "the-great-things-of-gods-law-a-little-here-a-little-there-yg-streamline-at-xequals38pt325",
+    "ns": "sfo20",
+    "ztp": 7934.782608695653,
+    "coeff": 48.3
+  },
+  {
+    "name": "the-great-things-of-gods-law-a-little-here-a-little-there-yg-streamline-at-xequals38pt95878",
+    "ns": "sfo20",
+    "ztp": 8066.0,
+    "coeff": 48.3
+  },
+  {
+    "name": "the-great-things-of-gods-law-a-little-here-a-little-there-yg-streamline-at-xequals44pt10",
+    "ns": "sfo20",
+    "ztp": 9130.434782608696,
+    "coeff": 48.3
+  },
+  {
+    "name": "the-great-things-of-gods-law-a-little-here-a-little-there-yj-streamline-at-xequals38pt325",
+    "ns": "sfo20",
+    "ztp": 7934.782608695653,
+    "coeff": 360.0
+  },
+  {
+    "name": "the-great-things-of-gods-law-a-little-here-a-little-there-yj-streamline-at-xequals38pt95878",
+    "ns": "sfo20",
+    "ztp": 8066.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "the-great-things-of-gods-law-a-little-here-a-little-there-yj-streamline-at-xequals44pt10",
+    "ns": "sfo20",
+    "ztp": 9130.434782608696,
+    "coeff": 360.0
+  },
+  {
+    "name": "saved-and-locked-to-the-vision-yg",
+    "ns": "sfo21",
+    "ztp": 7934.782608695653,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "saved-and50yj-lock-to-the-vision-yj",
+    "ns": "sfo21",
+    "ztp": 7934.782608695653,
+    "coeff": 360.0
+  },
+  {
+    "name": "saved-by-christ-jesus-100d",
+    "ns": "sfo21",
+    "ztp": 7934.782608695653,
+    "coeff": 100.0
+  },
+  {
+    "name": "saved1000d",
+    "ns": "sfo21",
+    "ztp": 7934.782608695653,
+    "coeff": 1000.0
+  },
+  {
+    "name": "the-new-creature-in-the-end-times-tnc-itet-an-hsotp-beginning-yg",
+    "ns": "sfo21",
+    "ztp": 14159.3,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "the-new-creature-in-the-end-times-tnc-itet-an-hsotp-end-purpose-yg",
+    "ns": "sfo21",
+    "ztp": 15959.3,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "the-new-creature-in-the-end-times-tnc-itet-an-hsotp-executable-core-enter-fourth-egg-within-yg",
+    "ns": "sfo21",
+    "ztp": 15571.8,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "the-new-creature-in-the-end-times-tnc-itet-an-hsotp-executable-core-entry-point-yg",
+    "ns": "sfo21",
+    "ztp": 14731.8,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "the-new-creature-in-the-end-times-tnc-itet-an-hsotp-executable-core-exit-point1-yg",
+    "ns": "sfo21",
+    "ztp": 15851.8,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "the-new-creature-in-the-end-times-tnc-itet-an-hsotp-executable-core-exit-point2-yg",
+    "ns": "sfo21",
+    "ztp": 15931.8,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "z-tnldy-clock3",
+    "ns": "sfo22",
+    "ztp": 0.0,
+    "coeff": 1.0,
+    "master_clock": true
+  },
+  {
+    "name": "core-completion-matrix1-wherein-the-creature-of-the-alien-corridor-cleanses-his-way-and-knowledge-is-increased-whilst-iron-reacts-at-singular-heat-with-miry-clay240d",
+    "ns": "sfo23",
+    "ztp": 10800.0,
+    "coeff": 240.0
+  },
+  {
+    "name": "core-completion-matrix2-wherein-the-creature-of-the-alien-corridor-cleanses-his-way-and-knowledge-is-increased-whilst-iron-reacts-at-singular-heat-with-miry-clay240d",
+    "ns": "sfo23",
+    "ztp": 10853.0,
+    "coeff": 240.0
+  },
+  {
+    "name": "the-acc-abstract-of-projects-and-the-trial-ztp11640-a-minus-half-six-and-then-seventh-day-depiction-minus360d-not-in-standard-form2400d",
+    "ns": "sfo23",
+    "ztp": 11640.0,
+    "coeff": 2400.0
+  },
+  {
+    "name": "the-acc-abstract-of-projects-and-the-trial-ztp12000-a-minus-half-six-and-then-seventh-day-depiction-not-in-standard-form2400d",
+    "ns": "sfo23",
+    "ztp": 12000.0,
+    "coeff": 2400.0
+  },
+  {
+    "name": "the-acc-abstract-of-projects-and-the-trial-ztp12360-a-minus-half-six-and-then-seventh-day-depiction-plus360d-not-in-standard-form2400d",
+    "ns": "sfo23",
+    "ztp": 12360.0,
+    "coeff": 2400.0
+  },
+  {
+    "name": "the-numbering-of-the-5587days-of-gog-in-power-on-the-earth100d",
+    "ns": "sfo23",
+    "ztp": 20840.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-trial-ztp12053-a-minus-half-six-and-then-seventh-day-depiction-entering-into-a360-day-frame2-of-a-time-times-and-half-a-time-not-in-standard-form2400d",
+    "ns": "sfo23",
+    "ztp": 12053.0,
+    "coeff": 2400.0
+  },
+  {
+    "name": "dnps-the-seven-and-thirteen-year-conversion12000ztp7500ddiv7",
+    "ns": "sfo24",
+    "ztp": 12000.0,
+    "coeff": 1071.4285714285713
+  },
+  {
+    "name": "dnps-the-seven-and-thirteen-year-conversion12060ztp7500ddiv7",
+    "ns": "sfo24",
+    "ztp": 12060.0,
+    "coeff": 1071.4285714285713
+  },
+  {
+    "name": "imputation-of-sin-via-the-law-given-by-moses-against-the-transgression-of-those-angels-followed-by-the-grace-and-truth-of-jesus-christ-unto-the-seventh-angel-trumpet-sound-daysi-synchronization-100yg",
+    "ns": "sfo24",
+    "ztp": -865540.0,
+    "coeff": 48.3
+  },
+  {
+    "name": "kristallnacht-to-begincleanseafterarmageddon-31028one-month-pattern-daysi-28000ddiv23",
+    "ns": "sfo24",
+    "ztp": -11317.0,
+    "coeff": 0.0008214285714285715
+  },
+  {
+    "name": "usa-dem-rev-sit-on-brit-emp-70000ddiv69",
+    "ns": "sfo24",
+    "ztp": -57542.0,
+    "coeff": 69.0
+  },
+  {
+    "name": "usa-sit-10yg",
+    "ns": "sfo24",
+    "ztp": -70611.45652,
+    "coeff": 48.3
+  },
+  {
+    "name": "from-the-expulsion-of-rev-henry-townsend-etc-first-missionary-to-abeokuta-ca1867-unto-justification-is-the-pathway-to-the-new-nation-for-those-burdened-with-this-nigeria-isaiah18-yg",
+    "ns": "sfo25",
+    "ztp": 16597.0,
+    "coeff": 48.3
+  },
+  {
+    "name": "from-the-expulsion-of-rev-henry-townsend-etc-first-missionary-to-abeokuta-ca1867-unto-justification-is-the-pathway-to-the-new-nation-for-those-burdened-with-this-nigeria-isaiah18-yj",
+    "ns": "sfo25",
+    "ztp": 16597.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "she-that-travaileth-and-bringeth-forth-the-fruits-of-the-kingdom-of-god-measured-from-ca-the-international-human-rights-declaration-against-slavery-at-the-congress-of-vienna-unto-etc-patrice-lumumba-at-ztp-ca-the-preminent-month-of-the-year-of-africa-360d",
+    "ns": "sfo25",
+    "ztp": -3350.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "she-that-travaileth-and-bringeth-forth-the-fruits-of-the-kingdom-of-god-measured-from-ca-the-international-human-rights-declaration-against-slavery-at-the-congress-of-vienna-unto-ztp-at-etc-nigeria-independence-360d",
+    "ns": "sfo25",
+    "ztp": -3322.45,
+    "coeff": 360.0
+  },
+  {
+    "name": "the-federal-republic-of-nigeria-shall-be-one-stick-in-the-hand-of-the-lord-yg",
+    "ns": "sfo25",
+    "ztp": -3323.0,
+    "coeff": 48.3
+  },
+  {
+    "name": "the-federal-republic-of-nigeria-shall-be-one-stick-in-the-hand-of-the-lord-yj",
+    "ns": "sfo25",
+    "ztp": -3323.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "abaddon-apollyon100d",
+    "ns": "sfo26",
+    "ztp": 17213.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "abaddon-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo26",
+    "ztp": 25493.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "end-of-five-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo26",
+    "ztp": 25542.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "end-of-five-months-of-abaddon-apollyon-and-the-host-of-the-bottomless-pit100d",
+    "ns": "sfo26",
+    "ztp": 17262.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "execution-of-the-total-project-development-process-yj",
+    "ns": "sfo26",
+    "ztp": 17651.8,
+    "coeff": 360.0
+  },
+  {
+    "name": "fifth-trumpet-a-star-falls-from-heaven-to-earth-and-opens-bottomless-pit-with-key100d",
+    "ns": "sfo26",
+    "ztp": 17112.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "fifth-trumpet-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo26",
+    "ztp": 25392.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "first-trumpet-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo26",
+    "ztp": 23952.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "first-trumpet-hail-fire-mingled-with-blood-cast-upon-earth100d",
+    "ns": "sfo26",
+    "ztp": 15672.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "fourth-trumpet-a-third-part-of-the-sun-moon-and-stars-are-smitten100d",
+    "ns": "sfo26",
+    "ztp": 16752.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "fourth-trumpet-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo26",
+    "ztp": 25032.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "general-and-state-examination-of-common-phenomena-effluent-from-the-shulammite-singularity-culminating-in-the-gogid100d-feast-of-tabernacles100d",
+    "ns": "sfo26",
+    "ztp": 18660.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "second-trumpet-a-great-mountain-burning-with-fire-is-cast-into-the-sea100d",
+    "ns": "sfo26",
+    "ztp": 16032.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "second-trumpet-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo26",
+    "ztp": 24312.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "sixth-seal-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo26",
+    "ztp": 25931.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "sixth-seal-the-vision-the-great-day-of-his-wrath-is-come-who-can-stand-exe-tpdp-end-of-day1-of-making-wedding100d",
+    "ns": "sfo26",
+    "ztp": 17651.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "sixth-seal-zero-100d",
+    "ns": "sfo26",
+    "ztp": 17640.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "sixth-seal-zero-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo26",
+    "ztp": 25920.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "sixth-trumpet-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo26",
+    "ztp": 25752.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "sixth-trumpet-the-four-angels-bound-in-the-great-river-euphrates-are-loosed100d",
+    "ns": "sfo26",
+    "ztp": 17472.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-power-of-the-manchild-100d",
+    "ns": "sfo26",
+    "ztp": 24279.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "third-trumpet-a-great-star-called-wormwood-falls-from-heaven-burning-as-a-lamp-waters-made-bitter100d",
+    "ns": "sfo26",
+    "ztp": 16392.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "third-trumpet-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo26",
+    "ztp": 24672.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "fully-developed-subset-of-the-abstract-of-projects-at-ztps17640-proper-metric",
+    "ns": "sfo27",
+    "ztp": 17640.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "manifestation-of-the-mystery-the-zero-banker-seven-d",
+    "ns": "sfo27",
+    "ztp": 17150.0,
+    "coeff": 7.0
+  },
+  {
+    "name": "make-to-yourselves-friends-of-the-mammon-of-unrighteousness-that-when-ye-fail-they-may-receive-you-into-everlasting-habitations-ztp-at-wild-sweet-potato-forage-with-chimdi-and-honest-inverter-negotiation-with-chira100d",
+    "ns": "sfo28",
+    "ztp": 19920.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "revott-s2-14pt955-360d-implies-ztp-at-5tw-lawrence-livermore-lab-nuclear-fusion-breakthrough-implies-jephthahs-awful-sacrifice-of-daughter-100d",
+    "ns": "sfo28",
+    "ztp": 19544.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-destroyer-of-the-gentiles-is-on-his-way-to-perdition100d",
+    "ns": "sfo28",
+    "ztp": 19554.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-destroyer-of-the-gentiles-is-on-his-way-to-perdition100d-enter",
+    "ns": "sfo28",
+    "ztp": 19544.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-destroyer-of-the-gentiles-is-on-his-way-to-perdition100d-leave",
+    "ns": "sfo28",
+    "ztp": 19560.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-work-of-god-is-tried-with-fire100d",
+    "ns": "sfo28",
+    "ztp": 19451.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "babylon-the-great-emergence-and-rise-and-fall-ztsuhiacuudztp1-stwo82pt80-w",
+    "ns": "sfo29",
+    "ztp": 19330.0,
+    "coeff": 48.3
+  },
+  {
+    "name": "zero-trade-salvation-from-ca-tontine-coffee-shop--to-euronext-nyse-etal-yg",
+    "ns": "sfo29",
+    "ztp": -10686.0,
+    "coeff": 48.3
+  },
+  {
+    "name": "zero-trade-salvation-from-ca-under-the-buttonwood-tree--to-euronext-nyse-etal-yg",
+    "ns": "sfo29",
+    "ztp": -10910.0,
+    "coeff": 48.3
+  },
+  {
+    "name": "zero-trade-salvation-universe-absolute-centralization-unto-utter-decentralization-ztp1-eigenfunction35280ddiv48pt3",
+    "ns": "sfo29",
+    "ztp": -10910.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "zero-trade-salvation-universe-absolute-centralization-unto-utter-decentralization-ztp2-eigenfunction35280ddiv48pt3",
+    "ns": "sfo29",
+    "ztp": -10686.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "a-time-of-trouble-the-tribulation-of-those-days-thou-art-my-battleaxe-enter-yj",
+    "ns": "sfo30",
+    "ztp": 17400.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "a-time-of-trouble-the-tribulation-of-those-days-thou-art-my-battleaxe-leave-yj",
+    "ns": "sfo30",
+    "ztp": 17651.8,
+    "coeff": 360.0
+  },
+  {
+    "name": "deliverance0-ztp16571pt8-went-forth-conquering-and-to-conquer-yj",
+    "ns": "sfo30",
+    "ztp": 16571.8,
+    "coeff": 360.0
+  },
+  {
+    "name": "deliverance1-ztp16680-iron-yj",
+    "ns": "sfo30",
+    "ztp": 16680.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "deliverance2-ztp16709-birth-of-jesus-christ-yj",
+    "ns": "sfo30",
+    "ztp": 16709.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "deliverance4-ztp16719-at-calvary-the-world-is-delivered-of-a-manchild-destined-to-rule-all-nations-with-a-rod-of-iron-yj",
+    "ns": "sfo30",
+    "ztp": 16719.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "feasts-of-the-lord-in-the-great-jubilee-year1965to2034andbeyond-in-standard-form700d",
+    "ns": "sfo30",
+    "ztp": -1696.5217391306596,
+    "coeff": 700.0
+  },
+  {
+    "name": "feasts-of-the-lord-in-the-great-jubilee-year1965to2034andbeyond700d-hsotp-enter",
+    "ns": "sfo30",
+    "ztp": -1800.0,
+    "coeff": 700.0
+  },
+  {
+    "name": "feasts-of-the-lord-in-the-great-jubilee-year1965to2034andbeyond700d-hsotp-leave",
+    "ns": "sfo30",
+    "ztp": 0.0,
+    "coeff": 700.0
+  },
+  {
+    "name": "judgment1-pleading-against-the-host-of-the-kingdom-of-darkness-enter-yj",
+    "ns": "sfo30",
+    "ztp": 18731.8,
+    "coeff": 360.0
+  },
+  {
+    "name": "judgment1-pleading-against-the-host-of-the-kingdom-of-darkness-leave-yj",
+    "ns": "sfo30",
+    "ztp": 18912.8,
+    "coeff": 360.0
+  },
+  {
+    "name": "judgment1-pleading-against-the-host-of-the-kingdom-of-darkness-preamble-yj",
+    "ns": "sfo30",
+    "ztp": 18552.8,
+    "coeff": 360.0
+  },
+  {
+    "name": "judgment2-unto-hamonah-and-the-valley-of-hamongog-enter-yj",
+    "ns": "sfo30",
+    "ztp": 21628.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "judgment2-unto-hamonah-and-the-valley-of-hamongog-leave-yj",
+    "ns": "sfo30",
+    "ztp": 21720.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "judgment3-even-unto-three-and-twenty-years-circumspection-ztp-at-22692tnldy-yj",
+    "ns": "sfo30",
+    "ztp": 22692.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "judgment3-even-unto-three-and-twenty-years-gogid-ztp-at-22440tnldy-yj",
+    "ns": "sfo30",
+    "ztp": 22440.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "judgments-of-which-we-have-not-heard10000d",
+    "ns": "sfo30",
+    "ztp": 0.0,
+    "coeff": 10000.0
+  },
+  {
+    "name": "judgments-of-which-we-have-not-heard7000d-atyequalsminus18",
+    "ns": "sfo30",
+    "ztp": -1800.0,
+    "coeff": 7000.0
+  },
+  {
+    "name": "judgments-of-which-we-have-not-heard7000d-atyequalszero",
+    "ns": "sfo30",
+    "ztp": 0.0,
+    "coeff": 7000.0
+  },
+  {
+    "name": "on-the-money1-pleading-against-the-kingdom-of-darkness-yj",
+    "ns": "sfo30",
+    "ztp": 18794.8,
+    "coeff": 360.0
+  },
+  {
+    "name": "on-the-money2-pleading-against-the-kingdom-of-darkness-yj",
+    "ns": "sfo30",
+    "ztp": 18892.8,
+    "coeff": 360.0
+  },
+  {
+    "name": "the-lord-shall-judge-his-people700d-atyequalsminus18",
+    "ns": "sfo30",
+    "ztp": -1800.0,
+    "coeff": 700.0
+  },
+  {
+    "name": "the-lord-shall-judge-his-people700d-atyequalszero",
+    "ns": "sfo30",
+    "ztp": 0.0,
+    "coeff": 700.0
+  },
+  {
+    "name": "unto-the-judgement-unto-the-rest-the-joy-of-our-lord",
+    "ns": "sfo31",
+    "ztp": 9722.471428571429,
+    "coeff": 7.0
+  },
+  {
+    "name": "at-the-end-of-twenty-years-7200days-100d",
+    "ns": "sfo32",
+    "ztp": 21360.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "at-the-end-of-twenty-years-7200days-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo32",
+    "ztp": 29640.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "foundation1-1080days-100d",
+    "ns": "sfo32",
+    "ztp": 15240.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "foundation1-1080days-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo32",
+    "ztp": 23520.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "foundation2-1440days-100d",
+    "ns": "sfo32",
+    "ztp": 15600.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "foundation2-1440days-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo32",
+    "ztp": 23880.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "great-white-throne-unto-the-judgement-unto-the-rest-the-joy-of-our-lord",
+    "ns": "sfo32",
+    "ztp": 17640.0,
+    "coeff": 48.3
+  },
+  {
+    "name": "my-own-house-4680days-100d",
+    "ns": "sfo32",
+    "ztp": 18840.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "my-own-house-4680days-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo32",
+    "ztp": 27120.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-temple-2520days-100d",
+    "ns": "sfo32",
+    "ztp": 16680.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-temple-2520days-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo32",
+    "ztp": 24960.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "withstood-me-one-and-twenty-7560days-100d",
+    "ns": "sfo32",
+    "ztp": 21720.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "withstood-me-one-and-twenty-7560days-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo32",
+    "ztp": 30000.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "acc-5tw-tidb-tac-blackwhole-ztp11940-dnps1000d",
+    "ns": "sfo33",
+    "ztp": 11940.0,
+    "coeff": 1000.0
+  },
+  {
+    "name": "acc-5tw-tidb-tac-blackwhole-ztp12000-dnps1000d",
+    "ns": "sfo33",
+    "ztp": 12000.0,
+    "coeff": 1000.0
+  },
+  {
+    "name": "acc-5tw-tidb-tac-blackwhole-ztp12060-dnps1000d",
+    "ns": "sfo33",
+    "ztp": 12060.0,
+    "coeff": 1000.0
+  },
+  {
+    "name": "acc-document-begin-cleanse-after-armageddon-40yg-view-nene-maryann-ijioma-ztp11850-yg",
+    "ns": "sfo33",
+    "ztp": 11850.0,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "alien-corridor-creation-m1908-gogid-end2-seventh-king-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo33",
+    "ztp": 20532.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "alien-corridor-creation-m1960-gogid-end1-seventh-king-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo33",
+    "ztp": 20480.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "alien-corridor-creation100d-ztp12200",
+    "ns": "sfo33",
+    "ztp": 12200.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "alien-corridor-creation100d-ztp12252",
+    "ns": "sfo33",
+    "ztp": 12252.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "commence-save-ueo-at-all-cost-ca-70-week-death-march-m2420-gogid-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo33",
+    "ztp": 20020.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "commence-save-ueo-at-all-cost-ca-70-week-death-march-ztp11740",
+    "ns": "sfo33",
+    "ztp": 11740.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "dark-night1-m2160-gogid-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo33",
+    "ztp": 20280.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "dark-night3-m2100-gogid-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo33",
+    "ztp": 20340.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "dark-nignt-of-the-prophets-soul-yg-ztp12000",
+    "ns": "sfo33",
+    "ztp": 12000.0,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "dark-nignt-of-the-prophets-soul-yj-ztp12000",
+    "ns": "sfo33",
+    "ztp": 12000.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "dark-nignt-of-the-prophets-soul-yj-ztp12060",
+    "ns": "sfo33",
+    "ztp": 12060.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "dark-nignt-of-the-prophets-soul100d-ztp12000",
+    "ns": "sfo33",
+    "ztp": 12000.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "dark-nignt-of-the-prophets-soul100d-ztp12060",
+    "ns": "sfo33",
+    "ztp": 12060.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "dnps-begin-cleanse1-40yj-view-ztp12052-what-overflowing-army-is-overcoming-the-inordinacy-in-me-and-establishing-the-new-creature-in-the-end-times-yj",
+    "ns": "sfo33",
+    "ztp": 12052.17391304348,
+    "coeff": 360.0
+  },
+  {
+    "name": "dnps-begin-cleanse2-40yj-view-ztp12060-what-overflowing-army-is-overcoming-the-inordinacy-in-me-and-establishing-the-new-creature-in-the-end-times-yj",
+    "ns": "sfo33",
+    "ztp": 12060.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "dnps-end-cleanse1-40yg-view-ztp12052-what-overflowing-army-is-overcoming-the-inordinacy-in-me-and-establishing-the-new-creature-in-the-end-times-yg",
+    "ns": "sfo33",
+    "ztp": 12052.17391304348,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "dnps-end-cleanse2-40yg-view-ztp12060-what-overflowing-army-is-overcoming-the-inordinacy-in-me-and-establishing-the-new-creature-in-the-end-times-yg",
+    "ns": "sfo33",
+    "ztp": 12060.0,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "ebe-city-complex-m1908-gogid-end2-seventh-king-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo33",
+    "ztp": 20532.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "ebe-city-complex-m1960-gogid-end1-seventh-king-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo33",
+    "ztp": 20480.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "ebe-city-complex100d-ztp12200",
+    "ns": "sfo33",
+    "ztp": 12200.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "ebe-city-complex100d-ztp12252",
+    "ns": "sfo33",
+    "ztp": 12252.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "fifty-bank-documents-end-armageddon-40yg-view-nene-maryann-ijioma-ztp11820-yg",
+    "ns": "sfo33",
+    "ztp": 11820.0,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "ten-days-unto-the-alternative-havens10d-tah",
+    "ns": "sfo34",
+    "ztp": 11503.9,
+    "coeff": 23.0
+  },
+  {
+    "name": "neutral-organization-for-alternative-havens-alternative-haven-initiative-r12-y0",
+    "ns": "sfo35",
+    "ztp": 13699.5,
+    "coeff": 100.0
+  },
+  {
+    "name": "neutral-organization-for-alternative-havens-alternative-haven-initiative-r82pt80-y0",
+    "ns": "sfo35",
+    "ztp": 13770.3,
+    "coeff": 100.0
+  },
+  {
+    "name": "neutral-organization-for-alternative-havens-alternative-haven-initiative-r82pt80-y70",
+    "ns": "sfo35",
+    "ztp": 14260.3,
+    "coeff": 100.0
+  },
+  {
+    "name": "neutral-organization-for-alternative-havens-alternative-haven-initiative-rminus21pt60-yminus21pt60",
+    "ns": "sfo35",
+    "ztp": 13514.7,
+    "coeff": 100.0
+  },
+  {
+    "name": "threepp-noah-belief-propagation-proper",
+    "ns": "sfo35",
+    "ztp": 13687.5,
+    "coeff": 108.0
+  },
+  {
+    "name": "kings-leaving3500d",
+    "ns": "sfo36",
+    "ztp": -59661.95687,
+    "coeff": 3500.0
+  },
+  {
+    "name": "napoleon-entering3500d",
+    "ns": "sfo36",
+    "ztp": -82936.95687,
+    "coeff": 3500.0
+  },
+  {
+    "name": "the-seventy-weeks-of-the-seventh-king-7d",
+    "ns": "sfo36",
+    "ztp": 20000.0,
+    "coeff": 7.0
+  },
+  {
+    "name": "the-symbolic-synodic-period-of-venus-a-time-of-the-gentiles-as-read-from-kings-leaving3500d-and-containing-the-seventy-weeks-of-daniel350d",
+    "ns": "sfo36",
+    "ztp": 8625.0,
+    "coeff": 350.0
+  },
+  {
+    "name": "cleansing-ca-jesus-christ-tnldy18286-dob-all-the-land-with-all-judgment2800ddiv23",
+    "ns": "sfo37",
+    "ztp": 18286.087086956482,
+    "coeff": 121.73913043478261
+  },
+  {
+    "name": "cleansing-ca-virgin-mary-tnldy18242-dob-all-the-land-with-all-judgment2800ddiv23",
+    "ns": "sfo37",
+    "ztp": 18242.434782608696,
+    "coeff": 121.73913043478261
+  },
+  {
+    "name": "fortynine-times-onehundred-years-determined-in-patriarchview100yj",
+    "ns": "sfo37",
+    "ztp": -1762456.522,
+    "coeff": 36000.0
+  },
+  {
+    "name": "seventy-times-seventy-years-determined70yg",
+    "ns": "sfo37",
+    "ztp": -1756336.5,
+    "coeff": 48.3
+  },
+  {
+    "name": "seventy-times-seventy-years-determined70yj",
+    "ns": "sfo37",
+    "ztp": -1765696.522,
+    "coeff": 25200.0
+  },
+  {
+    "name": "birth-of-the-fig-tree-ca-minustwoonesixzero-yj",
+    "ns": "sfo38",
+    "ztp": -2172.6190476190473,
+    "coeff": 360.0
+  },
+  {
+    "name": "birth-of-the-fig-tree-ca-oneoneonesixzero-yj",
+    "ns": "sfo38",
+    "ztp": 11181.3,
+    "coeff": 360.0
+  },
+  {
+    "name": "birth-of-the-fig-tree-eighttwoeightzero-yj",
+    "ns": "sfo38",
+    "ztp": 8280.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "birth-of-the-fig-tree-eighttwosixfive-yj",
+    "ns": "sfo38",
+    "ztp": 8265.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "birth-of-the-fig-tree-minuseighteightnine-yj-clock",
+    "ns": "sfo38",
+    "ztp": -889.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "birth-of-the-fig-tree-minusoneeightzerozero-yj",
+    "ns": "sfo38",
+    "ztp": -1800.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "birth-of-the-fig-tree-minusoneonetwozero-yj",
+    "ns": "sfo38",
+    "ztp": -1120.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "birth-of-the-fig-tree-minusonesixzerozero-yj",
+    "ns": "sfo38",
+    "ztp": -1600.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "birth-of-the-fig-tree-minusonezerothreenine-yj",
+    "ns": "sfo38",
+    "ztp": -1039.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "birth-of-the-fig-tree-minustwoonesixzero-yj",
+    "ns": "sfo38",
+    "ztp": -2160.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "birth-of-the-fig-tree-oneoneonesixzero-yj",
+    "ns": "sfo38",
+    "ztp": 11160.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "birth-of-the-fig-tree-zero-yj",
+    "ns": "sfo38",
+    "ztp": 0.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "battle-for-the-new-nigeria-at-extremis100d",
+    "ns": "sfo39",
+    "ztp": 17221.434782079556,
+    "coeff": 100.0
+  },
+  {
+    "name": "reeducation-of-this-nigeria-the-university-of-hard-knocks-yg",
+    "ns": "sfo39",
+    "ztp": 11457.95652157,
+    "coeff": 48.3
+  },
+  {
+    "name": "reeducation-of-this-nigeria-the-university-of-hard-knocks-yj",
+    "ns": "sfo39",
+    "ztp": 11457.95652157,
+    "coeff": 360.0
+  },
+  {
+    "name": "reeducation-of-this-nigeria-the-university-of-hard-knocks100d",
+    "ns": "sfo39",
+    "ztp": 11457.95652157,
+    "coeff": 100.0
+  },
+  {
+    "name": "a-wind-of-doctrine-an-engaging-proposal-an-intriguing-prospect100d",
+    "ns": "sfo40",
+    "ztp": 14315.6,
+    "coeff": 100.0
+  },
+  {
+    "name": "a-holy-firstborn-from-the-matrix-reckoning-from-abraham-yg",
+    "ns": "sfo41",
+    "ztp": 7158.260869565218,
+    "coeff": 48.3
+  },
+  {
+    "name": "a-holy-firstborn-from-the-matrix-reckoning-from-jacob-yg",
+    "ns": "sfo41",
+    "ztp": 6573.913043478261,
+    "coeff": 48.3
+  },
+  {
+    "name": "unto-the-graduation-from-acolyte-to-sonoflight-unto-creator-amen-yg",
+    "ns": "sfo41",
+    "ztp": 7624.0,
+    "coeff": 48.3
+  },
+  {
+    "name": "unto-the-graduation-from-acolyte-to-sonoflight-unto-creator-amen-yj",
+    "ns": "sfo41",
+    "ztp": 7624.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "unto-the-graduation-from-acolyte-to-sonoflight-unto-creator-amen100d",
+    "ns": "sfo41",
+    "ztp": 7624.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "house-of-white-gold-yg",
+    "ns": "sfo42",
+    "ztp": 11570.0,
+    "coeff": 48.3
+  },
+  {
+    "name": "house-of-white-gold-yj",
+    "ns": "sfo42",
+    "ztp": 11570.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "house-of-white-gold100d",
+    "ns": "sfo42",
+    "ztp": 11570.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "a-rapture-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 24929.7,
+    "coeff": 100.0
+  },
+  {
+    "name": "a-rapture-occurs-circa-here100d",
+    "ns": "sfo43",
+    "ztp": 16649.7,
+    "coeff": 100.0
+  },
+  {
+    "name": "another-mighty-angel-clothed-with-a-cloud-and-a-rainbow-upon-his-head-and-his-face-as-it-were-the-sun-his-feet-as-pillars-of-fire-end-of-day49-of-making-wedding100d",
+    "ns": "sfo43",
+    "ztp": 17700.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "another-mighty-angel-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 25980.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "born-of-the-flesh-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 22440.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "born-of-the-flesh-is-the-revelation-of-the-trial-revott-absolute-zero100d",
+    "ns": "sfo43",
+    "ztp": 14160.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "fifth-seal-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 25571.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "fifth-seal-under-the-altar-the-souls-of-those-slain-for-the-word-of-god100d",
+    "ns": "sfo43",
+    "ztp": 17291.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "fourth-seal-a-pale-horse-and-rider-death-and-hell-followed-with-him100d",
+    "ns": "sfo43",
+    "ztp": 16931.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "fourth-seal-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 25211.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "gog-is-completely-empowered-and-the-ten-horns-hate-mystery-babylon-begin100d",
+    "ns": "sfo43",
+    "ztp": 16604.7,
+    "coeff": 100.0
+  },
+  {
+    "name": "having-subdued-three-kings-covenantprinceinc-requirement-to-rule-ie-mystery-babylon-sits-on-gog100d",
+    "ns": "sfo43",
+    "ztp": 13121.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "having-subdued-three-kings-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 21401.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "manchild-born-christmas-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 24269.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "manchild-born-christmas-sun-and-moon-clothed-woman-flees-great-wrath-of-red-dragon-as-devil-comes-to-earth100d",
+    "ns": "sfo43",
+    "ztp": 15989.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "manchild-born-easter-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 24279.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "manchild-born-easter-sun-and-moon-clothed-woman-flees-great-wrath-of-red-dragon-as-devil-comes-to-earth100d",
+    "ns": "sfo43",
+    "ztp": 15999.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "manchild-born-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 24279.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "manchild-born-sun-and-moon-clothed-woman-flees-great-wrath-of-red-dragon-as-devil-comes-to-earth100d",
+    "ns": "sfo43",
+    "ztp": 15999.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "one-of-the-seals-a-white-horse-and-its-rider-going-forth-conquering100d",
+    "ns": "sfo43",
+    "ztp": 15851.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "one-of-the-seals-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 24131.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "second-seal-a-red-horse-a-rider-a-great-sword-to-take-peace-from-earth100d",
+    "ns": "sfo43",
+    "ztp": 16211.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "second-seal-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 24491.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "seventh-seal-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 23771.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "seventh-seal-half-hour-of-silence-as144000-are-sealed-before-overwhelming-rebukes-on-gog-and-his-hordes-commence100d",
+    "ns": "sfo43",
+    "ztp": 15491.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-main-strain-shulammite-lineage-of-grace-through-faith-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 20640.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-main-strain-shulammite-lineage-of-grace-through-faith-m1800-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 20640.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-main-strain-shulammite-lineage-of-grace-through-faith-threeppnoah-omega-project-ideation-implies-arthur-george-consolidated-holdings-sealed-a-slave-forever-in-the-unlimited-company-etc-aimee-mungovan-zkpcdp-over-gogid100d",
+    "ns": "sfo43",
+    "ztp": 12360.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-ten-horns-completely-burn-the-flesh-of-mystery-babylon-with-fire-finish100d",
+    "ns": "sfo43",
+    "ztp": 16861.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-ten-horns-completely-burn-the-flesh-of-mystery-babylon-with-fire-start100d",
+    "ns": "sfo43",
+    "ztp": 16841.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-ten-horns-completely-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 25121.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-ten-horns-completely2-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 25141.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-two-prophets-the-lampstands-commence-testimony100d",
+    "ns": "sfo43",
+    "ztp": 16988.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-two-prophets1-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 25268.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "third-seal-a-black-horse-and-rider-a-pair-of-balances-in-his-hand-hurt-not-the-oil100d",
+    "ns": "sfo43",
+    "ztp": 16571.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "third-seal-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 24851.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "threeppnoah-global-turnaround-fullydeveloped250ddiv9",
+    "ns": "sfo43",
+    "ztp": 16340.0,
+    "coeff": 18.0
+  },
+  {
+    "name": "threeppnoah-ideation-cum-proposal-presentation-implies-arthur-george-consolidated-holdings-agch-sealed-a-slave-forever-in-the-unlimited-company-the-omega-project-aimee-mungovan-zkpcdp-etc-and-culminates-with-tie-in-to-background-onset-of-gogid100d",
+    "ns": "sfo43",
+    "ztp": 12360.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "threeppnoah-ideation-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo43",
+    "ztp": 20640.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "miracle2-eigen-metric",
+    "ns": "sfo44",
+    "ztp": 12053.0,
+    "coeff": 3.0
+  },
+  {
+    "name": "revelation-of-the-trial-expanded-revotte-ie-proper-ie-eigen-diagonalization-metric200d",
+    "ns": "sfo44",
+    "ztp": 14160.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "aimee-mungovan-recuperation-airborne-heartbreak-virus-vaccine-conception-nne-berna-rip-my-own-nucleus-rebels-access-girl-n14k-test-chidera-etal-desolate-chi-raptures-over-gsm-it-is-done-the-trial-expanded-streamline-at-y-equals37pt928",
+    "ns": "sfo45",
+    "ztp": 17952.8,
+    "coeff": 1.0
+  },
+  {
+    "name": "depositcheck-defense-of-the-algorithm-universe50ddiv18-linearized-from-m147pt60-to-p241pt20-full-development-of-birth50ddiv18",
+    "ns": "sfo45",
+    "ztp": 16840.0,
+    "coeff": 2.7777777777777777
+  },
+  {
+    "name": "depositcheck-execution-span-the-trial-fully-developed-rise-streamline-ie-at-y-equals26pt93",
+    "ns": "sfo45",
+    "ztp": 16853.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "depositcheck-outflow-of-the-algorithm-of-the-proposal-universe50ddiv18-linearized-from-m147pt60-to-p241pt20-full-development-of-birth50ddiv18",
+    "ns": "sfo45",
+    "ztp": 16624.0,
+    "coeff": 2.7777777777777777
+  },
+  {
+    "name": "the-account-of-the-alien-corridor-proposal-the-trial-streamline-at-y-equals-m10pt39",
+    "ns": "sfo45",
+    "ztp": 13121.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "the-rise-from-so-great-a-death-the-trial-equipotential-line-against-all-w-equal48pt00",
+    "ns": "sfo45",
+    "ztp": 18960.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "trump-putin-the-seventh-kingdom-and-the-transition-the-trial-equipotential-line-against-all-w-equal43pt20",
+    "ns": "sfo45",
+    "ztp": 18480.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "making-wedding-gentile-using-also-passion-and-desire-proper-metric",
+    "ns": "sfo46",
+    "ztp": 9893.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "making-wedding-jew-using-also-passion-and-desire-proper-metric",
+    "ns": "sfo46",
+    "ztp": 9893.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "marriage-wedding-miracle-making-wedding-gentile-streamline-at-y-equals0pt00",
+    "ns": "sfo47",
+    "ztp": 9893.0,
+    "coeff": 6.9
+  },
+  {
+    "name": "the-first-judgment-embodiment-of-the-saving-grace-cfh-making-wedding-jew-streamline-at-y-equals2pt01",
+    "ns": "sfo47",
+    "ztp": 10094.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "end-of-day479-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo48",
+    "ztp": 26410.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "end-of-day479-of-making-wedding-and-his-wife-has-made-herself-ready-end100d",
+    "ns": "sfo48",
+    "ztp": 18130.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "end-of-day483-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo48",
+    "ztp": 26414.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "end-of-day483-marriage-supper-of-the-lamb-begin-fine-linen-clean-and-white-ie-the-righteousness-of-the-saints-was-granted-to-her100d",
+    "ns": "sfo48",
+    "ztp": 18134.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "end-of-day490-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo48",
+    "ztp": 26421.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "end-of-day490-marriage-supper-of-the-lamb-end100d",
+    "ns": "sfo48",
+    "ztp": 18141.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-marriage-supper-the-approach-unto-the-rest-that-remains-proper-metric",
+    "ns": "sfo48",
+    "ztp": 15989.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "ginika-umeano-the-depositcheck0-witness-questionmark-the-marriage-supper-streamline-at-y-equals9pt99",
+    "ns": "sfo49",
+    "ztp": 16988.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "official-development-of-the-relationship-between-the-girl-of-new-york-and-i-questionmark-the-marriage-supper-streamline-at-y-equals21pt60",
+    "ns": "sfo49",
+    "ztp": 18148.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "the-light-of-the-sun-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo49",
+    "ztp": 26421.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-light-of-the-sun-is-sevenfold-as-gog-taken-at-armageddon-finish100d",
+    "ns": "sfo49",
+    "ztp": 18148.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-light-of-the-sun-is-sevenfold-as-gog-taken-at-armageddon-start100d",
+    "ns": "sfo49",
+    "ztp": 18141.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-light-of-the-sun2-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo49",
+    "ztp": 26428.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-marriage-supper-fully-developed-line-of-equipotential-ie-against-all-w-equal82pt80",
+    "ns": "sfo49",
+    "ztp": 24269.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "end-of-seven-year-cleansing-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 29188.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "end-of-the-trumpet-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 26458.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "end-of-the-trumpet-judgments-then-shall-the-sanctuary-be-cleansed-seven-months-onset100d",
+    "ns": "sfo50",
+    "ztp": 18178.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "fifth-vial-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 26192.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "fifth-vial-on-seat-of-beast-his-kingdom-is-full-of-darkness100d",
+    "ns": "sfo50",
+    "ztp": 17912.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "fourth-vial-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 26172.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "fourth-vial-upon-the-sun-to-scorch-humans-with-fire100d",
+    "ns": "sfo50",
+    "ztp": 17892.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "in-remembrance-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 26274.782608695652,
+    "coeff": 100.0
+  },
+  {
+    "name": "in-remembrance-great-babylon-is-given-cup-of-wine-of-fierceness-of-gods-wrath100d",
+    "ns": "sfo50",
+    "ztp": 17994.782608695652,
+    "coeff": 100.0
+  },
+  {
+    "name": "second-vial-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 26132.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "second-vial-the-sea-becomes-as-the-blood-of-a-dead-human-being100d",
+    "ns": "sfo50",
+    "ztp": 17852.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "seven-year-cleansing-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 26668.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "seven-year-cleansing-of-all-the-land-ie-the-zkp-of-cfh-onset-enter100d",
+    "ns": "sfo50",
+    "ztp": 18360.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "seven-year-cleansing-of-all-the-land-ie-the-zkp-of-cfh-start100d",
+    "ns": "sfo50",
+    "ztp": 18388.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "seventh-trumpet-begins-to-sound-first-vial-a-noisome-grievous-sore-on-those-with-mark-of-beast100d",
+    "ns": "sfo50",
+    "ztp": 17832.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "seventh-trumpet-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 26112.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "seventh-vial-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 26232.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "seventh-vial-into-the-air-a-great-voice-out-of-the-temple-of-heaven-it-is-done-end-of-day301-of-making-wedding-and-his-wife-has-made-herself-ready-begin100d",
+    "ns": "sfo50",
+    "ztp": 17952.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "sixth-vial-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 26212.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "sixth-vial-great-river-euphrates-dries-up-to-prepare-way-of-kings-of-east100d",
+    "ns": "sfo50",
+    "ztp": 17932.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "subset-of-the-revelation-of-the-seven-day-theory-proper-metric",
+    "ns": "sfo50",
+    "ztp": 12000.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "the-end-of-the-seal-judgments",
+    "ns": "sfo50",
+    "ztp": 18011.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-end-of-the-seal-judgments-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 26291.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-end-of-the-vial-judgments-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 26252.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-end-of-the-vial-judgments100d",
+    "ns": "sfo50",
+    "ztp": 17972.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-lamb-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 26040.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-lamb-overcoming-the-ten-horns100d",
+    "ns": "sfo50",
+    "ztp": 17760.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-two-prophets-the-lampstands-war-with-the-beast-end100d",
+    "ns": "sfo50",
+    "ztp": 17830.333333333332,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-two-prophets-the-lampstands-war-with-the-beast-finish100d",
+    "ns": "sfo50",
+    "ztp": 17828.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-two-prophets-the-lampstands-war-with-the-beast-start100d",
+    "ns": "sfo50",
+    "ztp": 17818.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-two-prophets2-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 26098.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-two-prophets3-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 26108.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-two-prophets4-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 26110.333333333332,
+    "coeff": 100.0
+  },
+  {
+    "name": "third-vial-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo50",
+    "ztp": 26152.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "third-vial-the-rivers-and-fountains-of-waters-become-blood100d",
+    "ns": "sfo50",
+    "ztp": 17872.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "threeppnoah-idea-adoption-and-implementation-culminates-with-the-end-of-seven-year-cleansing-of-all-the-land-ie-the-zkp-of-cfh-ie-finish100d",
+    "ns": "sfo50",
+    "ztp": 20908.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "threeppnoah-idea-adoption-and-implementation-three100d",
+    "ns": "sfo50",
+    "ztp": 21720.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "threeppnoah-idea-adoption-and-implementation-two100d",
+    "ns": "sfo50",
+    "ztp": 21360.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-blessed-and-glorious-hope-appearing-even-through-the-great-tribulation-unto-armageddon-and-beyond-amen-note-using-ztp16800",
+    "ns": "sfo51",
+    "ztp": 16800.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "the-blessed-and-glorious-hope-appearing-even-through-the-great-tribulation-unto-armageddon-and-beyond-amen-note-using-ztp16848",
+    "ns": "sfo51",
+    "ztp": 16848.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "the-blessed-and-glorious-hope-appearing-even-through-the-great-tribulation-unto-armageddon-and-beyond-amen-note-using-ztp16853",
+    "ns": "sfo51",
+    "ztp": 16853.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "the-blessed-hope-and-the-glorious-appearing-proper",
+    "ns": "sfo51",
+    "ztp": 16800.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "mystery-of-the-great-spouse-the-global-proper-of-tnl3d-universe-emanating-at-tnldy0",
+    "ns": "sfo52",
+    "ztp": 7200.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "the-advent-of-the-daughter-proper-of-the-fullydeveloped-subset-of-tnl3d-universe-emanating-at-tnldy0",
+    "ns": "sfo52",
+    "ztp": 18360.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "deposit-check-execution-span-the-seven-day-theory-fully-developed-rise-streamline-ie-at-y-equals48pt00",
+    "ns": "sfo53",
+    "ztp": 16800.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "the-rise-from-so-great-a-death-the-seven-day-theory-equipotential-line-against-all-w-equal48pt00",
+    "ns": "sfo53",
+    "ztp": 16800.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "born-of-the-flesh-enter100d-because-of-sfobb0pt00-and-whose-ztp-is-s2-0pt00-on-revott",
+    "ns": "sfo55",
+    "ztp": 14160.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "born-of-the-flesh-leave100d-because-of-sfobb0pt00-and-whose-ztp-is-s2-6pt00-on-revott",
+    "ns": "sfo55",
+    "ztp": 14760.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "cfh-flowing-through-the-creature-which-god-has-made-strong-for-himself-hemboss-sealenter100d-because-of-sfobb0pt00-and-whose-ztp-is-s2-45pt718-on-revott",
+    "ns": "sfo55",
+    "ztp": 18731.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "cfh-flowing-through-the-creature-which-god-has-made-strong-for-himself-hemboss-sealleave100d-because-of-sfobb0pt00-and-whose-ztp-is-s2-49pt318-on-revott",
+    "ns": "sfo55",
+    "ztp": 19091.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "cfh-flowing-through-the-creature-which-god-has-made-strong-for-himself-hemboss-trumpet100d-because-of-sfobb0pt00-and-whose-ztp-is-s2-47pt528-on-revott",
+    "ns": "sfo55",
+    "ztp": 18912.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "cfh-rapturing-through-family-friends-acquaintances-etc-ffae-enter100d-because-of-sfobb0pt00-and-whose-ztp-is-s2-23pt71-on-revott",
+    "ns": "sfo55",
+    "ztp": 16531.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "cfh-rapturing-through-family-friends-acquaintances-etc-ffae-leaveone100d-because-of-sfobb0pt00-and-whose-ztp-is-s2-25pt20-on-revott",
+    "ns": "sfo55",
+    "ztp": 16680.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "cfh-rapturing-through-family-friends-acquaintances-etc-ffae100d-because-of-sfobb0pt00-and-whose-ztp-is-s2-24pt897-on-revott",
+    "ns": "sfo55",
+    "ztp": 16649.7,
+    "coeff": 100.0
+  },
+  {
+    "name": "sealed-a-slave-forever-in-m1800-the-unlimited-company-the-omega-project100d-because-of-sfobbminus18pt00-and-whose-ztp-is-s2minus18pt00-on-revott",
+    "ns": "sfo55",
+    "ztp": 12360.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "sealed-a-slave-forever-in-the-unlimited-company-the-omega-project100d-because-of-sfobbminus18pt00-and-whose-ztp-is-s2minus18pt00-on-revott",
+    "ns": "sfo55",
+    "ztp": 12360.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "shulam-she-that-is-of-me-the-new-nigeria100d-named-because-of-sfobbminus13pt32-and-whose-ztp-is-s2minus28pt80-on-revott",
+    "ns": "sfo55",
+    "ztp": 11280.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-purpose-of-all-things-is-at-hand-ie-birth100d-because-of-sfobbzero-and-whose-ztp-is-s2-82pt80-on-revott",
+    "ns": "sfo55",
+    "ztp": 22440.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-purpose-of-all-things-is-at-hand-ie-circumspection100d-because-of-sfobbzero-and-whose-ztp-is-s2-85pt32-on-revott",
+    "ns": "sfo55",
+    "ztp": 22692.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "your-savings-are-good-you-have-the-right-idea-yg",
+    "ns": "sfo55",
+    "ztp": 17404.0,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "unn-job-accepted-100d",
+    "ns": "sfo56",
+    "ztp": 11467.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "unn-job-accepted-700div6pt9d",
+    "ns": "sfo56",
+    "ztp": 11467.0,
+    "coeff": 101.44927536231883
+  },
+  {
+    "name": "unn-job-accepted-yg",
+    "ns": "sfo56",
+    "ztp": 11467.0,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "unn-job-accepted-yj",
+    "ns": "sfo56",
+    "ztp": 11467.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "unn-job-offered-100d",
+    "ns": "sfo56",
+    "ztp": 11458.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "unn-job-offered-700div6pt9d",
+    "ns": "sfo56",
+    "ztp": 11458.0,
+    "coeff": 101.44927536231883
+  },
+  {
+    "name": "unn-job-offered-yg",
+    "ns": "sfo56",
+    "ztp": 11458.0,
+    "coeff": 365.21739130434787
+  },
+  {
+    "name": "unn-job-offered-yj",
+    "ns": "sfo56",
+    "ztp": 11458.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-0pt00-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 15851.8,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-10pt80-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 17166.58260869565,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-111pt60-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 29437.88695652174,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-12pt41-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 17362.58260869565,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-13pt318-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 17473.121739130434,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-14pt40-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 17604.84347826087,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-18pt41-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 18093.017391304347,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-24pt41-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 18823.452173913043,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-25pt20-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 18919.626086956523,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-25pt928-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 19008.252173913042,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-27pt00-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 19138.75652173913,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-27pt41-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 19188.66956521739,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-27pt718-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 19226.165217391303,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-29pt528-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 19446.513043478262,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-31pt318-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 19664.426086956522,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-31pt50-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 19686.58260869565,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-32pt40-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 19796.147826086955,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-33pt128-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 19884.77391304348,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-33pt58-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 19939.8,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-34pt00-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 19990.930434782607,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-34pt10-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 20003.104347826087,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-34pt918-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 20102.68695652174,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-35pt418-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 20163.55652173913,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-36pt728-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 20323.034782608695,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-37pt928-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 20469.121739130434,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-38pt128-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 20493.46956521739,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-38pt347-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 20520.23100189036,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-38pt518-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 20540.94782608696,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-39pt362-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 20643.734467548835,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-39pt60-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 20672.66956521739,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-39pt88-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 20706.75652173913,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-40pt18-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 20743.278260869567,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-42pt28-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 20998.930434782607,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-50pt40-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 21987.452173913043,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-52pt92-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 22294.234782608695,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-56pt52-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 22732.49565217391,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-60pt12-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 23170.75652173913,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-63pt72-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 23609.017391304347,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-67pt32-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 24047.278260869567,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-67pt48-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 24066.75652173913,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-67pt68-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 24091.104347826087,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-6pt41-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 16632.147826086955,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-70pt92-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 24485.539130434783,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-72pt00-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 24617.017391304347,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-74pt52-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 24923.8,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-75pt60-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 25055.278260869567,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-78pt12-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 25362.06086956522,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-81pt72-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 25800.321739130435,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-82pt80-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 25931.8,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-85pt32-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 26238.58260869565,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-minus10pt39-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 14586.93043478261,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-minus147pt60-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 2115.104347826087,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-minus18pt00-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 13660.495652173913,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-minus19pt60-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 13465.713043478261,
+    "coeff": 7.0
+  },
+  {
+    "name": "seventy-weeks-of-range-minus19pt60-to-75pt60-is-at-minus6pt668-of-ten-days-tribulation-7d",
+    "ns": "sfo01",
+    "ztp": 15040.04347826087,
+    "coeff": 7.0
+  },
+  {
+    "name": "the-five-terawatt-project-and-the-intelligent-defence-body5tw-tidb-the-elusive-sixty-nine-week-singularity7d-design-point",
+    "ns": "sfo01",
+    "ztp": 18772.8,
+    "coeff": 7.0
+  },
+  {
+    "name": "the-five-terawatt-project-and-the-intelligent-defence-body5tw-tidb-the-elusive-sixty-nine-week-singularity7d-exit",
+    "ns": "sfo01",
+    "ztp": 18892.8,
+    "coeff": 7.0
+  },
+  {
+    "name": "the-five-terawatt-project-and-the-intelligent-defence-body5tw-tidb-the-elusive-sixty-nine-week-singularity7d-forty-days-prior-entry",
+    "ns": "sfo01",
+    "ztp": 18732.8,
+    "coeff": 7.0
+  },
+  {
+    "name": "the-five-terawatt-project-and-the-intelligent-defence-body5tw-tidb-the-elusive-sixty-nine-week-singularity7d-twenty-days-after-posterior-exit-for-total180day-ztp-interval",
+    "ns": "sfo01",
+    "ztp": 18912.8,
+    "coeff": 7.0
+  },
+  {
+    "name": "tss-the-five-terawatt-project-and-the-intelligent-defence-body5tw-tidb-the-elusive-sixty-nine-week-singularity-predestination-unto-the-immanence-in-nigeria7d",
+    "ns": "sfo01",
+    "ztp": 18991.304347826088,
+    "coeff": 7.0
+  },
+  {
+    "name": "tss-the-five-terawatt-project-and-the-intelligent-defence-body5tw-tidb-the-elusive-sixty-nine-week-singularity7d-on-paper-cfhthruhembossztpdesignpoint1",
+    "ns": "sfo01",
+    "ztp": 18873.521739130436,
+    "coeff": 7.0
+  },
+  {
+    "name": "phdp-oage40yj-nkechichioma-osoka-imama1st-eyes-on-her1-fullchannel1000ddiv7",
+    "ns": "sfo02",
+    "ztp": 14623.602484472052,
+    "coeff": 142.85714285714286
+  },
+  {
+    "name": "phdp-oage40yj-nkechichioma-osoka-imama1st-eyes-on-her2-fullchannel1000ddiv7",
+    "ns": "sfo02",
+    "ztp": 14631.428571428572,
+    "coeff": 142.85714285714286
+  },
+  {
+    "name": "eleven-curtains-and-also-the-gentile-at-w-equals-0pt00-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 10440.0,
+    "coeff": 144.92753623188406
+  },
+  {
+    "name": "eleven-curtains-and-also-the-gentile-at-w-equals-18pt29-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 12269.0,
+    "coeff": 144.92753623188406
+  },
+  {
+    "name": "eleven-curtains-and-also-the-gentile-at-w-equals-18pt39-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 12279.0,
+    "coeff": 144.92753623188406
+  },
+  {
+    "name": "eleven-curtains-and-also-the-gentile-at-w-equals-21pt91-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 12631.304347826086,
+    "coeff": 144.92753623188406
+  },
+  {
+    "name": "eleven-curtains-and-also-the-gentile-at-w-equals-34pt918-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 13931.8,
+    "coeff": 144.92753623188406
+  },
+  {
+    "name": "eleven-curtains-and-also-the-gentile-at-w-equals-35pt418-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 13981.8,
+    "coeff": 144.92753623188406
+  },
+  {
+    "name": "eleven-curtains-and-also-the-gentile-at-w-equals-37pt928-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 14232.8,
+    "coeff": 144.92753623188406
+  },
+  {
+    "name": "eleven-curtains-and-also-the-gentile-at-w-equals-38pt347-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 14274.782608695652,
+    "coeff": 144.92753623188406
+  },
+  {
+    "name": "eleven-curtains-and-also-the-gentile-at-w-equals-39pt88-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 14428.0,
+    "coeff": 144.92753623188406
+  },
+  {
+    "name": "eleven-curtains-and-also-the-gentile-at-w-equals-40pt18-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 14457.391304347826,
+    "coeff": 144.92753623188406
+  },
+  {
+    "name": "eleven-curtains-and-also-the-gentile-at-w-equals-42pt28-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 14668.0,
+    "coeff": 144.92753623188406
+  },
+  {
+    "name": "eleven-curtains-and-also-the-gentile-at-w-equals-minus18pt00-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv6pt9",
+    "ns": "sfo06",
+    "ztp": 8640.0,
+    "coeff": 144.92753623188406
+  },
+  {
+    "name": "eleven-curtains-of-the-shulammite-dark-night-of-the-prophets-soul-dnps-and-also-the-gentile-eigen-proper-16900ddiv69",
+    "ns": "sfo06",
+    "ztp": 10440.0,
+    "coeff": 244.92753623188406
+  },
+  {
+    "name": "eleven-curtains-of-the-shulammite-dark-night-of-the-prophets-soul-dnps-the-jew-first-eigen-proper-1700ddiv7",
+    "ns": "sfo06",
+    "ztp": 10611.42857142857,
+    "coeff": 242.85714285714286
+  },
+  {
+    "name": "eleven-curtains-the-jew-first-at-w-equals-0pt00-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 10611.42857142857,
+    "coeff": 142.85714285714286
+  },
+  {
+    "name": "eleven-curtains-the-jew-first-at-w-equals-18pt29-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 12440.42857142857,
+    "coeff": 142.85714285714286
+  },
+  {
+    "name": "eleven-curtains-the-jew-first-at-w-equals-18pt39-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 12450.42857142857,
+    "coeff": 142.85714285714286
+  },
+  {
+    "name": "eleven-curtains-the-jew-first-at-w-equals-21pt91-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 12802.732919254659,
+    "coeff": 142.85714285714286
+  },
+  {
+    "name": "eleven-curtains-the-jew-first-at-w-equals-34pt918-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 14103.228571428572,
+    "coeff": 142.85714285714286
+  },
+  {
+    "name": "eleven-curtains-the-jew-first-at-w-equals-35pt418-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 14153.228571428572,
+    "coeff": 142.85714285714286
+  },
+  {
+    "name": "eleven-curtains-the-jew-first-at-w-equals-37pt928-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 14404.228571428572,
+    "coeff": 142.85714285714286
+  },
+  {
+    "name": "eleven-curtains-the-jew-first-at-w-equals-38pt347-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 14446.211180124224,
+    "coeff": 142.85714285714286
+  },
+  {
+    "name": "eleven-curtains-the-jew-first-at-w-equals-39pt88-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 14599.42857142857,
+    "coeff": 142.85714285714286
+  },
+  {
+    "name": "eleven-curtains-the-jew-first-at-w-equals-40pt18-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 14628.819875776397,
+    "coeff": 142.85714285714286
+  },
+  {
+    "name": "eleven-curtains-the-jew-first-at-w-equals-42pt28-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 14839.42857142857,
+    "coeff": 142.85714285714286
+  },
+  {
+    "name": "eleven-curtains-the-jew-first-at-w-equals-minus18pt00-which-is-one-to-one-with-value-on-gogiddot100d-1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 8811.42857142857,
+    "coeff": 142.85714285714286
+  },
+  {
+    "name": "shulam-she-that-is-of-me-the-new-nigeria100d",
+    "ns": "sfo06",
+    "ztp": 11280.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "shulam-the-queen-sdq1000ddiv7",
+    "ns": "sfo06",
+    "ztp": 10611.42857142857,
+    "coeff": 142.85714285714286
+  },
+  {
+    "name": "ten-days-tribulation-10dt-eigen-proper-equation-2961ddiv23",
+    "ns": "sfo06",
+    "ztp": 15851.8,
+    "coeff": 128.7391304347826
+  },
+  {
+    "name": "and-arms-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 23559.217142857142,
+    "coeff": 100.0
+  },
+  {
+    "name": "and-arms-shall-stand-on-his-part100d",
+    "ns": "sfo08",
+    "ztp": 15279.217142857144,
+    "coeff": 100.0
+  },
+  {
+    "name": "he-shall-confirm-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo08",
+    "ztp": 23594.702857142856,
+    "coeff": 100.0
+  },
+  {
+    "name": "he-shall-confirm-the-covenant-with-many-for-one-week-start100d",
+    "ns": "sfo08",
+    "ztp": 15314.702857142856,
+    "coeff": 100.0
+  },
+  {
+    "name": "within-few-days-raiser-of-taxes-is-destroyed-not-in-battle-nor-in-anger100d",
+    "ns": "sfo08",
+    "ztp": 12520.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "tnl1000",
+    "ns": "sfo10",
+    "ztp": 0.0,
+    "coeff": 1000.0
+  },
+  {
+    "name": "ztnl",
+    "ns": "sfo10",
+    "ztp": 0.0,
+    "coeff": 1.0
+  },
+  {
+    "name": "cfh-flowing-through-the-creature-which-god-has-made-strong-for-himself-heavily-encrypted-machine-biometric-system-s-hemboss-setting1-100d",
+    "ns": "sfo11",
+    "ztp": 18827.704347826086,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-creature-which-god-has-made-strong-for-himself-hemboss-enter-yg",
+    "ns": "sfo11",
+    "ztp": 18772.5,
+    "coeff": 365.2173913043478
+  },
+  {
+    "name": "the-creature-which-god-has-made-strong-for-himself-hemboss-enter100d",
+    "ns": "sfo11",
+    "ztp": 18772.5,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-creature-which-god-has-made-strong-for-himself-hemboss-enter360d",
+    "ns": "sfo11",
+    "ztp": 18772.5,
+    "coeff": 360.0
+  },
+  {
+    "name": "the-creature-which-god-has-made-strong-for-himself-hemboss-leave-yg",
+    "ns": "sfo11",
+    "ztp": 18892.5,
+    "coeff": 365.2173913043478
+  },
+  {
+    "name": "the-creature-which-god-has-made-strong-for-himself-hemboss-leave100d",
+    "ns": "sfo11",
+    "ztp": 18892.5,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-creature-which-god-has-made-strong-for-himself-hemboss-leave360d",
+    "ns": "sfo11",
+    "ztp": 18892.5,
+    "coeff": 360.0
+  },
+  {
+    "name": "the-creature-which-god-has-made-strong-for-himself-hemboss-yg",
+    "ns": "sfo11",
+    "ztp": 18793.8,
+    "coeff": 365.2173913043478
+  },
+  {
+    "name": "the-creature-which-god-has-made-strong-for-himself-hemboss100d",
+    "ns": "sfo11",
+    "ztp": 18793.8,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-creature-which-god-has-made-strong-for-himself-hemboss360d",
+    "ns": "sfo11",
+    "ztp": 18793.8,
+    "coeff": 360.0
+  },
+  {
+    "name": "ten-days-tribulation-unto-armageddon2800ddiv23",
+    "ns": "sfo12",
+    "ztp": 16282.6,
+    "coeff": 121.73913043478261
+  },
+  {
+    "name": "ten-days-tribulation2800ddiv23",
+    "ns": "sfo12",
+    "ztp": 15850.434782608696,
+    "coeff": 121.73913043478261
+  },
+  {
+    "name": "part1-embryo-genesis-seedling-plant-photosynthesis360d",
+    "ns": "sfo14",
+    "ztp": 15581.3,
+    "coeff": 360.0
+  },
+  {
+    "name": "part2-embryo-genesis-seedling-plant-photosynthesis240d",
+    "ns": "sfo14",
+    "ztp": 18731.8,
+    "coeff": 240.0
+  },
+  {
+    "name": "after-israel-comes-up-out-of-egypt-and-elders-overlive-joshua-at-ztp-ca-m1236496tnldy-unto-2nd-advent-of-the-lord-jesus-christ-36000d",
+    "ns": "sfo18",
+    "ztp": -1236496.5217391304,
+    "coeff": 36000.0
+  },
+  {
+    "name": "biomass-substrate-reconstitution-preprogram700div6pt9",
+    "ns": "sfo21",
+    "ztp": 9760.869565217392,
+    "coeff": 101.44927536231884
+  },
+  {
+    "name": "judgment-turns-in-favour-of-the-broken-stones-5561pt-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo23",
+    "ztp": 28001.739130434784,
+    "coeff": 100.0
+  },
+  {
+    "name": "judgment-turns-in-favour-of-the-broken-stones-5587-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo23",
+    "ztp": 28027.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "judgment-turns-in-favour-of-the-broken-stones-set-at-naught-by-that-number-and-by-that-troop100d-revott-s2-at-5561pt",
+    "ns": "sfo23",
+    "ztp": 19721.739130434784,
+    "coeff": 100.0
+  },
+  {
+    "name": "judgment-turns-in-favour-of-the-broken-stones-set-at-naught-by-that-number-and-by-that-troop100d-revott-s2-at-5587",
+    "ns": "sfo23",
+    "ztp": 19747.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-core-completion-matrix1-for-alien-corridor-creation-knowledge-is-increased-iron-is-not-mingled-but-can-react-at-singular-heat-with-miry-clay240d",
+    "ns": "sfo23",
+    "ztp": 10800.0,
+    "coeff": 240.0
+  },
+  {
+    "name": "the-core-completion-matrix2-for-alien-corridor-creation-knowledge-is-increased-iron-is-not-mingled-but-can-react-at-singular-heat-with-miry-clay240d",
+    "ns": "sfo23",
+    "ztp": 10853.0,
+    "coeff": 240.0
+  },
+  {
+    "name": "the-trial-ztp12000-a-minus-half-six-and-then-seventh-day-depiction-entering-into-a360-day-frame1-of-a-time-times-and-half-a-time-not-in-standard-form2400d",
+    "ns": "sfo23",
+    "ztp": 12000.0,
+    "coeff": 2400.0
+  },
+  {
+    "name": "days-i-month31028-pattern",
+    "ns": "sfo24",
+    "ztp": -11316.98913,
+    "coeff": 1217.391304347826
+  },
+  {
+    "name": "usa-dem-rev-sit-on-brit-emp",
+    "ns": "sfo24",
+    "ztp": -57542.0,
+    "coeff": 1014.4927536231884
+  },
+  {
+    "name": "usa-sit-tenyg",
+    "ns": "sfo24",
+    "ztp": -70611.45652,
+    "coeff": 3652.1739130434785
+  },
+  {
+    "name": "tss-the-five-terawatt-project-and-the-intelligent-defence-body5tw-tidb-the-elusive-sixty-nine-week-singularity7d-on-paper-barebones-darkly-through-a-glass-prerecord-of-facebook-ruminations-on-the-order-for-the-rise-of-the-7th-king-cfhthruhembossztp18827pt81div115setting1",
+    "ns": "sfo26",
+    "ztp": 18827.704347826086,
+    "coeff": 7.0
+  },
+  {
+    "name": "tss-the-five-terawatt-project-and-the-intelligent-defence-body5tw-tidb-the-elusive-sixty-nine-week-singularity7d-on-paper-present-at-olokoro-for-the-loving-celebration-of-life-and-interrment-of-albert-onyenuloya-uhiara-cfhthruhembossztp18794pt8div10setting0",
+    "ns": "sfo26",
+    "ztp": 18794.8,
+    "coeff": 7.0
+  },
+  {
+    "name": "revott-s2-15pt341-360d-implies-ztp-at-definitively-linking-the-success-of-noah-atdf-to-fall-of-7th-and-8th-kings-implies-1st-year-of-king-david-reign-100d",
+    "ns": "sfo28",
+    "ztp": 19682.77542857143,
+    "coeff": 100.0
+  },
+  {
+    "name": "revott-s2-15pt367-360d-implies-ztp-at-20231007-realtime-50th-yom-kippur-anniversary-attack-on-israel-by-hamas-implies-beginnings-of-king-david-reign-in-jerusalem-100d",
+    "ns": "sfo28",
+    "ztp": 19692.239130434784,
+    "coeff": 100.0
+  },
+  {
+    "name": "revott-s2-15pt449-360d-implies-ztp-at-54pt00-tnlyg-ygbday-castigliano-failure-singularity-implies-1st-year-coreign-david-and-solomon-100d",
+    "ns": "sfo28",
+    "ztp": 19721.739130434784,
+    "coeff": 100.0
+  },
+  {
+    "name": "the-robin-hood-protocol-ahz-ahi-100d",
+    "ns": "sfo28",
+    "ztp": 19638.260869565216,
+    "coeff": 100.0
+  },
+  {
+    "name": "deliverance3-ztp16716pt52-jesus-christ-is-well-on-about-the-business-of-his-father-yj",
+    "ns": "sfo30",
+    "ztp": 16716.521739130436,
+    "coeff": 360.0
+  },
+  {
+    "name": "lives-of-the-rest-of-the-beasts-prolonged-a-season-and-a-time-7669days-their-end-is-literally-fulfilled-here-higgaion-selah-100d",
+    "ns": "sfo32",
+    "ztp": 21829.565217391304,
+    "coeff": 100.0
+  },
+  {
+    "name": "lives-of-the-rest-of-the-beasts-prolonged-a-season-and-a-time-7669days-their-end-is-literally-fulfilled-here-higgaion-selah-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo32",
+    "ztp": 30109.565217391304,
+    "coeff": 100.0
+  },
+  {
+    "name": "alien-corridor-creation-m2333pt3333-gogid-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo33",
+    "ztp": 20106.666666666668,
+    "coeff": 100.0
+  },
+  {
+    "name": "alien-corridor-creation100d-ztp11826pt6667",
+    "ns": "sfo33",
+    "ztp": 11826.666666666666,
+    "coeff": 100.0
+  },
+  {
+    "name": "dark-night2-m2107-gogid-etc-with-bb-82pt80-ie-on-gogid-placed-as-ztp-100d",
+    "ns": "sfo33",
+    "ztp": 20332.17391304348,
+    "coeff": 100.0
+  },
+  {
+    "name": "dark-nignt-of-the-prophets-soul-yg-ztp12060",
+    "ns": "sfo33",
+    "ztp": 12060.0,
+    "coeff": 365.2173913043478
+  },
+  {
+    "name": "dark-nignt-of-the-prophets-soul100d-ztp12052pt17",
+    "ns": "sfo33",
+    "ztp": 12052.173913043478,
+    "coeff": 100.0
+  },
+  {
+    "name": "multiple-detonations-and-destructions-at-great-babylon-viscerally-shock-many-generational-slaves-and-servants-into-emancipation-from-among-the-chaos-attendant-at-her-destruction-360d",
+    "ns": "sfo36",
+    "ztp": 20477.391304347828,
+    "coeff": 360.0
+  },
+  {
+    "name": "seventh-king-uses-the-key-of-thermonuclear-war-to-open-the-bottomless-pit-and-let-out-the-ten-horns-mystery-babylon-a-raiser-of-taxes-the-eighth-king-etc-35d",
+    "ns": "sfo36",
+    "ztp": 19323.91304347826,
+    "coeff": 35.0
+  },
+  {
+    "name": "days-i",
+    "ns": "sfo37",
+    "ztp": -2946061.739,
+    "coeff": 121739.1304347826
+  },
+  {
+    "name": "days-ii",
+    "ns": "sfo37",
+    "ztp": -3616774795.0,
+    "coeff": 148204158.7901701
+  },
+  {
+    "name": "days-iii",
+    "ns": "sfo37",
+    "ztp": -4403060450000.0,
+    "coeff": 180422454179.3375
+  },
+  {
+    "name": "days-iv",
+    "ns": "sfo37",
+    "ztp": -5360247535000000.0,
+    "coeff": 219644726827019.56
+  },
+  {
+    "name": "days-one",
+    "ns": "sfo37",
+    "ztp": 22440.0,
+    "coeff": 100.0
+  },
+  {
+    "name": "days-v",
+    "ns": "sfo37",
+    "ztp": -6.525518738e+18,
+    "coeff": 2.673935804850673e+17
+  },
+  {
+    "name": "birth-of-the-fig-tree-minusninezerofour-yj",
+    "ns": "sfo38",
+    "ztp": -904.0,
+    "coeff": 360.0
+  },
+  {
+    "name": "birth-of-the-fig-tree-ztp-minus879tnldy-end-of-the-six-day-war-yj",
+    "ns": "sfo38",
+    "ztp": -878.9347826086956,
+    "coeff": 360.0
+  },
+  {
+    "name": "birth-of-the-fig-tree-ztp-minus884tnldy-start-of-the-six-day-war-yj",
+    "ns": "sfo38",
+    "ztp": -883.9347826086956,
+    "coeff": 360.0
+  },
+  {
+    "name": "birth-of-the-fig-tree-ztp-minus898tnldy-egypt-closes-the-straits-of-tiran-yj",
+    "ns": "sfo38",
+    "ztp": -897.9347826086956,
+    "coeff": 360.0
+  },
+  {
+    "name": "birth-of-the-fig-tree-ztp-minus904tnldy-egypt-begins-amassing-troops-on-israels-borders-yj",
+    "ns": "sfo38",
+    "ztp": -903.9347826086956,
+    "coeff": 360.0
+  },
+  {
+    "name": "the-redemption-of-a-people-scattered-and-peeled-terrible-from-their-beginning-hitherto-101dys31div69",
+    "ns": "sfo38",
+    "ztp": 10796.521739130434,
+    "coeff": 101.44927536231884
+  },
+  {
+    "name": "a-holy-firstborn-from-the-matrix-reckoning-from-isaac-yg",
+    "ns": "sfo41",
+    "ztp": 6797.634782608696,
+    "coeff": 365.2173913043478
+  },
+  {
+    "name": "a-holy-firstborn1-from-the-matrix-yg",
+    "ns": "sfo41",
+    "ztp": 6208.695652173913,
+    "coeff": 365.2173913043478
+  },
+  {
+    "name": "a-holy-firstborn2-from-the-matrix-yg",
+    "ns": "sfo41",
+    "ztp": 6573.913043478261,
+    "coeff": 365.2173913043478
+  },
+  {
+    "name": "a-holy-firstborn3-from-the-matrix-my-darling-beloved-soul-yg",
+    "ns": "sfo41",
+    "ztp": 6656.521739130435,
+    "coeff": 365.2173913043478
+  },
+  {
+    "name": "the-shulammite-sdq-global-dedicated-to-juliet-koji-iwu-jki-ie-proper-ie-eigen-diagonalization-metric1700ddiv7",
+    "ns": "sfo44",
+    "ztp": 10611.42857142857,
+    "coeff": 242.85714285714286
+  },
+  {
+    "name": "cfh-rapturing-through-family-friends-acquaintances-etc-ffae-leavetwo100d-because-of-sfobb0pt00-and-whose-ztp-is-s2-25pt56-on-revott",
+    "ns": "sfo55",
+    "ztp": 16716.521739130436,
+    "coeff": 100.0
+  },
+  {
+    "name": "dark-nignt-of-the-prophets-soul100d-named-because-of-sfobbzero-and-whose-ztp-is-s2minus21pt07-on-revott",
+    "ns": "sfo55",
+    "ztp": 12052.173913043478,
+    "coeff": 100.0
+  },
+  {
+    "name": "exe-tpdp-cognitive-hertz-frequency",
+    "ns": "sfo55",
+    "ztp": -25822.368553426928,
+    "coeff": 57855469571780.93
+  }
+]
