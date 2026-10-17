@@ -7625,7 +7625,7 @@ function pendingProjections(store,y){ return store.projections.filter(p=>!p.reso
 // one JSON Feed 1.1 snapshot beside the page (a static page cannot read other sites' feeds).
 const FEED_SNAPSHOT="feeds/all.json";
 const FEED_DOMAINS=[
-  ["world","World"],["middle-east","Middle East"],["russia-eurasia","Russia & Eurasia"],["asia","Asia"],
+  ["world","World"],["middle-east","Middle East"],["russia-eurasia","Russia & Eurasia"],["balkans","Balkans"],["asia","Asia"],
   ["africa","Africa & Nigeria"],["geopolitical-analysis","Geopolitical analysis"],["defense-nuclear","Defence & nuclear"],
   ["economic","Economic"],["religious","Religious"],["science-technology","Science & technology"],
 ];

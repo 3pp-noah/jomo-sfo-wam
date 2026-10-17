@@ -129,11 +129,12 @@ def clip(text: str, n: int) -> str:
 def source_url(source: dict) -> str:
     """A catalogue entry has either the publisher's own "url", or "google": a site path for a
     Google News search (for publishers with no feed, or one that refuses scripts). "{year}" in
-    the path is the current year; "days" bounds the search; "terms" narrows it."""
+    the path is the current year; "days" bounds the search; "terms" narrows it. An empty "google"
+    searches all of Google News for "terms" alone (the name watches)."""
     if "url" in source:
         return source["url"]
     site = source["google"].replace("{year}", str(utc_now().year))
-    q = f"when:{source.get('days', 2)}d site:{site}" + (f" {source['terms']}" if source.get("terms") else "")
+    q = f"when:{source.get('days', 2)}d" + (f" site:{site}" if site else "") + (f" {source['terms']}" if source.get("terms") else "")
     return "https://news.google.com/rss/search?" + urllib.parse.urlencode({"q": q, "hl": "en-US", "gl": "US", "ceid": "US:en"})
 
 

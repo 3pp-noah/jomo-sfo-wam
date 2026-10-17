@@ -43,7 +43,7 @@ so the feeds are read on the author's computer and published beside the page as 
 
 | Part | Role |
 |---|---|
-| `feeds/catalogue.json` | the sources: 75, in ten domains — world, Middle East, Russia & Eurasia, Asia, Africa & Nigeria, geopolitical analysis, defence & nuclear, economic, religious, science & technology — each with its perspective |
+| `feeds/catalogue.json` | the sources: 98, in eleven domains — world, Middle East, Russia & Eurasia, Balkans (Serbia, Bosnia and Herzegovina, Kosovo, Croatia, North Macedonia, Montenegro, Albania, plus Google News watches on their leaders' names), Asia, Africa & Nigeria, geopolitical analysis, defence & nuclear, economic, religious, science & technology — each with its perspective |
 | `feeds/build.py` | reads each publisher's RSS 2.0, RSS 1.0/RDF or Atom feed (standard library only), repairs the common faults, and writes `feeds/all.json` in both `public/` and `docs/` |
 | `feeds/refresh.sh [--push]` | rebuilds, commits only the snapshot, and with `--push` publishes it |
 | FEEDS tab | reads `feeds/all.json`: the latest headlines across the selected domains, or source by source, with the snapshot's age |
