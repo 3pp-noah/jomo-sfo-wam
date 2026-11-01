@@ -1,3 +1,4 @@
+import "./nsukka-yg-clock.js"; // sets globalThis.NsukkaYg before this module runs
 import { useState, useEffect, useMemo, useCallback, useRef, createContext, useContext } from "react";
 // ── SFO-WAM Engine (Vite project: import from separate file) ──
 import SFOWAMEngine from './sfo_wam_engine';
@@ -76,11 +77,10 @@ const THEMES = {
 export const ThemeContext = createContext(THEMES.coolSlate);
 export function useTheme() { return useContext(ThemeContext); }
 
-// ── TNLDY EPOCH & CONSTANTS ──
-const EPOCH = 4703008911.6524158066013043478202; // Calibrated TNLDY epoch constant
+// ── TNLDY CONSTANTS ──
 const MSD = 86400000;
-const YJ = 360; // Julian year coefficient
-const YG = 17640 / 48.3; // Gregorian year coefficient ≈ 365.2174
+const YJ = 360; // Jewish sacerdotal year, days
+const YG = 17640 / 48.3; // Yg, the Gentile sacerdotal year ≈ 365.2174 days: the engine's own year, not the Gregorian
 const SFO22_MASTER = 2100.0; // sfo22 master constant ZTP
 
 // ── GPBS STEADY-STATE DEVICES ──
@@ -544,11 +544,14 @@ TASK:
 
 
 // ── TNLDY TIME AUTHORITY ──
+// TNLDY read from Nsukka on the Yg calendar (./nsukka-yg-clock.js): Yg laid on Nsukka's calendar from
+// 1 December 00:00 and recalibrated every Yg year. A TNLDY passed over at a recalibration has no date.
+const NsukkaYg = globalThis.NsukkaYg;
 function computeTNLDY() {
-  return (EPOCH + Date.now()) / MSD;
+  return NsukkaYg.zOf(Date.now()).z;
 }
 
-function tnldyToMs(z) { return z * MSD - EPOCH; }
+function tnldyToMs(z) { try { const t = NsukkaYg.instantsOf(z); return t.length ? t[0] : NaN; } catch { return NaN; } }
 
 function tnldyToDate(z) {
   return new Date(tnldyToMs(z));

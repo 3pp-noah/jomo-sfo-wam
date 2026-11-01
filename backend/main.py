@@ -24,6 +24,7 @@ except ImportError as exc:  # pragma: no cover - startup diagnostic
         "FastAPI runtime dependencies are missing. Run: python -m pip install -r backend/requirements.txt"
     ) from exc
 
+from backend.nsukka_yg_clock import z_of
 from backend.research_agent import (
     GenerateDigestRequest,
     HumanReviewItemRequest,
@@ -43,8 +44,6 @@ GRAPH_SOURCE_PATH = PROJECT_ROOT / "src" / "sfo_wam_engine.jsx"
 DB_PATH = PROJECT_ROOT / "backend" / "runtime_state" / "jomo_causal_kernel.sqlite3"
 LOCAL_ENV_PATH = PROJECT_ROOT / ".env.local"
 
-EPOCH = 4703008911.6524158066013043478202
-MSD = 86400000
 DEFAULT_MODEL = "claude-sonnet-4-20250514"
 DEFAULT_SYSTEM = (
     "You are JOMO/Claude operating as a bounded digest and targeting instrument for the "
@@ -72,7 +71,8 @@ def now_ts() -> float:
 
 
 def tnldy_now() -> float:
-    return (EPOCH + int(time.time() * 1000)) / MSD
+    # TNLDY now, read from Nsukka on the Yg calendar (the engine's year, 17640/48.3 days), recalibrated every Yg year.
+    return float(z_of(int(time.time() * 1000)))
 
 
 def agent_y(z: float, coeff: float, ztp: float) -> float:

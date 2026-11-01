@@ -327,6 +327,7 @@ except ImportError as exc:  # pragma: no cover - startup diagnostic
         "FastAPI runtime dependencies are missing. Run: python -m pip install -r backend/requirements.txt"
     ) from exc
 
+from backend.nsukka_yg_clock import z_of
 from backend.research_agent import (
     GenerateDigestRequest,
     HumanReviewItemRequest,
@@ -346,8 +347,6 @@ GRAPH_SOURCE_PATH = PROJECT_ROOT / "src" / "sfo_wam_engine.jsx"
 DB_PATH = PROJECT_ROOT / "backend" / "runtime_state" / "jomo_causal_kernel.sqlite3"
 LOCAL_ENV_PATH = PROJECT_ROOT / ".env.local"
 
-EPOCH = 4703008911.6524158066013043478202
-MSD = 86400000
 DEFAULT_MODEL = "claude-sonnet-4-20250514"
 DEFAULT_SYSTEM = (
     "You are JOMO/Claude operating as a bounded digest and targeting instrument for the "
@@ -375,7 +374,8 @@ def now_ts() -> float:
 
 
 def tnldy_now() -> float:
-    return (EPOCH + int(time.time() * 1000)) / MSD
+    # TNLDY now, read from Nsukka on the Yg calendar (the engine's year, 17640/48.3 days), recalibrated every Yg year.
+    return float(z_of(int(time.time() * 1000)))
 
 
 def agent_y(z: float, coeff: float, ztp: float) -> float:
@@ -2745,7 +2745,83 @@ class ResearchAgent:
 
     def generate_digest(self, req: GenerateDigestRequest) -> dict[str, Any]:
         return self.digest_writer.generate(req, self.status())
-`,A=`[
+`,A=`"""TNLDY read from Nsukka: the Yg year laid directly onto the Gregorian calendar, recalibrated every Yg year.
+
+    Z(t) = (yG - 1969)·Yg - 340 + (t - S(yG)) / day
+
+    Yg     = 17640/48.3 = 8400/23 days
+    yG     the Yg year holding t: Nsukka's civil year, plus one from 1 December
+    S(yG)  1 December of year yG - 1, 00:00:00 Nsukka time (WAT, UTC+01:00 since 1919, no daylight saving)
+
+The MDQNM engine's own reckoning (sfo10, miscellaneous_streamlines): decimal year = Z·48.3/17640 + 5849 + 391/420
+- 3880, so Z = 0 is yearday 340 of Yg 1969, and yearday(Z, yG) = Z + 340 + (1969 - yG)·Yg; its month table starts
+the year in December. A yearday is counted in real days from S(yG) and lands on whatever Gregorian day it falls
+on, 29 February included. Each Yg year occupies the 365 or 366 civil days from one 1 December to the next, so at
+every S(yG) the clock is recalibrated: after 365 days the last 5/23 day of the old year's Z is passed over (no
+instant has it); after 366 days the first 18/23 day of the new year's Z occurs twice.
+"""
+from __future__ import annotations
+
+import datetime as dt
+from fractions import Fraction
+
+YG = Fraction(17640) / Fraction("48.3")
+DAY_MS = 86_400_000
+WAT = dt.timezone(dt.timedelta(hours=1), "WAT")
+UNIX = dt.datetime(1970, 1, 1, tzinfo=dt.timezone.utc)
+
+
+def ms_of(t: dt.datetime) -> int:
+    """Epoch milliseconds of an aware datetime (sub-millisecond part truncated toward the past)."""
+    d = t - UNIX
+    return (d.days * 86400 + d.seconds) * 1000 + d.microseconds // 1000
+
+
+def start_ms(yg: int) -> int:
+    """S(yG): 1 December of yG - 1, 00:00 Nsukka, in epoch milliseconds."""
+    return ms_of(dt.datetime(yg - 1, 12, 1, tzinfo=WAT))
+
+
+def yg_of(ms: int) -> int:
+    n = (UNIX + dt.timedelta(milliseconds=ms)).astimezone(WAT)
+    return n.year + (1 if n.month == 12 else 0)
+
+
+def z_start(yg: int) -> Fraction:
+    return (yg - 1969) * YG - 340
+
+
+def z_of(ms: int) -> Fraction:
+    """TNLDY of the instant \`ms\` (epoch milliseconds), exactly."""
+    yg = yg_of(ms)
+    return z_start(yg) + Fraction(ms - start_ms(yg), DAY_MS)
+
+
+def instants(z) -> list[Fraction]:
+    """Every instant (epoch ms, exact) at which the clock reads Z: none in a passed-over tail, two in a doubled head."""
+    z = Fraction(z)
+    guess = 1969 + int((z + 340) // YG)
+    out = []
+    for yg in (guess - 1, guess, guess + 1):
+        yd = z - z_start(yg)
+        if 0 <= yd < Fraction(start_ms(yg + 1) - start_ms(yg), DAY_MS):
+            out.append(start_ms(yg) + yd * DAY_MS)
+    return sorted(out)
+
+
+def nsukka(ms) -> str:
+    """Nsukka wall-clock time of an instant, to the millisecond: 'YYYY-MM-DD HH:MM:SS.mmm'."""
+    whole = int(Fraction(ms) // 1) if not isinstance(ms, int) else ms
+    frac = Fraction(ms) - whole
+    whole += 1 if frac >= Fraction(1, 2) else 0
+    n = (UNIX + dt.timedelta(milliseconds=whole)).astimezone(WAT)
+    return n.strftime("%Y-%m-%d %H:%M:%S.") + f"{n.microsecond // 1000:03d}"
+
+
+def reading(ms: int) -> dict:
+    yg = yg_of(ms)
+    return {"nsukka": nsukka(ms), "yg": yg, "yearday": Fraction(ms - start_ms(yg), DAY_MS), "z": z_of(ms)}
+`,N=`[
   {
     "name": "10p8",
     "ns": "sfo00",
@@ -7487,7 +7563,8 @@ class ResearchAgent:
     "ztp": -25822.368553426928,
     "coeff": 57855469571780.93
   }
-]`,N=`import { useState, useEffect, useCallback, useMemo, useRef } from "react";
+]`,R=`import "./nsukka-yg-clock.js"; // sets globalThis.NsukkaYg before this module runs
+import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import { useTheme } from "./App";
 
 // ═══════════════════════════════════════════════════════════════════
@@ -7497,12 +7574,14 @@ import { useTheme } from "./App";
 // Parameterised by (A, C) for any agent in the 759-agent JOMO constellation
 // ═══════════════════════════════════════════════════════════════════
 
-// ── TNLDY TIME AUTHORITY ──
-const EPOCH = 4703008911.6524158066013043478202;
+// ── TNLDY TIME AUTHORITY: read from Nsukka on the Yg calendar (./nsukka-yg-clock.js) ──
+// Yg = 17640/48.3 days, the engine's own year, laid on Nsukka's calendar from 1 December 00:00 and
+// recalibrated every Yg year. A TNLDY passed over at a recalibration has no date ("—").
+const Yg = globalThis.NsukkaYg;
 const MSD = 86400000;
-function tnldy(ms) { return (EPOCH + ms) / MSD; }
+function tnldy(ms) { return Yg.zOf(ms).z; }
 function tnldyNow() { return tnldy(Date.now()); }
-function tnldyToMs(z) { return z * MSD - EPOCH; }
+function tnldyToMs(z) { try { const t = Yg.instantsOf(z); return t.length ? t[0] : NaN; } catch { return NaN; } }
 function tnldyToDate(z) { return new Date(tnldyToMs(z)); }
 function agentY(z, A, C) { return A === 0 ? 0 : (z - C) / A; }
 function agentZ(y, A, C) { return A * y + C; }
@@ -7703,7 +7782,7 @@ const ANCHOR_PRESETS=[
 ];
 const PREVIEW_YS=[-147.6,-104.4,-60.97,-43.2,-18.0,0.0,3.6,10.8,18.0,21.6,25.2,33.128,38.3478,72.0,82.8,111.6,212.4];
 
-function dateStrToTnldy(s){const ms=new Date(s+"T00:00:00Z").getTime();return isNaN(ms)?null:(EPOCH+ms)/MSD;}
+function dateStrToTnldy(s){const ms=new Date(s+"T00:00:00+01:00").getTime();return isNaN(ms)?null:tnldy(ms);}  // the day's start in Nsukka
 
 // Exact solve from 2 anchors
 function solveExact(y1,z1,y2,z2){
@@ -8716,4 +8795,4 @@ export default function SFOWAMEngine({
 
   </div>);
 }
-`;const R=Object.assign({"./py/fastapi/__init__.py":v,"./py/fastapi/middleware/cors.py":b,"./py/fastapi/responses.py":w,"./py/httpx.py":z,"./py/jomo_clock.py":x,"./py/jomo_dispatch.py":k}),_={"backend/main.py":E,"backend/research_agent.py":S,"src/agent_registry_verified.json":A,"src/sfo_wam_engine.jsx":N};for(const[n,e]of Object.entries(R))_["kernel/"+n.slice(2)]=e;let l,r,u,y=!1;async function O(n){try{r.FS.mount(r.FS.filesystems.IDBFS,{},n),await new Promise((e,a)=>r.FS.syncfs(!0,d=>d?a(d):e())),y=!0}catch(e){console.warn("[kernel] storage unavailable; this session will not be kept:",e)}}let m=!1,h=!1;function g(){if(y){if(m){h=!0;return}m=!0,r.FS.syncfs(!1,n=>{n&&console.warn("[kernel] save failed:",n),m=!1,h&&(h=!1,g())})}}setInterval(g,5e3);async function j(n){const{loadPyodide:e}=await import(n+"pyodide.mjs");r=await e({indexURL:n}),l=await T(r,_,{persist:O,prelude:"import jomo_clock"})}self.onmessage=async({data:n})=>{if(n.type==="boot"){u=j(n.pyodideURL),u.then(()=>self.postMessage({type:"ready"}),e=>self.postMessage({type:"boot-failed",error:String(e&&e.message||e)}));return}if(await u,n.type==="request"){let e;try{e=await l.request(n.method,n.url,n.body)}catch(a){console.error(a),e={status:500,media_type:"text/plain",body:"Internal Server Error"}}self.postMessage({type:"response",id:n.id,...e}),n.method!=="GET"&&g()}else if(n.type==="open-stream"){const e=await l.openStream(n.sid,n.url,a=>self.postMessage({type:"chunk",sid:n.sid,text:a}));self.postMessage({type:"stream-open",sid:n.sid,...e})}else n.type==="close-stream"&&l.closeStream(n.sid)};
+`;const O=Object.assign({"./py/fastapi/__init__.py":v,"./py/fastapi/middleware/cors.py":b,"./py/fastapi/responses.py":w,"./py/httpx.py":z,"./py/jomo_clock.py":x,"./py/jomo_dispatch.py":k}),_={"backend/main.py":E,"backend/research_agent.py":S,"backend/nsukka_yg_clock.py":A,"src/agent_registry_verified.json":N,"src/sfo_wam_engine.jsx":R};for(const[n,e]of Object.entries(O))_["kernel/"+n.slice(2)]=e;let l,r,m,y=!1;async function j(n){try{r.FS.mount(r.FS.filesystems.IDBFS,{},n),await new Promise((e,a)=>r.FS.syncfs(!0,d=>d?a(d):e())),y=!0}catch(e){console.warn("[kernel] storage unavailable; this session will not be kept:",e)}}let u=!1,h=!1;function g(){if(y){if(u){h=!0;return}u=!0,r.FS.syncfs(!1,n=>{n&&console.warn("[kernel] save failed:",n),u=!1,h&&(h=!1,g())})}}setInterval(g,5e3);async function L(n){const{loadPyodide:e}=await import(n+"pyodide.mjs");r=await e({indexURL:n}),l=await T(r,_,{persist:j,prelude:"import jomo_clock"})}self.onmessage=async({data:n})=>{if(n.type==="boot"){m=L(n.pyodideURL),m.then(()=>self.postMessage({type:"ready"}),e=>self.postMessage({type:"boot-failed",error:String(e&&e.message||e)}));return}if(await m,n.type==="request"){let e;try{e=await l.request(n.method,n.url,n.body)}catch(a){console.error(a),e={status:500,media_type:"text/plain",body:"Internal Server Error"}}self.postMessage({type:"response",id:n.id,...e}),n.method!=="GET"&&g()}else if(n.type==="open-stream"){const e=await l.openStream(n.sid,n.url,a=>self.postMessage({type:"chunk",sid:n.sid,text:a}));self.postMessage({type:"stream-open",sid:n.sid,...e})}else n.type==="close-stream"&&l.closeStream(n.sid)};

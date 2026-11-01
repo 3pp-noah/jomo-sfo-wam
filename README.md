@@ -36,6 +36,17 @@ what they do persists for them alone.
 which a public page cannot hold; it answers 503 exactly as the backend does without
 `ANTHROPIC_API_KEY`, and the research layer writes its deterministic local digests instead.
 
+## Time
+
+TNLDY is read from Nsukka on the Yg calendar, in the page (`src/nsukka-yg-clock.js`) and in the backend
+(`backend/nsukka_yg_clock.py`) alike:
+
+    Z = (yG − 1969)·Yg − 340 + days since 1 December 00:00 Nsukka,   Yg = 17640/48.3 days
+
+Yg is the MDQNM engine's own year; it is laid on Nsukka's calendar and recalibrated at every Yg year
+(1 December, 00:00 WAT), so the clock does not drift from Nsukka's. Dates are shown in Nsukka time (WAT).
+A TNLDY passed over at a recalibration has no date (—). It is the same clock as on the other 3PP-NOAH sites.
+
 ## Knowledge-server feeds
 
 A page cannot read other sites' feeds (they send no CORS headers) and GitHub Pages runs no proxy,

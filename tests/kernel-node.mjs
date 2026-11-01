@@ -15,7 +15,7 @@ function walk(dir) {
 
 export function kernelFiles() {
   const files = {};
-  for (const rel of ["backend/main.py", "backend/research_agent.py",
+  for (const rel of ["backend/main.py", "backend/research_agent.py", "backend/nsukka_yg_clock.py",
                      "src/agent_registry_verified.json", "src/sfo_wam_engine.jsx"])
     files[rel] = readFileSync(join(ROOT, rel), "utf8");
   for (const p of walk(join(ROOT, "kernel/py")).filter((p) => p.endsWith(".py")))

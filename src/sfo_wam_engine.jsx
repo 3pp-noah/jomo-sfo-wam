@@ -1,3 +1,4 @@
+import "./nsukka-yg-clock.js"; // sets globalThis.NsukkaYg before this module runs
 import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import { useTheme } from "./App";
 
@@ -8,12 +9,14 @@ import { useTheme } from "./App";
 // Parameterised by (A, C) for any agent in the 759-agent JOMO constellation
 // ═══════════════════════════════════════════════════════════════════
 
-// ── TNLDY TIME AUTHORITY ──
-const EPOCH = 4703008911.6524158066013043478202;
+// ── TNLDY TIME AUTHORITY: read from Nsukka on the Yg calendar (./nsukka-yg-clock.js) ──
+// Yg = 17640/48.3 days, the engine's own year, laid on Nsukka's calendar from 1 December 00:00 and
+// recalibrated every Yg year. A TNLDY passed over at a recalibration has no date ("—").
+const Yg = globalThis.NsukkaYg;
 const MSD = 86400000;
-function tnldy(ms) { return (EPOCH + ms) / MSD; }
+function tnldy(ms) { return Yg.zOf(ms).z; }
 function tnldyNow() { return tnldy(Date.now()); }
-function tnldyToMs(z) { return z * MSD - EPOCH; }
+function tnldyToMs(z) { try { const t = Yg.instantsOf(z); return t.length ? t[0] : NaN; } catch { return NaN; } }
 function tnldyToDate(z) { return new Date(tnldyToMs(z)); }
 function agentY(z, A, C) { return A === 0 ? 0 : (z - C) / A; }
 function agentZ(y, A, C) { return A * y + C; }
@@ -214,7 +217,7 @@ const ANCHOR_PRESETS=[
 ];
 const PREVIEW_YS=[-147.6,-104.4,-60.97,-43.2,-18.0,0.0,3.6,10.8,18.0,21.6,25.2,33.128,38.3478,72.0,82.8,111.6,212.4];
 
-function dateStrToTnldy(s){const ms=new Date(s+"T00:00:00Z").getTime();return isNaN(ms)?null:(EPOCH+ms)/MSD;}
+function dateStrToTnldy(s){const ms=new Date(s+"T00:00:00+01:00").getTime();return isNaN(ms)?null:tnldy(ms);}  // the day's start in Nsukka
 
 // Exact solve from 2 anchors
 function solveExact(y1,z1,y2,z2){

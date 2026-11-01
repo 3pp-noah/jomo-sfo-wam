@@ -10,6 +10,7 @@
 import { bootKernel } from "./boot.js";
 import mainPy from "../backend/main.py?raw";
 import researchPy from "../backend/research_agent.py?raw";
+import clockPy from "../backend/nsukka_yg_clock.py?raw";
 import registryJson from "../src/agent_registry_verified.json?raw";
 import engineJsx from "../src/sfo_wam_engine.jsx?raw";
 
@@ -18,6 +19,7 @@ const kernelPy = import.meta.glob("./py/**/*.py", { query: "?raw", import: "defa
 const files = {
   "backend/main.py": mainPy,
   "backend/research_agent.py": researchPy,
+  "backend/nsukka_yg_clock.py": clockPy,
   "src/agent_registry_verified.json": registryJson,
   "src/sfo_wam_engine.jsx": engineJsx,
 };
