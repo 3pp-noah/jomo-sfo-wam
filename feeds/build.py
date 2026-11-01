@@ -258,7 +258,7 @@ def main() -> int:
         "home_page_url": SITE,
         "feed_url": SITE + "feeds/all.json",
         "description": f"Headlines from {len(catalogue)} news, geopolitical-analysis, defence, economic, "
-                       "religious and science sources, as fetched for the SFO-WAM FEEDS tab.",
+                       "religious, science and sports sources, as fetched for the SFO-WAM FEEDS tab.",
         "language": "en",
         "_jomo": {"generated": now, "sources": status},
         "items": items,
