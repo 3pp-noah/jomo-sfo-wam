@@ -44,7 +44,7 @@
    "method": "GET",
    "url": "/api/graph/node/399",
    "same": true,
-   "status": 404
+   "status": 200
   },
   {
    "method": "GET",

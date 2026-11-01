@@ -36,9 +36,9 @@ class ResearchHypothesisRequest(BaseModel):
     title: str
     claim: str
     hypothesis_type: str
-    node_idx: Optional[int] = Field(default=None, ge=0, le=398)
-    source_node_idx: Optional[int] = Field(default=None, ge=0, le=398)
-    target_node_idx: Optional[int] = Field(default=None, ge=0, le=398)
+    node_idx: Optional[int] = Field(default=None, ge=0, le=399)
+    source_node_idx: Optional[int] = Field(default=None, ge=0, le=399)
+    target_node_idx: Optional[int] = Field(default=None, ge=0, le=399)
     namespace: Optional[str] = None
     status: str = "open"
     confidence: float = Field(default=0.0, ge=0.0, le=1.0)
@@ -297,7 +297,7 @@ class ResearchStore:
         if goal_count == 0:
             for goal in [
                 ("Test whether active lock-ins preserve SFO-WAM admissibility.", "Compare active lock-ins against d-separation changes and governance thresholds.", 10),
-                ("Detect unstable causal regions in the 399-node graph.", "Find nodes with repeated observations, blocked paths, or coordination convergence.", 8),
+                ("Detect unstable causal regions in the 400-node graph.", "Find nodes with repeated observations, blocked paths, or coordination convergence.", 8),
                 ("Compare projected transitions against observed transitions.", "Measure projection resolution, unresolved projections, and likely misses.", 8),
                 ("Identify nodes requiring human review.", "Escalate strong machine evidence without canonical promotion.", 9),
                 ("Produce periodic research digests.", "Summarize hypotheses, tests, evidence, and review items locally or through backend-safe model calls.", 6),

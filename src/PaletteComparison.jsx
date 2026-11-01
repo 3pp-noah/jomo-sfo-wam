@@ -113,7 +113,7 @@ function MockPanel({ scheme, s }) {
           <div style={{ fontSize: 8, color: s.text.muted, textTransform: "uppercase", letterSpacing: 1, marginBottom: 4 }}>ACTIVE AGENT</div>
           <div style={{ color: s.accent.brand, fontWeight: 700, fontSize: 11, fontFamily: "monospace" }}>ZIRCON-009</div>
           <div style={{ color: s.text.secondary, fontSize: 8, marginTop: 2 }}>Domain: ZIRCON · A=100 · C=17651.8</div>
-          <div style={{ color: s.accent.purple, fontSize: 8, fontFamily: "monospace" }}>Y = 29.314700 · BB 177/399</div>
+          <div style={{ color: s.accent.purple, fontSize: 8, fontFamily: "monospace" }}>Y = 29.314700 · BB 177/400</div>
         </div>
 
         {/* Card 2: Edge in view */}

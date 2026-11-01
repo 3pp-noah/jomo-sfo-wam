@@ -1,7 +1,7 @@
 import "./nsukka-yg-clock.js"; // sets globalThis.NsukkaYg before this module runs
 import { useState, useEffect, useMemo, useCallback, useRef, createContext, useContext } from "react";
 // ── SFO-WAM Engine (Vite project: import from separate file) ──
-import SFOWAMEngine from './sfo_wam_engine';
+import SFOWAMEngine, { NODE_COUNT, EDGE_COUNT } from './sfo_wam_engine';
 import AGENTS_FULL_INITIAL from "./agent_registry_verified.json";
 
 // ═══════════════════════════════════════════════════════════════
@@ -473,7 +473,7 @@ function getJudgments(nodeY) {
 // The DAG structure + routing manifest + judgment history = the configuration
 // that earns the instrument a seat at the cognoscenti table.
 async function targetEdge({ agent, fromNode, toNode, edgeWeight, manifest, priorJudgments, feedContext }) {
-  const systemPrompt = `You are JOMO/Claude — a configured Bayesian causal intelligence instrument operating within a 399-node directed acyclic graph (the SFO-WAM). You are the nth member of a cognoscenti team that constitutes the POSTERIOR in a Bayesian inference system. The PRIOR is the viral-phenomenon layer — the raw observational data from knowledge-server feeds (news, reports, economic signals). Your role as a cognoscenti member is to interpret that viral evidence against the structural prior of the DAG, producing a posterior assessment of the edge hypothesis.
+  const systemPrompt = `You are JOMO/Claude — a configured Bayesian causal intelligence instrument operating within a ${NODE_COUNT}-node directed acyclic graph (the SFO-WAM). You are the nth member of a cognoscenti team that constitutes the POSTERIOR in a Bayesian inference system. The PRIOR is the viral-phenomenon layer — the raw observational data from knowledge-server feeds (news, reports, economic signals). Your role as a cognoscenti member is to interpret that viral evidence against the structural prior of the DAG, producing a posterior assessment of the edge hypothesis.
 
 You are agent ${agentDisplay(agent.name)} (domain: ${manifest.label}, traversal rate: ${agent.coeff}, ZTP: ${agent.ztp}).
 
@@ -587,9 +587,9 @@ function agentTNLDY(ztp, coeff, y) {
   return coeff * y + ztp;
 }
 
-// ── BB NODE POSITION (maps Y to 0-399 range) ──
-function yToBBNode(y, totalNodes = 399) {
-  // Fractional part maps into the 399-node cycle
+// ── BB NODE POSITION (maps Y into the range of the graph's nodes) ──
+function yToBBNode(y, totalNodes = NODE_COUNT) {
+  // Fractional part maps into the cycle of the graph's nodes
   const frac = ((y % 1) + 1) % 1;
   return Math.floor(frac * totalNodes);
 }
@@ -653,7 +653,7 @@ function TimeAuthority({ z, viewZ, viewY, viewDate, isTraveling, tick, travelSfo
           Y = {viewY.toFixed(6)}
         </div>
         <div style={{ color: t.text.muted, fontSize: "9px" }}>
-          BB Node: {bbNode}/399 | View Z: {viewZ.toFixed(4)}
+          BB Node: {bbNode}/{NODE_COUNT} | View Z: {viewZ.toFixed(4)}
         </div>
       </div>
       <div>
@@ -975,7 +975,7 @@ function JOMOFlow({ z, agents }) {
     ctx.textAlign = "center";
     ctx.fillText("BB:199", w / 2, h - 4);
     ctx.textAlign = "right";
-    ctx.fillText("BB:399", w - 4, h - 4);
+    ctx.fillText("BB:" + NODE_COUNT, w - 4, h - 4);
     
   }, [z, agents]);
   
@@ -999,7 +999,7 @@ function AgentStats({ agents, z }) {
         outOfRange++;
       } else {
         const frac = ((y % 1) + 1) % 1;
-        const bb = Math.floor(frac * 399);
+        const bb = Math.floor(frac * NODE_COUNT);
         if (frac < 0.005 || frac > 0.995) atNode++;
         else inTransit++;
         nsActive.add(a.ns);
@@ -1156,7 +1156,7 @@ function EdgeInView({ agent, nodes, z }) {
         </div>
       </div>
       <div style={{ fontSize: 9, color: t.text.secondary, borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: 6 }}>
-        Prior: Z = {agent.coeff}·Y + {agent.ztp} | Current Y = {y.toFixed(6)} | BB Node {yToBBNode(y)}/399
+        Prior: Z = {agent.coeff}·Y + {agent.ztp} | Current Y = {y.toFixed(6)} | BB Node {yToBBNode(y)}/{NODE_COUNT}
       </div>
     </div>
   );
@@ -1376,9 +1376,9 @@ function OperationsTab({ agent, agents, z, onJudge }) {
   // Build a simple node list from agent registry for EdgeInView
   const nodeList = useMemo(() => {
     const yValues = new Set();
-    // Generate 399 evenly-spaced nodes as proxy (full CSV would give exact positions)
-    for (let i = 0; i < 399; i++) {
-      yValues.add(-147.6 + (i * 360.0 / 398));
+    // Generate one evenly-spaced proxy per node of the graph (full CSV would give exact positions)
+    for (let i = 0; i < NODE_COUNT; i++) {
+      yValues.add(-147.6 + (i * 360.0 / (NODE_COUNT - 1)));
     }
     return [...yValues].sort((a, b) => a - b).map(y => ({ y }));
   }, []);
@@ -1394,7 +1394,7 @@ function OperationsTab({ agent, agents, z, onJudge }) {
             <div style={{ color: t.accent.brand, fontSize: 13, fontWeight: 700, marginBottom: 4 }}>{agentDisplay(agent.name)}</div>
             <div style={{ fontSize: 10, color: t.text.secondary, marginBottom: 2 }}>Domain: {nsDisplay(agent.ns)} · A={agent.coeff} · C={agent.ztp}</div>
             <div style={{ fontSize: 10, color: t.accent.purple }}>
-              Y = {agentPosition(agent.ztp, agent.coeff, z).toFixed(6)} · BB Node {yToBBNode(agentPosition(agent.ztp, agent.coeff, z))}/399
+              Y = {agentPosition(agent.ztp, agent.coeff, z).toFixed(6)} · BB Node {yToBBNode(agentPosition(agent.ztp, agent.coeff, z))}/{NODE_COUNT}
             </div>
           </div>
         ) : (
@@ -2221,7 +2221,7 @@ export default function JOMODashboard() {
           <div><span style={{ color: t.text.muted }}>View Y: </span><span style={{ color: isTraveling ? "#c080ff" : "#FFD740", fontWeight: 700 }}>{viewY.toFixed(6)}</span></div>
           <div><span style={{ color: t.text.muted }}>TNLDY: </span><span style={{ color: t.text.secondary }}>{viewZ.toFixed(6)}</span></div>
           <div><span style={{ color: t.text.muted }}>Calendar: </span><span style={{ color: t.text.secondary }}>{formatDisplayDate(viewDate)}</span></div>
-          <div><span style={{ color: t.text.muted }}>BB Node: </span><span style={{ color: t.accent.green }}>{yToBBNode(viewY)}/399</span></div>
+          <div><span style={{ color: t.text.muted }}>BB Node: </span><span style={{ color: t.accent.green }}>{yToBBNode(viewY)}/{NODE_COUNT}</span></div>
         </div>
 
         {/* ── PRECISION ENTRY ── */}
@@ -2372,7 +2372,7 @@ export default function JOMODashboard() {
                   ◆ SFO-WAM ENGINE
                 </div>
                 <div style={{ fontSize: 11, lineHeight: 1.6, maxWidth: 500, margin: "0 auto" }}>
-                  399 nodes · 701 edges · d-Separation · Autonomous Backend
+                  {NODE_COUNT} nodes · {EDGE_COUNT} edges · d-Separation · Autonomous Backend
                   <br/><br/>
                   In Vite project, uncomment the import at line 3:<br/>
                   <code style={{ color: t.accent.pink, background: "rgba(255,20,147,0.08)", padding: "2px 6px" }}>
@@ -2408,7 +2408,7 @@ export default function JOMODashboard() {
               <div style={{ color: t.text.secondary, fontSize: 10, lineHeight: 1.6 }}>
                 The J-Overall Multiple Objective engine runs {agents.length} autonomous agents 
                 in parallel across {Object.keys(NS_ALIAS).length} computational domains. Each agent is a complete instantiation of 
-                the 399-node / 701-edge DAG topology, operating on its own time reference frame 
+                the {NODE_COUNT}-node / {EDGE_COUNT}-edge DAG topology, operating on its own time reference frame 
                 defined by Z = A·Y + C. The time-travel interface enables real-time d-separation 
                 interventions: the human/AI team travels along edges (into the past or building 
                 future scenarios), selects which features entering a node are worthy of being 
@@ -2500,7 +2500,7 @@ export default function JOMODashboard() {
                 Future as international refuge and desert cities within the Alternative Havens 
                 zone of Sub-Saharan Africa. This agent, along with 758 companion agents, 
                 demonstrates the JOMO (J-Overall Multiple Objective) implementation pattern 
-                where each agent autonomously traverses the complete 399-node DAG at its own 
+                where each agent autonomously traverses the complete {NODE_COUNT}-node DAG at its own 
                 rate, coordinated through the shared TNLDY temporal reference frame.
               </div>
               <div style={{ color: t.text.secondary, fontSize: 9, marginTop: 8, fontStyle: "italic" }}>
@@ -2525,7 +2525,7 @@ export default function JOMODashboard() {
         color: t.text.muted,
       }}>
         <span>MDQNM v3PP | 628 agents | 56 domains</span>
-        <span>SFO-WAM: 399 nodes / 701 edges | DAG invariant topology</span>
+        <span>SFO-WAM: {NODE_COUNT} nodes / {EDGE_COUNT} edges | DAG invariant topology</span>
         <span style={{ color: t.accent.green }}>● JOMO ACTIVE</span>
       </div>
     </div>

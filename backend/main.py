@@ -119,14 +119,14 @@ class StartRequest(BaseModel):
 
 
 class DsepRequest(BaseModel):
-    node_idx: int = Field(ge=0, le=398)
+    node_idx: int = Field(ge=0, le=399)
     conditioned_nodes: list[int] = Field(default_factory=list)
 
 
 class ObservationRequest(BaseModel):
     agent_name: Optional[str] = None
     namespace: Optional[str] = None
-    node_idx: Optional[int] = Field(default=None, ge=0, le=398)
+    node_idx: Optional[int] = Field(default=None, ge=0, le=399)
     node_y: Optional[float] = None
     prompt: str = ""
     digest: str = ""
@@ -141,7 +141,7 @@ class JudgmentRequest(BaseModel):
     observation_id: Optional[str] = None
     agent_name: Optional[str] = None
     namespace: Optional[str] = None
-    node_idx: int = Field(ge=0, le=398)
+    node_idx: int = Field(ge=0, le=399)
     state: str = "monitor"
     rationale: str = ""
     judge: str = "human"
@@ -153,8 +153,8 @@ class JudgmentRequest(BaseModel):
 class ProjectionRequest(BaseModel):
     agent_name: Optional[str] = None
     namespace: Optional[str] = None
-    source_idx: int = Field(ge=0, le=398)
-    target_idx: int = Field(ge=0, le=398)
+    source_idx: int = Field(ge=0, le=399)
+    target_idx: int = Field(ge=0, le=399)
     edge_weight: Optional[float] = None
     prompt: str = ""
     digest: str = ""
@@ -183,7 +183,7 @@ class DigestRequest(BaseModel):
 class DigestTaskRequest(BaseModel):
     agent_name: Optional[str] = None
     namespace: Optional[str] = None
-    node_idx: Optional[int] = Field(default=None, ge=0, le=398)
+    node_idx: Optional[int] = Field(default=None, ge=0, le=399)
     trigger: str = "manual"
     priority: int = Field(default=5, ge=1, le=10)
     prompt: str
