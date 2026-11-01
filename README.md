@@ -109,6 +109,7 @@ repository does not grow by one ~700 KB snapshot per run.
 | NTH-HOME | https://nth-member.github.io/ |
 | REVOTT atop GDELT | https://nth-member.github.io/revott/ |
 | The nth member | https://nth-member.github.io/member/ |
+| REVOTT stamps | https://nth-member.github.io/revott-stamps/ |
 | GDELT day sources | https://nth-member.github.io/gdelt/ |
 | H-Gematria/ASCII | https://nth-member.github.io/gematria/ |
 | Alien Corridor Support System | https://nth-member.github.io/alien-corridor/ |
