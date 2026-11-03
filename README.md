@@ -108,7 +108,8 @@ environment `feeds-timer` (Settings › Environments); a run that did not wait s
 starts the chain again: Actions › Feeds › Run workflow, a push that changes the feeds' code or
 catalogue, or the schedule when it fires. Away from
 GitHub, `feeds/refresh.sh` first moves the checkout to GitHub's latest snapshot, and stops if a
-commit there is not yet on GitHub.
+commit there is not yet on GitHub. When both build at once, the snapshot that reaches GitHub second
+is dropped, which is not a failure.
 
 `feeds/refresh.sh` keeps a single rolling "Feeds: snapshot" commit, replaced on each run, so the
 repository does not grow by one ~1.3 MB snapshot per run; the commit's message is the run's report.

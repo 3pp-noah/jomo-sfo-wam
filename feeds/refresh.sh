@@ -41,6 +41,7 @@ if [ -z "${GITHUB_ACTIONS:-}" ]; then
   done
   git reset -q --keep "origin/$BRANCH" || { echo "FAIL feeds: could not move to origin/$BRANCH"; exit 1; }
 fi
+BASE=$(git rev-parse -q --verify "refs/remotes/origin/$BRANCH")
 
 if ! REPORT=$(python3 -B feeds/build.py 2>&1); then
   echo "$REPORT"
@@ -71,5 +72,13 @@ if [ $PUSH = 1 ]; then
     git push -q --force-with-lease origin "HEAD:$BRANCH"
   else
     git push -q origin "HEAD:$BRANCH"
-  fi && echo "feeds: pushed" || { echo "FAIL feeds: push"; exit 1; }
+  fi && { echo "feeds: pushed"; exit 0; }
+  # GitHub and the author's computer both refresh: a push refused because the other's newer snapshot
+  # reached GitHub first is no failure. That snapshot stands, and this one is dropped.
+  if git fetch -q origin "$BRANCH" && [ -n "$BASE" ] && [ "$(git rev-parse "origin/$BRANCH")" != "$BASE" ]; then
+    echo "feeds: a newer snapshot reached GitHub first; this one is dropped"
+    exit 0
+  fi
+  echo "FAIL feeds: push"
+  exit 1
 fi
