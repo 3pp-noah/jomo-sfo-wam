@@ -8,6 +8,8 @@
 # wait timer set -- starts nothing, so the chain cannot run away; a newer run's "next" job replaces
 # an older one's, so there is one chain. Any run starts it again: by hand (Actions > Feeds > Run
 # workflow), a push that changes the feeds' code or catalogue, or the schedule when it fires.
+# The chain is alive while Actions > Feeds shows a run "Waiting" on its job "Wait 14 minutes, then
+# start the next run"; when none is waiting, Run workflow starts it again.
 #
 # Each run is one Pages build: about 4 an hour, and 4 more from the author's computer while it is
 # on, against Pages' soft limit of 10.
