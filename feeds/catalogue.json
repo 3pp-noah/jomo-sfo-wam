@@ -18,7 +18,7 @@
 {"id": "economist", "label": "The Economist International", "domain": "world", "perspective": "British", "url": "https://www.economist.com/international/rss.xml"},
 {"id": "unnews", "label": "UN News", "domain": "world", "perspective": "United Nations", "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml"},
 {"id": "jpost", "label": "Jerusalem Post", "domain": "middle-east", "perspective": "Israeli", "url": "https://www.jpost.com/rss/rssfeedsfrontpage.aspx"},
-{"id": "timesofisrael", "label": "Times of Israel", "domain": "middle-east", "perspective": "Israeli", "url": "https://www.timesofisrael.com/feed/"},
+{"id": "timesofisrael", "label": "Times of Israel", "domain": "middle-east", "perspective": "Israeli", "google": "timesofisrael.com", "days": 2},
 {"id": "almonitor", "label": "Al-Monitor", "domain": "middle-east", "perspective": "Middle East", "url": "https://www.al-monitor.com/rss"},
 {"id": "mee", "label": "Middle East Eye", "domain": "middle-east", "perspective": "Arab (UK-based)", "url": "https://www.middleeasteye.net/rss"},
 {"id": "arabnews", "label": "Arab News", "domain": "middle-east", "perspective": "Saudi", "google": "arabnews.com", "days": 2},
