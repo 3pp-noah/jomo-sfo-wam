@@ -50,13 +50,15 @@ A TNLDY passed over at a recalibration has no date (—). It is the same clock a
 ## Knowledge-server feeds
 
 A page cannot read other sites' feeds (they send no CORS headers) and GitHub Pages runs no proxy,
-so the feeds are read on the author's computer and published beside the page as a snapshot.
+so the feeds are read on GitHub, every 15 minutes, and published beside the page as a snapshot.
 
 | Part | Role |
 |---|---|
 | `feeds/catalogue.json` | the sources: 134, in twelve domains — world, Middle East, Russia & Eurasia, Balkans (Serbia, Bosnia and Herzegovina, Kosovo, Croatia, North Macedonia, Montenegro, Albania, plus Google News watches on their leaders' names), Asia, Africa & Nigeria, geopolitical analysis, defence & nuclear, economic, religious, science & technology, and sports (36: the NBA, the WNBA and Nigeria's Super Eagles and Super Falcons first, then the wires, broadcasters and governing bodies of world sport) — each with its perspective |
 | `feeds/build.py` | reads each publisher's RSS 2.0, RSS 1.0/RDF or Atom feed (standard library only), repairs the common faults, and writes `feeds/all.json` in both `public/` and `docs/` |
-| `feeds/refresh.sh [--push]` | rebuilds, commits only the snapshot, and with `--push` publishes it |
+| `feeds/history.py` | logs what each snapshot adds — its sources' spans and its new items — in `feeds/history/<UTC date>.jsonl.gz`, kept 30 days, for REVOTT stamps |
+| `feeds/refresh.sh [--push]` | rebuilds, commits only the snapshot and its history, and with `--push` publishes it |
+| `.github/workflows/feeds.yml` | runs `feeds/refresh.sh --push` on GitHub every 15 minutes, by hand (Actions › Feeds › Run workflow), and on any push that changes the feeds' code or catalogue |
 | FEEDS tab | reads `feeds/all.json`: the latest headlines across the selected domains, or source by source, with the snapshot's age |
 
 The snapshot is a **JSON Feed 1.1** document (https://www.jsonfeed.org/version/1.1/), so any JSON
@@ -92,14 +94,18 @@ npm run build     # into docs/, which GitHub Pages serves
 feeds/refresh.sh --push   # new feed snapshot, committed and published; no rebuild needed
 ```
 
-On the author's computer the feeds are refreshed every 15 minutes by cron:
-
-```
-*/15 * * * * $HOME/jomo-sfo-wam/feeds/cron.sh
-```
+The feeds are refreshed on GitHub (`.github/workflows/feeds.yml`) at minutes 7, 22, 37 and 52 of
+every hour — off the top of the hour, when GitHub starts scheduled runs latest — whether or not
+the author's computer is on. Until 2026-11-03 that computer's cron did it (`feeds/cron.sh`, now
+retired). Run by hand there, `feeds/refresh.sh` first moves the checkout to GitHub's latest
+snapshot, and stops if a commit there is not yet on GitHub.
 
 `feeds/refresh.sh` keeps a single rolling "Feeds: snapshot" commit, replaced on each run, so the
-repository does not grow by one ~700 KB snapshot per run.
+repository does not grow by one ~1.3 MB snapshot per run; the commit's message is the run's report.
+`feeds/history/` keeps what the replaced snapshots added, about 1.2 MB a day for 30 days. Before
+committing other work here, move onto GitHub's latest snapshot — `git fetch && git reset --keep
+origin/main`, when the only local commits are snapshots — and if a run lands before the push,
+`git pull --rebase`.
 
 ## Refreshing the sites
 
@@ -113,7 +119,8 @@ cd ~ && ./refresh-all.sh            # refresh and commit, push nothing
 cd ~ && ./refresh-all.sh --check    # what GDELT has that is new; changes nothing
 ```
 
-JOMO SFO-WAM's feeds and REVOTT stamps also refresh themselves every 15 minutes, from cron.
+JOMO SFO-WAM's feeds also refresh themselves every 15 minutes, on GitHub; REVOTT stamps every 15
+minutes from the author's computer's cron.
 
 ## Other 3PP-NOAH sites
 

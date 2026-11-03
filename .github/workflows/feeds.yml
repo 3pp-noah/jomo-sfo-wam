@@ -1,0 +1,39 @@
+# The FEEDS snapshot, refreshed on GitHub every 15 minutes, whether or not the author's computer
+# is on: feeds/refresh.sh --push, as on that computer. Also run by hand (Actions > Feeds > Run
+# workflow), and whenever a push changes the code or the catalogue.
+#
+# GitHub starts scheduled runs late when it is busy, most of all at the top of the hour, hence
+# minutes 7, 22, 37 and 52. Each run is one Pages build: 4 an hour, against Pages' soft limit of 10.
+name: Feeds
+on:
+  schedule:
+    - cron: "7,22,37,52 * * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/feeds.yml
+      - feeds/build.py
+      - feeds/history.py
+      - feeds/refresh.sh
+      - feeds/catalogue.json
+permissions:
+  contents: write
+concurrency:
+  group: feeds-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.14"
+      - name: Refresh and publish the snapshot
+        run: |
+          git config user.name 3pp-noah
+          git config user.email 3pp-noah@users.noreply.github.com
+          feeds/refresh.sh --push
