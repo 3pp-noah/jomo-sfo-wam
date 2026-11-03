@@ -50,7 +50,8 @@ A TNLDY passed over at a recalibration has no date (—). It is the same clock a
 ## Knowledge-server feeds
 
 A page cannot read other sites' feeds (they send no CORS headers) and GitHub Pages runs no proxy,
-so the feeds are read on GitHub, every 15 minutes, and published beside the page as a snapshot.
+so the feeds are read on the author's computer and on GitHub, every 15 minutes, and published beside
+the page as a snapshot.
 
 | Part | Role |
 |---|---|
@@ -94,11 +95,17 @@ npm run build     # into docs/, which GitHub Pages serves
 feeds/refresh.sh --push   # new feed snapshot, committed and published; no rebuild needed
 ```
 
-The feeds are refreshed on GitHub (`.github/workflows/feeds.yml`) at minutes 7, 22, 37 and 52 of
-every hour — off the top of the hour, when GitHub starts scheduled runs latest — whether or not
-the author's computer is on. Until 2026-11-03 that computer's cron did it (`feeds/cron.sh`, now
-retired). Run by hand there, `feeds/refresh.sh` first moves the checkout to GitHub's latest
-snapshot, and stops if a commit there is not yet on GitHub.
+The feeds are refreshed every 15 minutes by the author's computer's cron, while it is on:
+
+```
+*/15 * * * * $HOME/jomo-sfo-wam/feeds/cron.sh
+```
+
+and on GitHub (`.github/workflows/feeds.yml`) at minutes 7, 22, 37 and 52 — off the top of the
+hour, when GitHub starts scheduled runs latest — so that they stay fresh while that computer
+sleeps, when GitHub's scheduler fires (it is best-effort: late, sometimes not at all). Away from
+GitHub, `feeds/refresh.sh` first moves the checkout to GitHub's latest snapshot, and stops if a
+commit there is not yet on GitHub.
 
 `feeds/refresh.sh` keeps a single rolling "Feeds: snapshot" commit, replaced on each run, so the
 repository does not grow by one ~1.3 MB snapshot per run; the commit's message is the run's report.
@@ -119,8 +126,8 @@ cd ~ && ./refresh-all.sh            # refresh and commit, push nothing
 cd ~ && ./refresh-all.sh --check    # what GDELT has that is new; changes nothing
 ```
 
-JOMO SFO-WAM's feeds also refresh themselves every 15 minutes, on GitHub; REVOTT stamps every 15
-minutes from the author's computer's cron.
+JOMO SFO-WAM's feeds and REVOTT stamps also refresh themselves every 15 minutes, from cron; the
+feeds on GitHub as well.
 
 ## Other 3PP-NOAH sites
 
