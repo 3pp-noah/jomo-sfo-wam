@@ -101,9 +101,12 @@ The feeds are refreshed every 15 minutes by the author's computer's cron, while 
 */15 * * * * $HOME/jomo-sfo-wam/feeds/cron.sh
 ```
 
-and on GitHub (`.github/workflows/feeds.yml`) at minutes 7, 22, 37 and 52 — off the top of the
-hour, when GitHub starts scheduled runs latest — so that they stay fresh while that computer
-sleeps, when GitHub's scheduler fires (it is best-effort: late, sometimes not at all). Away from
+and on GitHub (`.github/workflows/feeds.yml`), about every 15 minutes, so that they stay fresh
+while that computer sleeps. GitHub's own schedule (minutes 7, 22, 37 and 52) is best-effort and
+fires rarely, so each run on main starts the next one itself, after the 14-minute wait timer of the
+environment `feeds-timer` (Settings › Environments); a run that did not wait starts nothing. Any run
+starts the chain again: Actions › Feeds › Run workflow, a push that changes the feeds' code or
+catalogue, or the schedule when it fires. Away from
 GitHub, `feeds/refresh.sh` first moves the checkout to GitHub's latest snapshot, and stops if a
 commit there is not yet on GitHub.
 

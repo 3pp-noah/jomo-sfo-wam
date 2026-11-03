@@ -1,9 +1,16 @@
 # The FEEDS snapshot, refreshed on GitHub every 15 minutes, whether or not the author's computer
-# is on: feeds/refresh.sh --push, as on that computer. Also run by hand (Actions > Feeds > Run
-# workflow), and whenever a push changes the code or the catalogue.
+# is on: feeds/refresh.sh --push, as on that computer.
 #
-# GitHub starts scheduled runs late when it is busy, most of all at the top of the hour, hence
-# minutes 7, 22, 37 and 52. Each run is one Pages build: 4 an hour, against Pages' soft limit of 10.
+# GitHub's own schedule is best-effort, and in practice fires rarely (once in 12 hours on
+# 2026-11-03), so each run on main starts the next one itself: its "next" job waits on the wait
+# timer of the environment feeds-timer (14 minutes, set in Settings > Environments; the wait uses no
+# runner), then dispatches this workflow again. A run that began less than 10 minutes earlier -- no
+# wait timer set -- starts nothing, so the chain cannot run away; a newer run's "next" job replaces
+# an older one's, so there is one chain. Any run starts it again: by hand (Actions > Feeds > Run
+# workflow), a push that changes the feeds' code or catalogue, or the schedule when it fires.
+#
+# Each run is one Pages build: about 4 an hour, and 4 more from the author's computer while it is
+# on, against Pages' soft limit of 10.
 name: Feeds
 on:
   schedule:
@@ -16,15 +23,16 @@ on:
       - feeds/history.py
       - feeds/refresh.sh
       - feeds/catalogue.json
-permissions:
-  contents: write
-concurrency:
-  group: feeds-${{ github.ref }}
-  cancel-in-progress: false
+permissions: {}
 jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: write
+    concurrency:
+      group: feeds-refresh-${{ github.ref }}
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v7
         with:
@@ -37,3 +45,39 @@ jobs:
           git config user.name 3pp-noah
           git config user.email 3pp-noah@users.noreply.github.com
           feeds/refresh.sh --push
+
+  next:
+    needs: refresh
+    if: ${{ always() && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment: feeds-timer
+    permissions:
+      actions: write
+      contents: read
+    concurrency:
+      group: feeds-next
+      cancel-in-progress: true
+    steps:
+      - name: Start the next run
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          created=$(gh api "repos/$GH_REPO/actions/runs/$GITHUB_RUN_ID" --jq .created_at)
+          waited=$(( $(date +%s) - $(date -d "$created" +%s) ))
+          if [ "$waited" -lt 600 ]; then
+            echo "::warning::This run began only ${waited}s ago, so the feeds-timer wait timer is not set; no next run is started."
+            exit 0
+          fi
+          newer=$(gh run list --workflow feeds.yml --branch main --limit 30 --json databaseId,status,createdAt \
+            --jq "[.[] | select(.databaseId != $GITHUB_RUN_ID and .status != \"completed\" and .createdAt > \"$created\")] | length")
+          if [ "$newer" -gt 0 ]; then
+            echo "A newer run is under way; it starts the next one."
+            exit 0
+          fi
+          for i in 1 2 3; do
+            gh workflow run feeds.yml --ref main && { echo "Next run started, after ${waited}s."; exit 0; }
+            sleep 20
+          done
+          exit 1
