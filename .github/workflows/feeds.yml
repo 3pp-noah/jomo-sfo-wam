@@ -26,6 +26,7 @@ on:
 permissions: {}
 jobs:
   refresh:
+    name: Refresh the feeds
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -47,6 +48,7 @@ jobs:
           feeds/refresh.sh --push
 
   next:
+    name: Wait 14 minutes, then start the next run
     needs: refresh
     if: ${{ always() && github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
