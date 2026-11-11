@@ -142,6 +142,7 @@ feeds on GitHub as well.
 | REVOTT atop GDELT | https://nth-member.github.io/revott/ |
 | The nth member | https://nth-member.github.io/member/ |
 | REVOTT stamps | https://nth-member.github.io/revott-stamps/ |
+| SOLID STAMP | https://nth-member.github.io/solid-stamp/ |
 | GDELT day sources | https://nth-member.github.io/gdelt/ |
 | H-Gematria/ASCII | https://nth-member.github.io/gematria/ |
 | Alien Corridor Support System | https://nth-member.github.io/alien-corridor/ |
