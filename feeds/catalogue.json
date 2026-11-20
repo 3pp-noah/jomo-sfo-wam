@@ -142,7 +142,7 @@
 {"id": "vatican", "label": "Vatican News", "domain": "religious", "perspective": "Catholic", "url": "https://www.vaticannews.va/en.rss.xml"},
 {"id": "arutzsheva", "label": "Arutz Sheva", "domain": "religious", "perspective": "Israeli (religious-national)", "url": "https://www.israelnationalnews.com/Rss.aspx"},
 {"id": "christianitytoday", "label": "Christianity Today", "domain": "religious", "perspective": "Evangelical", "url": "https://www.christianitytoday.com/feed/"},
-{"id": "rns", "label": "Religion News Service", "domain": "religious", "perspective": "Multi-faith", "url": "https://religionnews.com/feed/"},
+{"id": "rns", "label": "Religion News Service", "domain": "religious", "perspective": "Multi-faith", "google": "religionnews.com", "days": 2},
 {"id": "crux", "label": "Crux", "domain": "religious", "perspective": "Catholic", "url": "https://cruxnow.com/feed"},
 {"id": "christianpost", "label": "The Christian Post", "domain": "religious", "perspective": "Evangelical", "url": "https://www.christianpost.com/rss"},
 {"id": "orthodoxtimes", "label": "Orthodox Times", "domain": "religious", "perspective": "Orthodox", "url": "https://orthodoxtimes.com/feed/"},
