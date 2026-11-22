@@ -4,7 +4,7 @@
 
 The JOMO SFO-WAM research-agent kernel: a causal instrument in which each of 790 agents, across
 56 SFO namespaces, is its own realisation of the invariant SFO-WAM directed acyclic graph
-(549 nodes, 937 edges). The dashboard carries the time-travel controls, the SFO-WAM engine
+(549 nodes, 942 edges). The dashboard carries the time-travel controls, the SFO-WAM engine
 (observe, propagate, project, judge; d-separation; FORGE), and the research-agent kernel:
 observations, judgments, lock-ins, projections, digest tasks, coordination actions, and a
 research layer of goals, hypotheses, tests, evidence scores, episodes, policy rules, a
