@@ -130,9 +130,14 @@ def source_url(source: dict) -> str:
     """A catalogue entry has either the publisher's own "url", or "google": a site path for a
     Google News search (for publishers with no feed, or one that refuses scripts). "{year}" in
     the path is the current year; "days" bounds the search; "terms" narrows it. An empty "google"
-    searches all of Google News for "terms" alone (the name watches)."""
+    searches all of Google News for "terms" alone (the name watches). "polymarket": a tag of
+    Polymarket's public Gamma API, read for its newest open questions."""
     if "url" in source:
         return source["url"]
+    if "polymarket" in source:
+        return "https://gamma-api.polymarket.com/events?" + urllib.parse.urlencode(
+            {"tag_id": source["polymarket"]["tag_id"], "closed": "false", "order": "createdAt", "ascending": "false",
+             "limit": 50})
     site = source["google"].replace("{year}", str(utc_now().year))
     q = f"when:{source.get('days', 2)}d" + (f" site:{site}" if site else "") + (f" {source['terms']}" if source.get("terms") else "")
     return "https://news.google.com/rss/search?" + urllib.parse.urlencode({"q": q, "hl": "en-US", "gl": "US", "ceid": "US:en"})
@@ -198,6 +203,40 @@ def items_of(root: ET.Element, source: dict) -> list[dict]:
     return unique[:ITEMS_PER_SOURCE]
 
 
+def items_of_polymarket(events: list, source: dict) -> list[dict]:
+    """Polymarket's questions under a tag, newest first: each event is an item dated when it was
+    added, its summary the market as read now (the leading price, and what was traded)."""
+    out = []
+    for e in events:
+        if not e.get("slug") or not e.get("title"):
+            continue
+        markets = [m for m in e.get("markets", []) if m.get("active") and not m.get("closed")]
+        v24 = float(e.get("volume24hr") or 0)
+        if len(markets) == 1:
+            try:
+                yes = float(json.loads(markets[0].get("outcomePrices") or "[]")[0])
+                lead = f"Yes {yes:.0%}"
+            except (ValueError, IndexError, TypeError):
+                lead = "1 market"
+        else:
+            lead = f"{len(markets)} markets"
+        item = {
+            "id": "https://polymarket.com/event/" + e["slug"],
+            "url": "https://polymarket.com/event/" + e["slug"],
+            "title": plain(e["title"]),
+            "summary": clip(f"{lead} · ${v24:,.0f} traded in 24 h · ${float(e.get('volume') or 0):,.0f} in all", SUMMARY_CHARS),
+            "authors": [{"name": source["label"]}],
+            "_jomo": {"source": source["id"], "domain": source["domain"], "perspective": source["perspective"]},
+        }
+        date = parse_date(e.get("createdAt") or e.get("startDate"))
+        if date:
+            item["date_published"] = iso(min(date, utc_now()))
+        out.append(item)
+    cutoff = utc_now() - dt.timedelta(days=MAX_AGE_DAYS)
+    out = [i for i in out if "date_published" not in i or parse_date(i["date_published"]) >= cutoff]
+    return out[:ITEMS_PER_SOURCE]
+
+
 def fetch(source: dict) -> tuple[list[dict] | None, str | None]:
     try:
         req = urllib.request.Request(source_url(source), headers={
@@ -206,7 +245,8 @@ def fetch(source: dict) -> tuple[list[dict] | None, str | None]:
             raw = r.read(8_000_000)
             if r.headers.get("Content-Encoding") == "gzip" or raw[:2] == b"\x1f\x8b":
                 raw = gzip.decompress(raw)
-        items = items_of(parse_xml(raw), source)
+        items = (items_of_polymarket(json.loads(raw), source) if "polymarket" in source
+                 else items_of(parse_xml(raw), source))
         if not items:
             return None, "no items"
         return items, None
@@ -238,7 +278,7 @@ def main() -> int:
     items, status, failed = [], [], 0
     for source, (got, error) in zip(catalogue, results):
         entry = {k: source[k] for k in ("id", "label", "domain", "perspective")}
-        entry["via"] = "Google News" if "google" in source else "publisher"
+        entry["via"] = "Google News" if "google" in source else "Polymarket API" if "polymarket" in source else "publisher"
         if got is not None:
             for i in got:
                 i["_jomo"]["fetched"] = now

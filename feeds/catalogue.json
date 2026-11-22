@@ -230,5 +230,6 @@
 {"domain": "sports", "id": "toi-sports", "label": "Times of India Sports", "perspective": "Indian", "url": "https://timesofindia.indiatimes.com/rssfeeds/4719148.cms"},
 {"domain": "sports", "id": "sportstar", "label": "Sportstar", "perspective": "Indian", "url": "https://sportstar.thehindu.com/feeder/default.rss"},
 {"domain": "sports", "id": "abc-sport", "label": "ABC Sport", "perspective": "Australian", "url": "https://www.abc.net.au/news/feed/2942460/rss.xml"},
-{"domain": "sports", "id": "scmp-sport", "label": "SCMP Sport", "perspective": "Hong Kong", "url": "https://www.scmp.com/rss/95/feed"}
+{"domain": "sports", "id": "scmp-sport", "label": "SCMP Sport", "perspective": "Hong Kong", "url": "https://www.scmp.com/rss/95/feed"},
+{"domain": "prediction-markets", "id": "polymarket-geopolitics", "label": "Polymarket · Geopolitics", "perspective": "Prediction market: newest open questions", "polymarket": {"tag_id": 100265}}
 ]

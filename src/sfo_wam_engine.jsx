@@ -144,6 +144,7 @@ const FEED_DOMAINS=[
   ["world","World"],["middle-east","Middle East"],["russia-eurasia","Russia & Eurasia"],["balkans","Balkans"],["asia","Asia"],
   ["africa","Africa & Nigeria"],["geopolitical-analysis","Geopolitical analysis"],["defense-nuclear","Defence & nuclear"],
   ["economic","Economic"],["religious","Religious"],["science-technology","Science & technology"],["sports","Sports"],
+  ["prediction-markets","Prediction markets"],
 ];
 const feedDomainLabel=d=>(FEED_DOMAINS.find(([k])=>k===d)||[d,d])[1];
 
