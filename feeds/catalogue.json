@@ -232,6 +232,5 @@
 {"domain": "sports", "id": "abc-sport", "label": "ABC Sport", "perspective": "Australian", "url": "https://www.abc.net.au/news/feed/2942460/rss.xml"},
 {"domain": "sports", "id": "scmp-sport", "label": "SCMP Sport", "perspective": "Hong Kong", "url": "https://www.scmp.com/rss/95/feed"},
 {"domain": "prediction-markets", "id": "polymarket-geopolitics", "label": "Polymarket · Geopolitics", "perspective": "Prediction market: newest open questions", "polymarket": {"tag_id": 100265}},
-{"domain": "prediction-markets", "id": "polymarket-ai", "label": "Polymarket · AI", "perspective": "Prediction market: newest open questions", "polymarket": {"tag_id": 439}},
-{"domain": "prediction-markets", "id": "polymarket-artificial-intelligence", "label": "Polymarket · artificial intelligence", "perspective": "Prediction market: newest open questions", "polymarket": {"tag_id": 835}}
+{"domain": "prediction-markets", "id": "polymarket-ai", "label": "Polymarket · AI", "perspective": "Prediction market: newest open questions", "polymarket": {"tag_id": 439}}
 ]
